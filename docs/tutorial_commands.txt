@@ -1,0 +1,220 @@
+________________________________________________________________________________
+
+hero_levelup: level up a hero and select skills
+
+"hero_levelup"
+{
+	"hero"	"npc_dota_hero_enchantress"
+	"level"	"25"
+
+	"levelups"
+	{
+		"enchantress_untouchable" "1"
+		"enchantress_untouchable" "1"
+		"enchantress_untouchable" "1"
+		"enchantress_untouchable" "1"
+
+		"enchantress_enchant" "1"
+		"enchantress_enchant" "1"
+		"enchantress_enchant" "1"
+		"enchantress_enchant" "1"
+
+		"enchantress_natures_attendants" "1"
+		"enchantress_natures_attendants" "1"
+		"enchantress_natures_attendants" "1"
+		"enchantress_natures_attendants" "1"
+
+		"enchantress_impetus" "1"
+		"enchantress_impetus" "1"
+		"enchantress_impetus" "1"
+
+		"attribute_bonus" "1"
+		"attribute_bonus" "1"
+		"attribute_bonus" "1"
+		"attribute_bonus" "1"
+		"attribute_bonus" "1"
+		"attribute_bonus" "1"
+		"attribute_bonus" "1"
+		"attribute_bonus" "1"
+		"attribute_bonus" "1"
+		"attribute_bonus" "1"
+	}
+}
+________________________________________________________________________________
+
+dota_tutorial_move_location_dist
+dota_tutorial_camera_location_dist
+dota_tutorial_state_change_delay
+dota_tutorial_debug
+dota_tutorial_roquelaire_useperches
+dota_tutorial_roquelaire_keepdistance
+dota_tutorial_usemodifierforanim
+dota_tutorial_see_enemy
+info_roquelaire_perch
+
+convars
+player_hero
+hero_controllable
+
+move_hero
+change_hero
+hero_level
+add_bad_bot
+add_good_bot
+add_bot_with_settings
+add_companion_bot
+force_good_win
+player_upgrade_ability
+add_teleportation_target
+player_give_item
+player_set_gold
+player_add_gold
+player_ensure_level
+show_tip
+force_game_start
+with_announcement
+calculate_score
+clear_all_tasks
+task_move_location
+movecamera_to
+teleportcamera_to
+setcamera_to_follow
+task_camera_location
+task_timed_round
+task_progress_count
+task_progress_event
+task_buy_items
+task_use_item
+task_learn_ability
+dota_player_learned_ability
+task_use_ability
+task_get_item_on_player
+task_courier_transfer_item
+dota_courier_transfer_item
+task_wait_for_shop_leftclick
+task_mouseover_stash_item
+task_double_tap
+heal_player
+heal_npc
+hide_npc
+reveal_npc
+player_movement_allowed
+player_healing_disable
+player_healing_enable
+set_tutorial_UI
+trigger_logic_relay
+npc_speech
+stop_npc_speech
+npc_sleep
+npc_wake
+npc_animation
+stop_npc_animation
+npc_set_buddha_on
+npc_set_buddha_off
+quest_finish
+quest
+finish_text
+shop_create_stock
+stockamount
+stocktime
+whitelist_enable
+add_item_shop_whitelist
+remove_item_shop_whitelist
+hero_levelup
+fire_experienced_event
+dota_camera_edgemove
+player_is_experienced
+player_is_notexperienced
+request_experience_dialog
+show_tooltip_at_entity
+title
+entity_name
+hide_tooltip_at_entity
+ping_minimap
+pos
+last_hit_lane
+repeat
+ping_minimap_stop
+finish_tutorial
+fade_to
+highlight_hud
+roq_face_player
+teleport_roq
+tower_invulnerable_in_lane
+tower_vulnerable_in_lane
+set_npc_health
+health_pct
+create_item_at_entity
+item
+lasthit_ui_mode
+hud_timer_show_tutorial_timer
+activate_lasthit_helper
+activate_deny_helper
+activate_permanent_glyph
+give_courier
+item_courier
+murder_all_creeps
+lesson_started
+dota_tutorial_lesson_start
+event
+mapIO_event
+remove_on_mapIO_event
+remove_on_event
+remove_on_ability
+required_count
+repeat_count
+reactive_tip
+timer
+npc_sound
+initial_delay
+find_nearest_friendly
+allow_movement
+face_player
+levelups
+element
+hide_highlight_hud_element
+highlight_hud_element
+elementname
+player_opened_shop
+player_closed_shop
+player_joined
+enter_pre_game
+advance_event
+advance_time
+next_lesson
+movecamera_finished
+modifier_tutorial_stat_collector
+tutorialline
+modifier_speech_bubble
+advance_on_quest
+death
+reveal_npc_delay
+use_modifier_for_anim
+fire_once
+npc_dota_creep*
+LastHitChallengeRival
+last_hit_lane_chosen
+tutorial_testui
+last_hit_challenge_rival
+force_lane
+last_hit_chosen
+difficulty
+passive
+easy
+medium
+hard
+unfair
+task_completed
+advance_trigger
+npc_awoke
+trigger_hero
+speech_end
+tutorial_speech_end
+tip_dismissed
+tutorial_tip_dismissed
+tutorial_cleanup_post
+tutorial_experience_closed
+tutorial_start_lesson
+dota_tutorial_shopleftclick
+dota_tutorial_stashmouseover
+dota_tutorial_doubletap

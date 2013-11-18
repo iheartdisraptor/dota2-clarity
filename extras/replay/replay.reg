@@ -1,0 +1,12 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\dota2]
+@="URL:dota2 Protocol"
+"URL Protocol"=""
+
+[HKEY_CLASSES_ROOT\dota2\shell]
+
+[HKEY_CLASSES_ROOT\dota2\shell\open]
+
+[HKEY_CLASSES_ROOT\dota2\shell\open\command]
+@="\"C:\\Games\\Steam\\steamapps\\common\\dota 2 beta\\dota.exe\" \"%1\"" 
