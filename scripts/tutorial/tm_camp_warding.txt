@@ -1,0 +1,1084 @@
+// Training Mission: Camp Warding by Anita (Octavia, u/iheartdisraptor)
+// This script belongs to the community. Feel free to extend and rerelease this script.
+
+// Directions:
+// 1. Enable the Dota 2 console: http://www.hattongames.com/2012/03/how-to-enable-the-console-in-dota-2
+// 2. Download and save this script as
+//    <Steam folder>/SteamApps/common/dota 2 beta/dota/scripts/tutorial/tm_camp_warding.txt.
+// 3. Download and save tm_camp_warding_console.cfg as
+//    <Steam folder>/SteamApps/common/dota 2 beta/dota/cfg/tm_camp_warding_console.cfg.
+// 4. In autoexec.cfg add "exec tm_camp_warding_console.cfg".
+// 5. Start Dota 2, open the console (~ by default), and enter "tm_camp_warding".
+
+// Changelog:
+// 1.0-6.79, 13.11.18
+// - Initial version
+
+"Tutorial_Lessons"
+{
+	"Version"	"1"
+
+	"tm_camp_warding"
+	{
+		"advance_time" "0"
+		"advance_event" "player_joined"
+		"next_lesson" "tm_camp_warding_setup"
+	}
+
+	"tm_camp_warding_setup"
+	{
+		"convars"
+		{
+			// Delay start to buy and choose lane
+			"dota_tutorial_prevent_start" "1"
+			"sv_pausable" "1"
+
+			// Camera setup
+			//"dota_endgame_cinematic_disable" "1"
+
+			// Tutorial environment setup
+			"dota_tutorial_state_change_delay" "0"
+			"dota_tutorial_show_tower_damage" "1"
+			//"dota_companion_enable" "0"
+			//"sf_loadout_tutorial_enable" "1"
+			//"dota_tutorial_log_hero" "1"
+
+			// Shop
+			"dota_player_auto_purchase_items" "0"
+			"dota_tutorial_shop_override" "0"
+			"dota_tutorial_disable_suggested_items" "0"
+
+			"dota_tutorial_game" "1"
+			//"sv_cheats" "1"
+
+			// Hide health bars
+			"dota_hud_healthbars" "0"
+		}
+
+		"precache"
+		{
+			"npc_dota_hero_enchantress" "1"
+		}
+
+		//"hud_timer_show_tutorial_timer" "1"
+
+		"advance_time" "0"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_setup_hero"
+	}
+
+	"tm_camp_warding_setup_hero"
+	{
+		"player_team" "good"
+
+		"player_hero" "npc_dota_hero_enchantress"
+
+		"player_movement_allowed" "0"
+		"convars"
+		{
+			"dota_hud_healthbars" "0"
+		}
+
+		"hero_levelup"
+		{
+			"hero"	"npc_dota_hero_enchantress"
+			"level"	"25"
+
+			"levelups"
+			{
+				"enchantress_untouchable" "1"
+				"enchantress_untouchable" "1"
+				"enchantress_untouchable" "1"
+				"enchantress_untouchable" "1"
+
+				"enchantress_enchant" "1"
+				"enchantress_enchant" "1"
+				"enchantress_enchant" "1"
+				"enchantress_enchant" "1"
+
+				"enchantress_natures_attendants" "1"
+				"enchantress_natures_attendants" "1"
+				"enchantress_natures_attendants" "1"
+				"enchantress_natures_attendants" "1"
+
+				"enchantress_impetus" "1"
+				"enchantress_impetus" "1"
+				"enchantress_impetus" "1"
+
+				"attribute_bonus" "1"
+				"attribute_bonus" "1"
+				"attribute_bonus" "1"
+				"attribute_bonus" "1"
+				"attribute_bonus" "1"
+				"attribute_bonus" "1"
+				"attribute_bonus" "1"
+				"attribute_bonus" "1"
+				"attribute_bonus" "1"
+				"attribute_bonus" "1"
+			}
+		}
+
+		"player_set_gold" "81523"
+
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+
+		"player_give_item" "item_quelling_blade"
+		"player_give_item" "item_travel_boots"
+		"player_give_item" "item_cyclone"
+		"player_give_item" "item_sange_and_yasha"
+
+		"player_give_item" "item_flying_courier"
+
+		"give_courier" "1"
+		"give_courier" "1"
+		"give_courier" "1"
+
+		"advance_time" "3"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_intro_fade"
+	}
+
+	"tm_camp_warding_intro_fade"
+	{
+		"fade_to" "0"
+		"activate_permanent_glyph" "1"
+
+		"advance_time" "2"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_intro_speech1"
+	}
+
+	"tm_camp_warding_intro_speech1"
+	{
+		"npc_speech"
+		{
+			"text" "Hey there!"
+			"npc" "npc_dota_hero_enchantress"
+			"duration" "4"
+		}
+
+		"advance_time" "4"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_intro_speech2"
+	}
+
+	"tm_camp_warding_intro_speech2"
+	{
+		"npc_speech"
+		{
+			"text" "Today let's learn how to ward and deward camps."
+			"npc" "npc_dota_hero_enchantress"
+			"duration" "6"
+		}
+
+		"advance_time" "6"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_intro_start_game"
+	}
+
+	"tm_camp_warding_intro_start_game"
+	{
+		"force_game_start" "with_announcement"
+
+		"player_movement_allowed" "1"
+		"convars"
+		{
+			"dota_hud_healthbars" "1"
+		}
+
+		"advance_time" "6"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_intro_quest"
+	}
+
+	"tm_camp_warding_intro_quest"
+	{
+		"quest_base"
+		{
+			"name" "quest_sproink_to_forest"
+			"type" "0"
+			"text" "Sproink to the forest."
+		}
+
+		"advance_time" "0.3"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_intro_wait_quest"
+	}
+
+	"tm_camp_warding_intro_wait_quest"
+	{
+		"task_move_location" "1424.289795 -4815.601074 0"
+		"advance_event" "task_completed"
+		"next_lesson" "tm_camp_warding_intro_finish_quest"
+	}
+
+	"tm_camp_warding_intro_finish_quest"
+	{
+		"quest_finish" "quest_sproink_to_forest"
+
+		"player_movement_allowed" "0"
+		"convars"
+		{
+			"dota_hud_healthbars" "0"
+		}
+
+		"npc_speech"
+		{
+			"text" "You know what I love? Warding!"
+			"npc" "npc_dota_hero_enchantress"
+			"duration" "4"
+		}
+
+		"advance_time" "4"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_train"
+	}
+
+	"tm_camp_warding_train"
+	{
+		"npc_speech"
+		{
+			"text" "When you see a quest marker, place an observer on top and move there."
+			"npc" "npc_dota_hero_enchantress"
+			"duration" "5"
+		}
+
+		"advance_time" "5"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_radiant_easy1"
+	}
+
+	// Radiant easy camp ///////////////////////////////////////////////////////
+
+	"tm_camp_warding_radiant_easy1"
+	{
+		"player_movement_allowed" "1"
+		"convars"
+		{
+			"dota_hud_healthbars" "1"
+		}
+
+		"npc_speech"
+		{
+			"text" "Over there, there's one!"
+			"npc" "npc_dota_hero_enchantress"
+			"allow_movement" "1"
+			"duration" "4"
+		}
+
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "3"
+			"text" "Place an observer on the marker."
+		}
+
+		"task_move_location" "3002.907715 -4869.374512 0"
+		"advance_event" "task_completed"
+		"next_lesson" "tm_camp_warding_radiant_easy1_exp"
+	}
+
+	"tm_camp_warding_radiant_easy1_exp"
+	{
+		"quest_finish" "quest_ward"
+
+		"player_movement_allowed" "0"
+		"convars"
+		{
+			"dota_hud_healthbars" "0"
+		}
+
+		"npc_speech"
+		{
+			"text" "This ward blocks the camp and gives vision, but it is easily dewarded. We can do better!"
+			"npc" "npc_dota_hero_enchantress"
+			"duration" "5"
+		}
+
+		"advance_time" "5"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_radiant_easy1_exp2"
+	}
+
+	"tm_camp_warding_radiant_easy1_exp2"
+	{
+		"npc_speech"
+		{
+			"text" "Good wards at least challenge your enemy to deward them."
+			"npc" "npc_dota_hero_enchantress"
+			"duration" "5"
+		}
+
+		"advance_time" "5"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_radiant_easy2"
+	}
+
+	"tm_camp_warding_radiant_easy2"
+	{
+		"player_movement_allowed" "1"
+		"convars"
+		{
+			"dota_hud_healthbars" "1"
+		}
+
+		"npc_speech"
+		{
+			"text" "Look, there's another!"
+			"npc" "npc_dota_hero_enchantress"
+			"allow_movement" "1"
+			"duration" "4"
+		}
+
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "3"
+			"text" "Place an observer on the marker."
+		}
+
+		"task_move_location" "3727 -5251 0"
+		"advance_event" "task_completed"
+		"next_lesson" "tm_camp_warding_radiant_easy2_exp"
+	}
+
+	"tm_camp_warding_radiant_easy2_exp"
+	{
+		"quest_finish" "quest_ward"
+
+		"player_movement_allowed" "0"
+		"convars"
+		{
+			"dota_hud_healthbars" "0"
+		}
+
+		"npc_speech"
+		{
+			"text" "This ward also blocks the camp and gives vision, but it is outside the range of the most common sentry."
+			"npc" "npc_dota_hero_enchantress"
+			"duration" "8"
+		}
+
+		"advance_time" "8"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_radiant_easy2_exp2"
+	}
+
+	"tm_camp_warding_radiant_easy2_exp2"
+	{
+		"npc_speech"
+		{
+			"text" "Now for a bit about creep spawning. Neutral camps like these spawn at 0:30 and on every minute after (e.g. 1:00, 2:00, etc)."
+			"npc" "npc_dota_hero_enchantress"
+			"duration" "8"
+		}
+
+		"advance_time" "8"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_radiant_easy2_exp3"
+	}
+
+	"tm_camp_warding_radiant_easy2_exp3"
+	{
+		"npc_speech"
+		{
+			"text" "A camp is blocked when a unit or ward is inside the camp's spawn box during these times."
+			"npc" "npc_dota_hero_enchantress"
+			"duration" "8"
+		}
+
+		"advance_time" "8"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_radiant_easy2_exp4"
+	}
+
+	"tm_camp_warding_radiant_easy2_exp4"
+	{
+		"npc_speech"
+		{
+			"text" "To see why this ward blocks the camp, press ']' to display the spawn boxes for a time. (Make sure you haven't set this key to anything else in the options!)"
+			"npc" "npc_dota_hero_enchantress"
+			"duration" "12"
+		}
+
+		"advance_time" "12"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_radiant_easy2_exp5"
+	}
+
+	"tm_camp_warding_radiant_easy2_exp5"
+	{
+		"npc_speech"
+		{
+			"text" "In this training mission, you can also press '[' to switch to a bird's eye view."
+			"npc" "npc_dota_hero_enchantress"
+			"duration" "5"
+		}
+
+		"advance_time" "5"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_radiant_easy3"
+	}
+
+	"tm_camp_warding_radiant_easy3"
+	{
+		"player_movement_allowed" "1"
+		"convars"
+		{
+			"dota_hud_healthbars" "1"
+		}
+
+		"npc_speech"
+		{
+			"text" "We're off to a skipping start! Let's keep going."
+			"npc" "npc_dota_hero_enchantress"
+			"allow_movement" "1"
+			"duration" "4"
+		}
+
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "3"
+			"text" "Place an observer on the marker."
+		}
+
+		"task_move_location" "2599.620361 -4492.426758 0"
+		"advance_event" "task_completed"
+		"next_lesson" "tm_camp_warding_radiant_easy3_exp"
+	}
+
+	"tm_camp_warding_radiant_easy3_exp"
+	{
+		"quest_finish" "quest_ward"
+
+		"player_movement_allowed" "0"
+		"convars"
+		{
+			"dota_hud_healthbars" "0"
+		}
+
+		"npc_speech"
+		{
+			"text" "This ward is partially hidden."
+			"npc" "npc_dota_hero_enchantress"
+			"duration" "4"
+		}
+
+		"advance_time" "4"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_radiant_easy4"
+	}
+
+	"tm_camp_warding_radiant_easy4"
+	{
+		"player_movement_allowed" "1"
+		"convars"
+		{
+			"dota_hud_healthbars" "1"
+		}
+
+		"npc_speech"
+		{
+			"text" "Another!"
+			"npc" "npc_dota_hero_enchantress"
+			"allow_movement" "1"
+			"duration" "4"
+		}
+
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "3"
+			"text" "Place an observer on the marker."
+		}
+
+		"task_move_location" "3692.026367 -4847.524902 0"
+		"advance_event" "task_completed"
+		"next_lesson" "tm_camp_warding_radiant_easy4_exp"
+	}
+
+	"tm_camp_warding_radiant_easy4_exp"
+	{
+		"quest_finish" "quest_ward"
+
+		"player_movement_allowed" "0"
+		"convars"
+		{
+			"dota_hud_healthbars" "0"
+		}
+
+		"npc_speech"
+		{
+			"text" "This ward is tricky to deward if the enemy places sentries at the top and bottom of the camp."
+			"npc" "npc_dota_hero_enchantress"
+			"duration" "6"
+		}
+
+		"advance_time" "6"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_radiant_easy5"
+	}
+
+	"tm_camp_warding_radiant_easy5"
+	{
+		"player_movement_allowed" "1"
+		"convars"
+		{
+			"dota_hud_healthbars" "1"
+		}
+
+		"npc_speech"
+		{
+			"text" "There!"
+			"npc" "npc_dota_hero_enchantress"
+			"allow_movement" "1"
+			"duration" "4"
+		}
+
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "3"
+			"text" "Place an observer on the marker."
+		}
+
+		"task_move_location" "2322.907959 -4790.977051 0"
+		"advance_event" "task_completed"
+		"next_lesson" "tm_camp_warding_radiant_easy5_exp"
+	}
+
+	"tm_camp_warding_radiant_easy5_exp"
+	{
+		"quest_finish" "quest_ward"
+
+		"player_movement_allowed" "0"
+		"convars"
+		{
+			"dota_hud_healthbars" "0"
+		}
+
+		"npc_speech"
+		{
+			"text" "This ward is similar to the last one."
+			"npc" "npc_dota_hero_enchantress"
+			"duration" "4"
+		}
+
+		"advance_time" "4"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_radiant_easy6"
+	}
+
+	"tm_camp_warding_radiant_easy6"
+	{
+		"player_movement_allowed" "1"
+		"convars"
+		{
+			"dota_hud_healthbars" "1"
+		}
+
+		"npc_speech"
+		{
+			"text" "Over there!"
+			"npc" "npc_dota_hero_enchantress"
+			"allow_movement" "1"
+			"duration" "4"
+		}
+
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "3"
+			"text" "Place an observer on the marker."
+		}
+
+		"task_move_location" "2270.642334 -4392.752930 0"
+		"advance_event" "task_completed"
+		"next_lesson" "tm_camp_warding_radiant_easy6_exp"
+	}
+
+	"tm_camp_warding_radiant_easy6_exp"
+	{
+		"quest_finish" "quest_ward"
+
+		"player_movement_allowed" "0"
+		"convars"
+		{
+			"dota_hud_healthbars" "0"
+		}
+
+		"npc_speech"
+		{
+			"text" "This ward is on top of 'the Magic Bush' which blocks two camps at once."
+			"npc" "npc_dota_hero_enchantress"
+			"duration" "5"
+		}
+
+		"advance_time" "5"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_radiant_easy7"
+	}
+
+	//here
+	"tm_camp_warding_radiant_easy7"
+	{
+		"player_movement_allowed" "1"
+		"convars"
+		{
+			"dota_hud_healthbars" "1"
+		}
+
+		"npc_speech"
+		{
+			"text" "In the bushes! Look closely."
+			"npc" "npc_dota_hero_enchantress"
+			"allow_movement" "1"
+			"duration" "4"
+		}
+
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "3"
+			"text" "Place an observer on the marker."
+		}
+
+		"task_move_location" "2651.502197 -4396.487793 0"
+		"advance_event" "task_completed"
+		"next_lesson" "tm_camp_warding_radiant_easy7_exp"
+	}
+
+	"tm_camp_warding_radiant_easy7_exp"
+	{
+		"quest_finish" "quest_ward"
+
+		"player_movement_allowed" "0"
+		"convars"
+		{
+			"dota_hud_healthbars" "0"
+		}
+
+		"npc_speech"
+		{
+			"text" "This ward is completely hidden. The enemy needs to get flying vision or cut a tree to see it."
+			"npc" "npc_dota_hero_enchantress"
+			"duration" "5"
+		}
+
+		"advance_time" "5"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_radiant_easy8"
+	}
+
+	"tm_camp_warding_radiant_easy8"
+	{
+		"player_movement_allowed" "1"
+		"convars"
+		{
+			"dota_hud_healthbars" "1"
+		}
+
+		"npc_speech"
+		{
+			"text" "Another here!"
+			"npc" "npc_dota_hero_enchantress"
+			"allow_movement" "1"
+			"duration" "4"
+		}
+
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "3"
+			"text" "Place an observer on the marker."
+		}
+
+		"task_move_location" "3400.152832 -4415.329102 0"
+		"advance_event" "task_completed"
+		"next_lesson" "tm_camp_warding_radiant_easy8_exp"
+	}
+
+	"tm_camp_warding_radiant_easy8_exp"
+	{
+		"quest_finish" "quest_ward"
+
+		"player_movement_allowed" "0"
+		"convars"
+		{
+			"dota_hud_healthbars" "0"
+		}
+
+		"npc_speech"
+		{
+			"text" "This ward is partially hidden but is still easily dewarded."
+			"npc" "npc_dota_hero_enchantress"
+			"duration" "4"
+		}
+
+		"advance_time" "4"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_radiant_easy9"
+	}
+
+	"tm_camp_warding_radiant_easy9"
+	{
+		"player_movement_allowed" "1"
+		"convars"
+		{
+			"dota_hud_healthbars" "1"
+		}
+
+		"npc_speech"
+		{
+			"text" "Over there!"
+			"npc" "npc_dota_hero_enchantress"
+			"allow_movement" "1"
+			"duration" "4"
+		}
+
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "3"
+			"text" "Place an observer on the marker."
+		}
+
+		"task_move_location" "3704.333008 -4507.153320 0"
+		"advance_event" "task_completed"
+		"next_lesson" "tm_camp_warding_radiant_easy9_exp"
+	}
+
+	"tm_camp_warding_radiant_easy9_exp"
+	{
+		"quest_finish" "quest_ward"
+
+		"player_movement_allowed" "0"
+		"convars"
+		{
+			"dota_hud_healthbars" "0"
+		}
+
+		"npc_speech"
+		{
+			"text" "This is another completely hidden ward."
+			"npc" "npc_dota_hero_enchantress"
+			"duration" "4"
+		}
+
+		"advance_time" "4"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_radiant_easy9_exp2"
+	}
+
+	"tm_camp_warding_radiant_easy9_exp2"
+	{
+		"npc_speech"
+		{
+			"text" "Now let's look at two sentries that can deward most of these observers."
+			"npc" "npc_dota_hero_enchantress"
+			"duration" "5"
+		}
+
+		"advance_time" "5"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_radiant_easy9_exp3"
+	}
+
+	"tm_camp_warding_radiant_easy9_exp3"
+	{
+		"npc_speech"
+		{
+			"text" "For this first sentry, cut down the tree and place the sentry on the stump."
+			"npc" "npc_dota_hero_enchantress"
+			"duration" "7"
+		}
+
+		"advance_time" "7"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_radiant_easy10"
+	}
+
+	"tm_camp_warding_radiant_easy10"
+	{
+		"player_movement_allowed" "1"
+		"convars"
+		{
+			"dota_hud_healthbars" "1"
+		}
+
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "3"
+			"text" "Cut the tree and place a sentry on the marker."
+		}
+
+		"task_move_location" "3038.360352 -4292.347656 0"
+		"advance_event" "task_completed"
+		"next_lesson" "tm_camp_warding_radiant_easy10_exp"
+	}
+
+	"tm_camp_warding_radiant_easy10_exp"
+	{
+		"quest_finish" "quest_ward"
+
+		"player_movement_allowed" "0"
+		"convars"
+		{
+			"dota_hud_healthbars" "0"
+		}
+
+		"npc_speech"
+		{
+			"text" "Sentries have an 800 reveal range. This sentry will reveal many wards while not blocking the camp."
+			"npc" "npc_dota_hero_enchantress"
+			"duration" "10"
+		}
+
+		"advance_time" "10"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_radiant_easy11"
+	}
+
+	"tm_camp_warding_radiant_easy11"
+	{
+		"player_movement_allowed" "1"
+		"convars"
+		{
+			"dota_hud_healthbars" "1"
+		}
+
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "3"
+			"text" "Place a sentry on the marker."
+		}
+
+		"task_move_location" "2964.214600 -5399.545898 0"
+		"advance_event" "task_completed"
+		"next_lesson" "tm_camp_warding_radiant_easy11_exp"
+	}
+
+	"tm_camp_warding_radiant_easy11_exp"
+	{
+		"quest_finish" "quest_ward"
+
+		"player_movement_allowed" "0"
+		"convars"
+		{
+			"dota_hud_healthbars" "0"
+		}
+
+		"npc_speech"
+		{
+			"text" "This sentry covers the bottom part of the spawn box, but not the sides."
+			"npc" "npc_dota_hero_enchantress"
+			"duration" "7"
+		}
+
+		"advance_time" "7"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_radiant_easy12"
+	}
+
+	"tm_camp_warding_radiant_easy12"
+	{
+		"player_movement_allowed" "1"
+		"convars"
+		{
+			"dota_hud_healthbars" "1"
+		}
+
+		"npc_speech"
+		{
+			"text" "And now one last observer."
+			"npc" "npc_dota_hero_enchantress"
+			"duration" "4"
+		}
+
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "3"
+			"text" "Place an observer on the marker."
+		}
+
+		"task_move_location" "2207.122803 -3304.636963 0"
+		"advance_event" "task_completed"
+		"next_lesson" "tm_camp_warding_radiant_easy12_exp"
+	}
+
+	"tm_camp_warding_radiant_easy12_exp"
+	{
+		"quest_finish" "quest_ward"
+
+		"player_movement_allowed" "0"
+		"convars"
+		{
+			"dota_hud_healthbars" "0"
+		}
+
+		"npc_speech"
+		{
+			"text" "This observer gives rune vision and blocks a camp, allowing you to trick the enemy into thinking you used the Magic Bush."
+			"npc" "npc_dota_hero_enchantress"
+			"duration" "10"
+		}
+
+		"advance_time" "10"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_finish"
+	}
+
+
+	// Radiant medium camp near rune ///////////////////////////////////////////
+
+	"empty"
+	{
+		"advance_time" "0"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_"
+	}
+
+	"empty_move"
+	{
+		"task_move_location" "2991 -5111 1238"
+		"advance_event" "task_completed"
+		"next_lesson" "tm_camp_warding_"
+	}
+
+	///////////////
+
+	"tm_camp_warding_finish"
+	{
+		"npc_speech"
+		{
+			"text" "We're done for today, but more training missions on warding will come."
+			"npc" "npc_dota_hero_enchantress"
+			"duration" "5"
+		}
+
+		"advance_time" "5"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_finish2"
+	}
+
+	"tm_camp_warding_finish2"
+	{
+		"npc_speech"
+		{
+			"text" "As with all things in the world of Dota, warding and dewarding are situational, especially in 6.79."
+			"npc" "npc_dota_hero_enchantress"
+			"duration" "6"
+		}
+
+		"advance_time" "6"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_finish3"
+	}
+
+	"tm_camp_warding_finish3"
+	{
+		"npc_speech"
+		{
+			"text" "The spawn box display will work in a practice lobby. Use it with 'dota_range_display 800' to find other warding spots."
+			"npc" "npc_dota_hero_enchantress"
+			"duration" "10"
+		}
+
+		"advance_time" "10"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_finish4"
+	}
+
+	"tm_camp_warding_finish4"
+	{
+		"npc_speech"
+		{
+			"text" "See you next time!"
+			"npc" "npc_dota_hero_enchantress"
+			"duration" "3"
+		}
+
+		"advance_time" "3"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_end_game"
+	}
+
+	"tm_camp_warding_end_game"
+	{
+		"finish_text" "Training mission complete!"
+		"finish_tutorial" "1"
+
+		"advance_time" "15"
+		"advance_event" "lesson_started"
+		"next_lesson" "tm_camp_warding_end_game2"
+	}
+
+	"tm_camp_warding_end_game2"
+	{
+		"fade_to" "255"
+	}
+}
