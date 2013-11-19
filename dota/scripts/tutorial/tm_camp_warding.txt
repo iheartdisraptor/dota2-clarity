@@ -1,14 +1,6 @@
 // Training Mission: Camp Warding by Anita (Octavia, u/iheartdisraptor)
-// This script belongs to the community. Feel free to extend and rerelease this script.
-
-// Directions:
-// 1. Enable the Dota 2 console: http://www.hattongames.com/2012/03/how-to-enable-the-console-in-dota-2
-// 2. Download and save this script as
-//    <Steam folder>/SteamApps/common/dota 2 beta/dota/scripts/tutorial/tm_camp_warding.txt.
-// 3. Download and save tm_camp_warding_console.cfg as
-//    <Steam folder>/SteamApps/common/dota 2 beta/dota/cfg/tm_camp_warding_console.cfg.
-// 4. In autoexec.cfg add "exec tm_camp_warding_console.cfg".
-// 5. Start Dota 2, open the console (~ by default), and enter "tm_camp_warding".
+// This script belongs to the community. Feel free to extend and rerelease this
+// script. For directions, see tm_camp_warding_console.cfg.
 
 // Changelog:
 // 1.0-6.79, 13.11.18
