@@ -14,3 +14,6 @@
 
 # Vim Temporary Files
 ~*
+
+# Windows shortcuts
+*.lnk
