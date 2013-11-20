@@ -1,0 +1,38 @@
+Installing just the training missions:
+
+1. Enable the Dota 2 console:
+   http://wyksblog.com/guide-activating-the-console-in-dota-2
+
+2. Copy and paste the dota2-scripts/dota directory to
+   Steam/SteamApps/common/dota 2 beta. The files are named such that they will
+   not overwrite any game files, your autoexec.cfg, or your config.cfg.
+
+3. Add "exec autoexec_tutorials.cfg" to your autoexec.cfg
+
+4. Restart Dota 2 and try to run a tutorial from the console, e.g.
+   enter "tutorial_rune_wards" into the console. Available tutorials are listed
+   in autoexec_tutorials.cfg.
+
+--------------------------------------------------------------------------------
+
+Installing dota2-scripts:
+
+1. Enable the Dota 2 console:
+   http://wyksblog.com/guide-activating-the-console-in-dota-2
+
+2. Copy and paste the dota2-scripts/dota directory to
+   Steam/SteamApps/common/dota 2 beta. The files are named such that they will
+   not overwrite any game files, your autoexec.cfg, or your config.cfg.
+
+3. Reference the scripts you want to use in your autoexec.cfg (located at
+   Steam/SteamApps/common/dota 2 beta/dota/cfg/autoexec.cfg).
+
+   To use all scripts:
+   Add "exec autoexec_example.cfg" to your autoexec.cfg
+
+   To use only drills and training missions:
+   Add "exec autoexec_tutorials.cfg" to your autoexec.cfg
+
+   To pick and choose:
+   Add the contents of autoexec_example.cfg to your autoexec.cfg and
+   modify the commands as you see fit.
