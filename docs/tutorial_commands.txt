@@ -1,3 +1,4 @@
+Various commands for Dota 2's tutorial scripting
 ________________________________________________________________________________
 
 hero_levelup: level up a hero and select skills

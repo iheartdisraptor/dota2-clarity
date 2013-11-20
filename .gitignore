@@ -19,4 +19,7 @@
 # Windows shortcuts
 *.lnk
 
+# Dota 2
 __*__.a
+autoexec.cfg
+config.cfg
