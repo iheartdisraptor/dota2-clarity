@@ -1,0 +1,1457 @@
+// Training Mission: Rune Warding by Anita (Octavia, u/iheartdisraptor)
+// This script belongs to the community. Feel free to extend and rerelease this
+// script. For directions, see tm_rune_warding_console.cfg.
+
+// Changelog:
+// 1.0-6.79, 13.11.19
+// - Initial version
+
+"Tutorial_Lessons"
+{
+	"Version" "1"
+
+	"tm_rune_warding"
+	{
+		"advance_time" "0"
+		"advance_event" "player_joined"
+		"next_lesson" "setup"
+	}
+
+	"setup"
+	{
+		"convars"
+		{
+			// Allow pause
+			"sv_pausable" "1"
+
+			// Start game when we say so
+			"dota_tutorial_prevent_start" "1"
+
+			// Camera setup
+			"dota_endgame_cinematic_disable" "1"
+
+			// Tutorial environment setup
+			"sf_loadout_tutorial_enable" "0"
+			"dota_tutorial_state_change_delay" "0"
+			"dota_tutorial_heroselection" "0"
+			"dota_tutorial_debug" "0"
+			"dota_companion_enable" "0"
+			"dota_tutorial_bot_game" "0"
+			"dota_tutorial_log_hero" "0"
+			"dota_tutorial_stop_daynightcycle" "1"
+
+			// Hide health bars
+			"dota_hud_healthbars" "0"
+
+			// Disable creep spawn
+			"dota_tutorial_game" "0"
+			"sv_cheats" "1"
+			"dota_creeps_no_spawning" "1"
+			"dota_range_display" "800"
+
+			// Required for various tutorial commands to work
+			"dota_tutorial_game" "1"
+		}
+
+		"precache"
+		{
+			"npc_dota_hero_crystal_maiden" "1"
+		}
+
+		"advance_time" "0"
+		"advance_event" "lesson_started"
+		"next_lesson" "setup_hero"
+	}
+
+	"setup_hero"
+	{
+		"player_team" "good"
+
+		"player_hero" "npc_dota_hero_crystal_maiden"
+
+		"player_movement_allowed" "0"
+		"convars"
+		{
+			"dota_hud_healthbars" "0"
+		}
+
+		"hero_levelup"
+		{
+			"hero"	"npc_dota_hero_crystal_maiden"
+			"level"	"25"
+
+			"levelups"
+			{
+				"crystal_maiden_crystal_nova" "1"
+				"crystal_maiden_crystal_nova" "1"
+				"crystal_maiden_crystal_nova" "1"
+				"crystal_maiden_crystal_nova" "1"
+
+				"crystal_maiden_frostbite" "1"
+				"crystal_maiden_frostbite" "1"
+				"crystal_maiden_frostbite" "1"
+				"crystal_maiden_frostbite" "1"
+
+				"crystal_maiden_brilliance_aura" "1"
+				"crystal_maiden_brilliance_aura" "1"
+				"crystal_maiden_brilliance_aura" "1"
+				"crystal_maiden_brilliance_aura" "1"
+
+				"crystal_maiden_freezing_field" "1"
+				"crystal_maiden_freezing_field" "1"
+				"crystal_maiden_freezing_field" "1"
+
+				"attribute_bonus" "1"
+				"attribute_bonus" "1"
+				"attribute_bonus" "1"
+				"attribute_bonus" "1"
+				"attribute_bonus" "1"
+				"attribute_bonus" "1"
+				"attribute_bonus" "1"
+				"attribute_bonus" "1"
+				"attribute_bonus" "1"
+				"attribute_bonus" "1"
+			}
+		}
+
+		"player_set_gold" "81523"
+
+		"player_give_item" "item_travel_boots"
+		"player_give_item" "item_quelling_blade"
+
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+		"player_give_item" "item_ward_sentry"
+
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+		"player_give_item" "item_ward_observer"
+
+		"player_give_item" "item_cyclone"
+		"player_give_item" "item_sange_and_yasha"
+
+		"player_give_item" "item_flying_courier"
+
+		"give_courier" "1"
+		"give_courier" "1"
+		"give_courier" "1"
+
+		"advance_time" "3"
+		"advance_event" "lesson_started"
+		"next_lesson" "intro_fade"
+	}
+
+	"intro_fade"
+	{
+		"fade_to" "0"
+		"activate_permanent_glyph" "1"
+
+		"advance_time" "2"
+		"advance_event" "lesson_started"
+		"next_lesson" "intro_speech1"
+	}
+
+	"intro_speech1"
+	{
+		"npc_speech"
+		{
+			"text" "Hello!"
+			"npc" "npc_dota_hero_crystal_maiden"
+			"duration" "2"
+		}
+
+		"advance_time" "2"
+		"advance_event" "lesson_started"
+		"next_lesson" "intro_speech2"
+	}
+
+	"intro_speech2"
+	{
+		"npc_speech"
+		{
+			"text" "Today we're going to learn how to ward the runes."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"duration" "5"
+		}
+
+		"advance_time" "5"
+		"advance_event" "lesson_started"
+		"next_lesson" "intro_start_game"
+	}
+
+	"intro_start_game"
+	{
+		"force_game_start" "with_announcement"
+
+		"player_movement_allowed" "1"
+		"convars"
+		{
+			"dota_hud_healthbars" "1"
+		}
+
+		"advance_time" "6"
+		"advance_event" "lesson_started"
+		"next_lesson" "intro_quest"
+	}
+
+	"intro_quest"
+	{
+		"quest_base"
+		{
+			"name" "quest_start"
+			"type" "0"
+			"text" "Walk to the bottom rune spot."
+		}
+
+		"advance_time" "0.3"
+		"advance_event" "lesson_started"
+		"next_lesson" "intro_wait_quest"
+	}
+
+	"intro_wait_quest"
+	{
+		"task_move_location" "2290.838379 -3200.314453 0"
+		"advance_event" "task_completed"
+		"next_lesson" "intro_finish_quest"
+	}
+
+	"intro_finish_quest"
+	{
+		"quest_finish" "quest_start"
+
+		"player_movement_allowed" "0"
+		"convars"
+		{
+			"dota_hud_healthbars" "0"
+		}
+
+		"npc_speech"
+		{
+			"text" "Here we are."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"duration" "3"
+		}
+
+		"advance_time" "3"
+		"advance_event" "lesson_started"
+		"next_lesson" "train"
+	}
+
+	"train"
+	{
+		"npc_speech"
+		{
+			"text" "Place an observer on the ping and walk to the quest marker to proceed."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"duration" "5"
+		}
+
+		"advance_time" "5"
+		"advance_event" "lesson_started"
+		"next_lesson" "bottom1_exp"
+	}
+
+	// Bottom rune /////////////////////////////////////////////////////////////
+
+	// Closest Radiant cliff ward
+	"bottom1_exp"
+	{
+		"player_movement_allowed" "1"
+		"convars"
+		{
+			"dota_hud_healthbars" "1"
+		}
+
+		"npc_speech"
+		{
+			"text" "This rune ward gives vision closer to mid, protecting that lane from a gank through the jungle. As Radiant, this ward is risky after 20:00 since it does not cover the entrance to Roshan's pit."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"allow_movement" "1"
+			"duration" "12"
+		}
+
+		"advance_time" "0"
+		"advance_event" "lesson_started"
+		"next_lesson" "bottom1"
+	}
+
+	"bottom1"
+	{
+		"player_movement_allowed" "1"
+		"convars"
+		{
+			"dota_hud_healthbars" "1"
+		}
+
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "1"
+			"text" "Place an observer ward."
+		}
+
+		"ping_minimap"
+		{
+			"pos" "1665.229980 -2774.326904 247.084747"
+			"delay" "2"
+			"repeat" "6"
+		}
+
+		"task_move_location" "1517.948975 -2417.623047 250"
+		"advance_event" "task_completed"
+		"next_lesson" "bottom2_exp"
+	}
+
+	// Radiant cliff ward
+	"bottom2_exp"
+	{
+		"quest_finish" "quest_ward"
+		"ping_minimap_stop" "1"
+
+		"npc_speech"
+		{
+			"text" "This ward gives some vision of the Radiant jungle."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"allow_movement" "1"
+			"duration" "12"
+		}
+
+		"advance_time" "0"
+		"advance_event" "lesson_started"
+		"next_lesson" "bottom2"
+	}
+
+	"bottom2"
+	{
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "1"
+			"text" "Place another observer ward."
+		}
+
+		"ping_minimap"
+		{
+			"pos" "2519.658447 -2674.707764 336.038208"
+			"delay" "2"
+			"repeat" "6"
+		}
+
+		"task_move_location" "2290.838379 -3200.314453 0"
+		"advance_event" "task_completed"
+		"next_lesson" "bottom3_exp"
+	}
+
+	// Radiant cliff ward alternative
+	"bottom3_exp"
+	{
+		"quest_finish" "quest_ward"
+		"ping_minimap_stop" "1"
+
+		"npc_speech"
+		{
+			"text" "At the cost of vision, this ward is slightly harder to deward with a sentry in the river."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"allow_movement" "1"
+			"duration" "12"
+		}
+
+		"advance_time" "0"
+		"advance_event" "lesson_started"
+		"next_lesson" "bottom3"
+	}
+
+	"bottom3"
+	{
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "1"
+			"text" "Place an observer ward."
+		}
+
+		"ping_minimap"
+		{
+			"pos" "2669.179443 -2904.009766 302.722015"
+			"delay" "2"
+			"repeat" "6"
+		}
+
+		"task_move_location" "1975.176270 -2560.332764 223.244431"
+		"advance_event" "task_completed"
+		"next_lesson" "bottom4_exp"
+	}
+
+	// Dire cliff ward
+	"bottom4_exp"
+	{
+		"quest_finish" "quest_ward"
+		"ping_minimap_stop" "1"
+
+		"npc_speech"
+		{
+			"text" "This ward covers Roshan and more of the Dire ramp towards mid."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"allow_movement" "1"
+			"duration" "12"
+		}
+
+		"advance_time" "0"
+		"advance_event" "lesson_started"
+		"next_lesson" "bottom4"
+	}
+
+	"bottom4"
+	{
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "1"
+			"text" "Place another observer ward."
+		}
+
+		"ping_minimap"
+		{
+			"pos" "3280.426758 -2158.982178 331.276794"
+			"delay" "2"
+			"repeat" "6"
+		}
+
+		"task_move_location" "3698.174072 -1752.869385 0"
+		"advance_event" "task_completed"
+		"next_lesson" "bottom5_exp"
+	}
+
+	// Dire cliff ward alternative
+	"bottom5_exp"
+	{
+		"quest_finish" "quest_ward"
+		"ping_minimap_stop" "1"
+
+		"npc_speech"
+		{
+			"text" "This ward is similar to the last but avoids a commonly used sentry ward. It can be placed from this position."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"allow_movement" "1"
+			"duration" "12"
+		}
+
+		"advance_time" "0"
+		"advance_event" "lesson_started"
+		"next_lesson" "bottom5"
+	}
+
+	"bottom5"
+	{
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "1"
+			"text" "Place an observer ward."
+		}
+
+		"ping_minimap"
+		{
+			"pos" "3517.726318 -2234.402832 447.530029"
+			"delay" "2"
+			"repeat" "6"
+		}
+
+		"task_move_location" "2678.638672 -1968.331055 312.180695"
+		"advance_event" "task_completed"
+		"next_lesson" "bottom6_exp"
+	}
+
+	// Dire ramp ward
+	"bottom6_exp"
+	{
+		"quest_finish" "quest_ward"
+		"ping_minimap_stop" "1"
+
+		"npc_speech"
+		{
+			"text" "This ward gives more vision towards Dire mid and covers Roshan well."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"allow_movement" "1"
+			"duration" "12"
+		}
+
+		"advance_time" "0"
+		"advance_event" "lesson_started"
+		"next_lesson" "bottom6"
+	}
+
+	"bottom6"
+	{
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "1"
+			"text" "Place another observer ward."
+		}
+
+		"ping_minimap"
+		{
+			"pos" "2181.203857 -1375.358521 182.67396"
+			"delay" "2"
+			"repeat" "6"
+		}
+
+		"task_move_location" "1812.153931 -975.589844 0"
+		"advance_event" "task_completed"
+		"next_lesson" "bottom7_exp"
+	}
+
+	// Dire ramp ward alternative
+	"bottom7_exp"
+	{
+		"quest_finish" "quest_ward"
+		"ping_minimap_stop" "1"
+
+		"npc_speech"
+		{
+			"text" "This ward also covers Roshan but is not covered by a commonly used sentry. It is less effective for Radiant."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"allow_movement" "1"
+			"duration" "12"
+		}
+
+		"advance_time" "0"
+		"advance_event" "lesson_started"
+		"next_lesson" "bottom7"
+	}
+
+	"bottom7"
+	{
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "1"
+			"text" "Place an observer ward."
+		}
+
+		"ping_minimap"
+		{
+			"pos" "2460.225098 -1102.131592 282.69302"
+			"delay" "2"
+			"repeat" "6"
+		}
+
+		"task_move_location" "2937.269775 -1413.758545 106.87345"
+		"advance_event" "task_completed"
+		"next_lesson" "bottom7.5_exp"
+	}
+
+	// Radiant blocking ward
+	"bottom7.5_exp"
+	{
+		"quest_finish" "quest_ward"
+		"ping_minimap_stop" "1"
+
+		"npc_speech"
+		{
+			"text" "This ward gives rune vision and blocks the Radiant camp to the left. To see why, press ']' to display spawn boxes."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"allow_movement" "1"
+			"duration" "12"
+		}
+
+		"advance_time" "0"
+		"advance_event" "lesson_started"
+		"next_lesson" "bottom7.5"
+	}
+
+	"bottom7.5"
+	{
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "1"
+			"text" "Place an observer ward."
+		}
+
+		"ping_minimap"
+		{
+			"pos" "2177.497314 -3248.800537 355.299774"
+			"delay" "2"
+			"repeat" "6"
+		}
+
+		"task_move_location" "2460.608887 -3726.435303 374.32238"
+		"advance_event" "task_completed"
+		"next_lesson" "bottom8_exp"
+	}
+
+	// Radiant camp ward
+	"bottom8_exp"
+	{
+		"quest_finish" "quest_ward"
+		"ping_minimap_stop" "1"
+
+		"npc_speech"
+		{
+			"text" "This ward blocks a camp while giving rune vision, sacrificing some coverage. It is most useful in the early game."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"allow_movement" "1"
+			"duration" "12"
+		}
+
+		"advance_time" "0"
+		"advance_event" "lesson_started"
+		"next_lesson" "bottom8"
+	}
+
+	"bottom8"
+	{
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "1"
+			"text" "Place another observer ward."
+		}
+
+		"ping_minimap"
+		{
+			"pos" "3155.651367 -3026.943115 361.823212"
+			"delay" "2"
+			"repeat" "6"
+		}
+
+		"task_move_location" "4055.334961 -2829.695068 0"
+		"advance_event" "task_completed"
+		"next_lesson" "bottom9_exp"
+	}
+
+	// Radiant near bot
+	"bottom9_exp"
+	{
+		"quest_finish" "quest_ward"
+		"ping_minimap_stop" "1"
+
+		"npc_speech"
+		{
+			"text" "This ward covers the rune while giving vision of the jungle to the side of bottom lane. Use this in the early game, but be careful since it tends to get dewarded often due to its utility. You can place the ward from the river."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"allow_movement" "1"
+			"duration" "12"
+		}
+
+		"advance_time" "0"
+		"advance_event" "lesson_started"
+		"next_lesson" "bottom9"
+	}
+
+	"bottom9"
+	{
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "1"
+			"text" "Place an observer ward."
+		}
+
+		"ping_minimap"
+		{
+			"pos" "3955.522461 -3289.339844 365.321899"
+			"delay" "2"
+			"repeat" "6"
+		}
+
+		"task_move_location" "3437.728760 -2800.101807 97.75054"
+		"advance_event" "task_completed"
+		"next_lesson" "bottom_sentry_transition"
+	}
+
+	// Transition //////////////////////////////////////////////////////////////
+
+	"bottom_sentry_transition"
+	{
+		"quest_finish" "quest_ward"
+		"ping_minimap_stop" "1"
+
+		"player_movement_allowed" "0"
+		"convars"
+		{
+			"dota_hud_healthbars" "0"
+		}
+
+		"npc_speech"
+		{
+			"text" "Now let's place some sentries for dewarding."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"duration" "4"
+		}
+
+		"advance_time" "4"
+		"advance_event" "lesson_started"
+		"next_lesson" "bottom_sentry_transition_allow_move"
+	}
+
+	"bottom_sentry_transition_allow_move"
+	{
+		"player_movement_allowed" "1"
+		"convars"
+		{
+			"dota_hud_healthbars" "1"
+		}
+
+		"advance_time" "2"
+		"advance_event" "lesson_started"
+		"next_lesson" "bottom10_exp"
+	}
+
+	// Bottom rune sentries ////////////////////////////////////////////////////
+
+	// Near Radiant sentry
+	"bottom10_exp"
+	{
+		"npc_speech"
+		{
+			"text" "This will reveal almost all rune wards placed on this side of the river."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"allow_movement" "1"
+			"duration" "12"
+		}
+
+		"advance_time" "0"
+		"advance_event" "lesson_started"
+		"next_lesson" "bottom10"
+	}
+
+	"bottom10"
+	{
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "1"
+			"text" "Place a sentry ward."
+		}
+
+		"ping_minimap"
+		{
+			"pos" "2011.366943 -2871.384277 339.096313"
+			"delay" "2"
+			"repeat" "6"
+		}
+
+		"task_move_location" "2280.709717 -3245.503662 403.160950"
+		"advance_event" "task_completed"
+		"next_lesson" "bottom11_exp"
+	}
+
+	// River sentry
+	"bottom11_exp"
+	{
+		"quest_finish" "quest_ward"
+		"ping_minimap_stop" "1"
+
+		"npc_speech"
+		{
+			"text" "This sentry reveals part of the Dire ramp, the Dire cliff, and the Radiant cliff. It's useful when you only have one sentry."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"allow_movement" "1"
+			"duration" "12"
+		}
+
+		"advance_time" "0"
+		"advance_event" "lesson_started"
+		"next_lesson" "bottom11"
+	}
+
+	"bottom11"
+	{
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "1"
+			"text" "Place another sentry ward."
+		}
+
+		"ping_minimap"
+		{
+			"pos" "2666.058105 -1947.799927 66.013939"
+			"delay" "2"
+			"repeat" "6"
+		}
+
+		"task_move_location" "2221.571045 -1264.221680 246.920349"
+		"advance_event" "task_completed"
+		"next_lesson" "bottom12_exp"
+	}
+
+	// River sentry alternate
+	"bottom12_exp"
+	{
+		"quest_finish" "quest_ward"
+		"ping_minimap_stop" "1"
+
+		"npc_speech"
+		{
+			"text" "This sentry reveals most of the Dire cliff and ramp. Use this with the sentry on the Radiant side to reveal almost every bottom rune warding spot."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"allow_movement" "1"
+			"duration" "12"
+		}
+
+		"advance_time" "0"
+		"advance_event" "lesson_started"
+		"next_lesson" "bottom12"
+	}
+
+	"bottom12"
+	{
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "1"
+			"text" "Place a sentry ward."
+		}
+
+		"ping_minimap"
+		{
+			"pos" "2868.597656 -1718.491821 181.109161"
+			"delay" "2"
+			"repeat" "6"
+		}
+
+		"task_move_location" "2908.926270 -1395.303467 199.426575"
+		"advance_event" "task_completed"
+		"next_lesson" "top_rune_transition"
+	}
+
+	// Transition //////////////////////////////////////////////////////////////
+
+	"top_rune_transition"
+	{
+		"quest_finish" "quest_ward"
+		"ping_minimap_stop" "1"
+
+		"player_movement_allowed" "0"
+		"convars"
+		{
+			"dota_hud_healthbars" "0"
+		}
+
+		"npc_speech"
+		{
+			"text" "Now let's go ward the top rune spot."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"duration" "4"
+		}
+
+		"advance_time" "4"
+		"advance_event" "lesson_started"
+		"next_lesson" "top_rune_transition_quest"
+	}
+
+	"top_rune_transition_quest"
+	{
+		"player_movement_allowed" "1"
+		"convars"
+		{
+			"dota_hud_healthbars" "1"
+		}
+
+		"quest_base"
+		{
+			"name" "quest_transition"
+			"type" "3"
+			"text" "Walk to the top rune spot."
+		}
+
+		"task_move_location" "-3014.913086 1459.686401 337.469910"
+		"advance_event" "task_completed"
+		"next_lesson" "top_rune_transition_quest_end"
+	}
+
+	"top_rune_transition_quest_end"
+	{
+		"quest_finish" "quest_transition"
+
+		"player_movement_allowed" "0"
+		"convars"
+		{
+			"dota_hud_healthbars" "0"
+		}
+
+		"npc_speech"
+		{
+			"text" "We're here! Let's start with observer wards."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"duration" "4"
+		}
+
+		"advance_time" "4"
+		"advance_event" "lesson_started"
+		"next_lesson" "top1_exp"
+	}
+
+	/// Top rune ///////////////////////////////////////////////////////////////
+
+	// Dire cliff
+	"top1_exp"
+	{
+		"player_movement_allowed" "1"
+		"convars"
+		{
+			"dota_hud_healthbars" "1"
+		}
+
+		"npc_speech"
+		{
+			"text" "This common observer protects top lane from mid ganks. Although it can be guessed easily, it provides the best vision for both Radiant and Dire top lanes in the early game."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"allow_movement" "1"
+			"duration" "12"
+		}
+
+		"advance_time" "0"
+		"advance_event" "lesson_started"
+		"next_lesson" "top1"
+	}
+
+	"top1"
+	{
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "1"
+			"text" "Place an observer ward."
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-2146.496826 2541.742676 415.871613"
+			"delay" "2"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-2284.021240 3479.121094 230.23117"
+		"advance_event" "task_completed"
+		"next_lesson" "top2_exp"
+	}
+
+	// Radiant cliff
+	"top2_exp"
+	{
+		"quest_finish" "quest_ward"
+		"ping_minimap_stop" "1"
+
+		"npc_speech"
+		{
+			"text" "This observer covers some, but not all paths that Dire mid could take to get to the top lane. It can be placed from the Secret Shop area."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"allow_movement" "1"
+			"duration" "12"
+		}
+
+		"advance_time" "0"
+		"advance_event" "lesson_started"
+		"next_lesson" "top2"
+	}
+
+	"top2"
+	{
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "1"
+			"text" "Place another observer ward."
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-3492.229004 2141.342285 472.86187"
+			"delay" "2"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-4012.209717 974.772339 368.948151"
+		"advance_event" "task_completed"
+		"next_lesson" "top3_exp"
+	}
+
+	// Radiant ancients
+	"top3_exp"
+	{
+		"quest_finish" "quest_ward"
+		"ping_minimap_stop" "1"
+
+		"npc_speech"
+		{
+			"text" "This gives vision of the Radiant ancients and the rune. Early game, it protects mid from ganks by top lane supports. Late game, it can be used by the Dire to scout out ganks on the Radiant carry."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"allow_movement" "1"
+			"duration" "12"
+		}
+
+		"advance_time" "0"
+		"advance_event" "lesson_started"
+		"next_lesson" "top3"
+	}
+
+	"top3"
+	{
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "1"
+			"text" "Place an observer ward."
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-2064.643311 319.228516 303.65094"
+			"delay" "2"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-2497.079590 -59.961655 434.619263"
+		"advance_event" "task_completed"
+		"next_lesson" "top4_exp"
+	}
+
+	// Radiant blocking ancients
+	"top4_exp"
+	{
+		"quest_finish" "quest_ward"
+		"ping_minimap_stop" "1"
+
+		"npc_speech"
+		{
+			"text" "This rune ward blocks the Radiant ancient camp. It must be placed down and left of the pole. Use the ']' key to display spawn boxes that will help you learn the placement."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"allow_movement" "1"
+			"duration" "12"
+		}
+
+		"advance_time" "0"
+		"advance_event" "lesson_started"
+		"next_lesson" "top4"
+	}
+
+	"top4"
+	{
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "1"
+			"text" "Place another observer ward."
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-2584.370117 355.806732 360.634033"
+			"delay" "2"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-1718.135986 1268.747070 322.50207"
+		"advance_event" "task_completed"
+		"next_lesson" "top5_exp"
+	}
+
+	// Radiant ramp
+	"top5_exp"
+	{
+		"quest_finish" "quest_ward"
+		"ping_minimap_stop" "1"
+
+		"npc_speech"
+		{
+			"text" "This ward gives some vision of both Radiant Dire mid. This is useful for when Pudge is around."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"allow_movement" "1"
+			"duration" "12"
+		}
+
+		"advance_time" "0"
+		"advance_event" "lesson_started"
+		"next_lesson" "top5"
+	}
+
+	"top5"
+	{
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "1"
+			"text" "Place an observer ward."
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-1736.699097 565.739624 318.359650"
+			"delay" "2"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-827.151489 1214.858887 328.40451"
+		"advance_event" "task_completed"
+		"next_lesson" "top6_exp"
+	}
+
+	// Dire ramp
+	"top6_exp"
+	{
+		"quest_finish" "quest_ward"
+		"ping_minimap_stop" "1"
+
+		"npc_speech"
+		{
+			"text" "This ward also gives vision of both Radiant and Dire mid, with more emphasis on the Dire side."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"allow_movement" "1"
+			"duration" "12"
+		}
+
+		"advance_time" "0"
+		"advance_event" "lesson_started"
+		"next_lesson" "top6"
+	}
+
+	"top6"
+	{
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "1"
+			"text" "Place another observer ward."
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-951.697937 1062.268799 285.318573"
+			"delay" "2"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-1916.078003 1240.213379 321.326385"
+		"advance_event" "task_completed"
+		"next_lesson" "top_sentry_transition"
+	}
+
+	// Transition //////////////////////////////////////////////////////////////
+
+	"top_sentry_transition"
+	{
+		"quest_finish" "quest_ward"
+		"ping_minimap_stop" "1"
+
+		"player_movement_allowed" "0"
+		"convars"
+		{
+			"dota_hud_healthbars" "0"
+		}
+
+		"npc_speech"
+		{
+			"text" "Now let's place sentries for dewarding."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"duration" "4"
+		}
+
+		"advance_time" "4"
+		"advance_event" "lesson_started"
+		"next_lesson" "top_sentry_transition_allow_move"
+	}
+
+	"top_sentry_transition_allow_move"
+	{
+		"player_movement_allowed" "1"
+		"convars"
+		{
+			"dota_hud_healthbars" "1"
+		}
+
+		"advance_time" "2"
+		"advance_event" "lesson_started"
+		"next_lesson" "top7_exp"
+	}
+
+	// Top rune sentries ///////////////////////////////////////////////////////
+
+	// River sentry
+	"top7_exp"
+	{
+		"npc_speech"
+		{
+			"text" "The sentry covers wards on the Dire ramp, the Radiant ramp, and the Radiant ancients ramp."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"allow_movement" "1"
+			"duration" "12"
+		}
+
+		"advance_time" "0"
+		"advance_event" "lesson_started"
+		"next_lesson" "top7"
+	}
+
+	"top7"
+	{
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "1"
+			"text" "Place a sentry ward."
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-1626.756470 865.393066 151.765976"
+			"delay" "2"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-2562.401123 -292.683807 428.806244"
+		"advance_event" "task_completed"
+		"next_lesson" "top8_exp"
+	}
+
+	// Ramp sentry
+	"top8_exp"
+	{
+		"quest_finish" "quest_ward"
+		"ping_minimap_stop" "1"
+
+		"npc_speech"
+		{
+			"text" "This sentry reveals the Radiant side observers, including the one that blocks ancients and sees the rune. "
+			"npc" "npc_dota_hero_crystal_maiden"
+			"allow_movement" "1"
+			"duration" "12"
+		}
+
+		"advance_time" "0"
+		"advance_event" "lesson_started"
+		"next_lesson" "top8"
+	}
+
+	"top8"
+	{
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "1"
+			"text" "Place another sentry ward."
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-2074.666748 465.475220 403.797546"
+			"delay" "2"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-1699.817505 1222.602783 263.214600"
+		"advance_event" "task_completed"
+		"next_lesson" "top9_exp"
+	}
+
+	// Dire cliff sentry
+	"top9_exp"
+	{
+		"npc_speech"
+		{
+			"text" "This reveals wards on the Dire cliff."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"allow_movement" "1"
+			"duration" "12"
+		}
+
+		"advance_time" "0"
+		"advance_event" "lesson_started"
+		"next_lesson" "top9"
+	}
+
+	"top9"
+	{
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "1"
+			"text" "Place a sentry ward."
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-2146.496826 2541.742676 415.871613"
+			"delay" "2"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-2491.771729 2839.056885 246.738724"
+		"advance_event" "task_completed"
+		"next_lesson" "top10_exp"
+	}
+
+	// Radiant sentry
+	"top10_exp"
+	{
+		"quest_finish" "quest_ward"
+		"ping_minimap_stop" "1"
+
+		"npc_speech"
+		{
+			"text" "This reveals wards on the Radiant cliff."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"allow_movement" "1"
+			"duration" "12"
+		}
+
+		"advance_time" "0"
+		"advance_event" "lesson_started"
+		"next_lesson" "top10"
+	}
+
+	"top10"
+	{
+		"quest_base"
+		{
+			"name" "quest_ward"
+			"type" "1"
+			"text" "Place another sentry ward."
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-3492.229004 2141.342285 472.86187"
+			"delay" "2"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-3001.083740 1487.228638 240.826920"
+		"advance_event" "task_completed"
+		"next_lesson" "finish"
+	}
+
+	// Ending //////////////////////////////////////////////////////////////////
+
+	"finish"
+	{
+		"quest_finish" "quest_ward"
+		"ping_minimap_stop" "1"
+
+		"player_movement_allowed" "0"
+		"convars"
+		{
+			"dota_hud_healthbars" "0"
+		}
+
+		"npc_speech"
+		{
+			"text" "Well, we're done for today."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"duration" "3"
+		}
+
+		"advance_time" "3"
+		"advance_event" "lesson_started"
+		"next_lesson" "finish2"
+	}
+
+	"finish2"
+	{
+		"npc_speech"
+		{
+			"text" "Let's head back."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"duration" "3"
+		}
+
+		"advance_time" "3"
+		"advance_event" "lesson_started"
+		"next_lesson" "end_quest"
+	}
+
+	"end_quest"
+	{
+		"player_movement_allowed" "1"
+		"convars"
+		{
+			"dota_hud_healthbars" "1"
+		}
+
+		"quest_base"
+		{
+			"name" "quest_base"
+			"type" "3"
+			"text" "Return home."
+		}
+
+		"task_move_location" "-6935.240234 -6440.072266 0"
+		"advance_event" "task_completed"
+		"next_lesson" "end_game"
+	}
+
+	"end_game"
+	{
+		"quest_finish" "quest_base"
+
+		"finish_text" "#DOTA_Tutorial_Finished_Tutorial01"
+		"finish_tutorial" "1"
+
+		"advance_time" "2"
+		"advance_event" "lesson_started"
+		"next_lesson" "end_game2"
+	}
+
+	"end_game2"
+	{
+		"fade_to" "255"
+	}
+}
