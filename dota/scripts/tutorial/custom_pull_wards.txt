@@ -14,7 +14,7 @@
 {
 	"Version" "1"
 
-	"tm_pull_camp_warding"
+	"custom_pull_wards"
 	{
 		"advance_time" "0"
 		"advance_event" "player_joined"

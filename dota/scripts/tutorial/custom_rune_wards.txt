@@ -10,7 +10,7 @@
 {
 	"Version" "1"
 
-	"tm_rune_warding"
+	"custom_rune_wards"
 	{
 		"advance_time" "0"
 		"advance_event" "player_joined"
