@@ -1,0 +1,1944 @@
+"Tutorial_Lessons"
+{
+	"Version" "1"
+
+	"custom_radiant_juke_paths"
+	{
+		"advance_time" "0"
+		"advance_event" "player_joined"
+		"next_lesson" "setup"
+	}
+
+	"setup"
+	{
+		"convars"
+		{
+			// Allow pause
+			"sv_pausable" "1"
+
+			// Start game when we say so
+			"dota_tutorial_prevent_start" "1"
+
+			// Camera setup
+			"dota_endgame_cinematic_disable" "1"
+
+			// Tutorial environment setup
+			"sf_loadout_tutorial_enable" "0"
+			"dota_tutorial_state_change_delay" "0"
+			"dota_tutorial_heroselection" "0"
+			"dota_tutorial_debug" "0"
+			"dota_companion_enable" "0"
+			"dota_tutorial_bot_game" "0"
+			"dota_tutorial_log_hero" "0"
+			"dota_tutorial_stop_daynightcycle" "1"
+
+			// Hide health bars
+			"dota_hud_healthbars" "0"
+
+			// Disable creep spawn
+			"dota_tutorial_game" "0"
+			"sv_cheats" "1"
+			"dota_creeps_no_spawning" "1"
+			"dota_ability_debug" "1"
+			"dota_range_display" "800"
+
+			// Required for various tutorial commands to work
+			"dota_tutorial_game" "1"
+		}
+
+		"precache"
+		{
+			"npc_dota_hero_windrunner" "1"
+		}
+
+		"advance_time" "0"
+		"advance_event" "lesson_started"
+		"next_lesson" "setup_hero"
+	}
+
+	"setup_hero"
+	{
+		"player_team" "good"
+
+		"player_hero" "npc_dota_hero_windrunner"
+
+		"player_movement_allowed" "0"
+		"convars"
+		{
+			"dota_hud_healthbars" "0"
+		}
+
+		"hero_levelup"
+		{
+			"hero"	"npc_dota_hero_windrunner"
+			"level"	"25"
+
+			"levelups"
+			{
+				"windrunner_shackleshot" "1"
+				"windrunner_shackleshot" "1"
+				"windrunner_shackleshot" "1"
+				"windrunner_shackleshot" "1"
+
+				"windrunner_powershot" "1"
+				"windrunner_powershot" "1"
+				"windrunner_powershot" "1"
+				"windrunner_powershot" "1"
+
+				"windrunner_windrun" "1"
+				"windrunner_windrun" "1"
+				"windrunner_windrun" "1"
+				"windrunner_windrun" "1"
+
+				"windrunner_focusfire" "1"
+				"windrunner_focusfire" "1"
+				"windrunner_focusfire" "1"
+
+				"attribute_bonus" "1"
+				"attribute_bonus" "1"
+				"attribute_bonus" "1"
+				"attribute_bonus" "1"
+				"attribute_bonus" "1"
+				"attribute_bonus" "1"
+				"attribute_bonus" "1"
+				"attribute_bonus" "1"
+				"attribute_bonus" "1"
+				"attribute_bonus" "1"
+			}
+		}
+
+		"player_set_gold" "81523"
+
+		// Give player the highest movespeed possible (and a quelling blade to
+		// cut trees for the juke paths).
+		"player_give_item" "item_travel_boots"
+		"player_give_item" "item_quelling_blade"
+		"player_give_item" "item_cyclone"
+		"player_give_item" "item_sange_and_yasha"
+		"player_give_item" "item_ancient_janggo"
+
+		"give_courier" "1"
+
+		"advance_time" "1"
+		"advance_event" "lesson_started"
+		"next_lesson" "intro_fade"
+	}
+
+	"intro_fade"
+	{
+		"fade_to" "0"
+		"activate_permanent_glyph" "1"
+
+		"advance_time" "2"
+		"advance_event" "lesson_started"
+		//"next_lesson" "intro_start_game"
+		"next_lesson" "intro_speech1"
+	}
+
+	"intro_speech1"
+	{
+		"npc_speech"
+		{
+			"text" "Today we're going to learn juke paths on our side of the river."
+			"npc" "npc_dota_hero_windrunner"
+			"duration" "5"
+		}
+
+		"advance_time" "5"
+		"advance_event" "lesson_started"
+		"next_lesson" "intro_speech2"
+	}
+
+	"intro_speech2"
+	{
+		"npc_speech"
+		{
+			"text" "Move to the waypoints and cut the trees that I ping. Are you ready?"
+			"npc" "npc_dota_hero_windrunner"
+			"duration" "5"
+		}
+
+		"advance_time" "5"
+		"advance_event" "lesson_started"
+		"next_lesson" "intro_start_game"
+	}
+
+	"intro_start_game"
+	{
+		"force_game_start" "with_announcement"
+
+		"player_movement_allowed" "1"
+		"convars"
+		{
+			"dota_hud_healthbars" "1"
+		}
+
+		"npc_speech"
+		{
+			"text" "Here we go!"
+			"npc" "npc_dota_hero_windrunner"
+			"duration" "5"
+			"allow_movement" "1"
+		}
+
+		"advance_time" "6"
+		"advance_event" "lesson_started"
+		"next_lesson" "marker1"
+	}
+
+	// Bottom lane T3 to T1 ////////////////////////////////////////////////////
+
+	"marker1"
+	{
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Embark on a journey through the woods."
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-4731.511230 -6889.816406 323.005035"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-4574.581543 -7202.764160 405.43185"
+		"advance_event" "task_completed"
+		"next_lesson" "marker2"
+	}
+
+	"marker2"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 2/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-4267.103516 -7057.769531 403.536469"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-3987.153320 -7087.376465 401.76763"
+		"advance_event" "task_completed"
+		"next_lesson" "marker3"
+	}
+
+	"marker3"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 3/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-3904.940186 -6974.712891 393.044952"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-3654.840820 -6714.635254 382.93637"
+		"advance_event" "task_completed"
+		"next_lesson" "marker4"
+	}
+
+	"marker4"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 4/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-1021.440491 -6846.120117 392.72900"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-729.874512 -6945.213867 397.00134"
+		"advance_event" "task_completed"
+		"next_lesson" "marker5"
+	}
+
+	"marker5"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 5/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-458.362366 -6846.154785 383.01586"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-163.522186 -6882.964844 402.7983"
+		"advance_event" "task_completed"
+		"next_lesson" "marker6"
+	}
+
+	"marker6"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 6/74"
+		}
+
+		"task_move_location" "1428.795410 -6849.295410 404.2109"
+		"advance_event" "task_completed"
+		"next_lesson" "marker7"
+	}
+
+	"marker7"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 7/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "1796.189697 -6732.568848 404.78564"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "2161.892334 -6456.468750 402.7243"
+		"advance_event" "task_completed"
+		"next_lesson" "marker8"
+	}
+
+	"marker8"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 8/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "2284.473877 -6846.808105 403.98971"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "2389.553711 -6985.586914 407.06274"
+		"advance_event" "task_completed"
+		"next_lesson" "marker9"
+	}
+
+	"marker9"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 9/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "3310.635010 -6680.712891 405.628998"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "3031.290527 -6745.712402 406.08578"
+		"advance_event" "task_completed"
+		"next_lesson" "marker10"
+	}
+
+	"marker10"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 10/74"
+		}
+
+		"task_move_location" "3876.459717 -6828.425293 407.357422"
+		"advance_event" "task_completed"
+		"next_lesson" "marker11"
+	}
+
+	// To side shop ////////////////////////////////////////////////////////////
+
+	"marker11"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 11/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "4125.098145 -6783.395508 406.88665"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "4162.051270 -6994.084473 410.629944"
+		"advance_event" "task_completed"
+		"next_lesson" "marker12"
+	}
+
+	"marker12"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 12/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "4162.051270 -6994.084473 410.629944"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "4594.037109 -7042.015137 408.8315"
+		"advance_event" "task_completed"
+		"next_lesson" "marker13"
+	}
+
+	"marker13"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 13/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "5578.515625 -6660.170410 401.430"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "5595.750488 -7065.291504 406.724060"
+		"advance_event" "task_completed"
+		"next_lesson" "marker14"
+	}
+
+	"marker14"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 14/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "6132.978516 -6139.979004 394.09198"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "6305.933105 -6113.183594 393.50912"
+		"advance_event" "task_completed"
+		"next_lesson" "marker15"
+	}
+
+	"marker15"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 15/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "6843.416504 -4991.106934 395.4679"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "7079.430664 -5164.184570 399.52044"
+		"advance_event" "task_completed"
+		"next_lesson" "marker16"
+	}
+
+	"marker16"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 16/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "7093.717773 -4591.113770 382.944489"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "7418.485352 -4804.237793 417.296204"
+		"advance_event" "task_completed"
+		"next_lesson" "marker17"
+	}
+
+	"marker17"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 17/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "7367.476563 -3416.235596 434.95227"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "6681.547852 -3114.378906 389.66381"
+		"advance_event" "task_completed"
+		"next_lesson" "marker18"
+	}
+
+	// To pull camp ////////////////////////////////////////////////////////////
+
+	"marker18"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 18/74"
+		}
+
+		"task_move_location" "5538.005371 -3545.814941 366.52795"
+		"advance_event" "task_completed"
+		"next_lesson" "marker19"
+	}
+
+	"marker19"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 19/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "5576.676270 -3651.458496 372.52554"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "5786.979004 -3752.711426 373.8084"
+		"advance_event" "task_completed"
+		"next_lesson" "marker20"
+	}
+
+	"marker20"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 20/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "5448.377441 -3841.195068 357.94845"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "5222.437500 -3936.580322 369.86419"
+		"advance_event" "task_completed"
+		"next_lesson" "marker21"
+	}
+
+	"marker21"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 21/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "5380.576660 -4086.945068 378.576"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "5085.061523 -4280.389160 381.997986"
+		"advance_event" "task_completed"
+		"next_lesson" "marker22"
+	}
+
+	"marker22"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 22/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "5589.438965 -4214.396973 381.5464"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "5829.412598 -4215.478516 381.41259"
+		"advance_event" "task_completed"
+		"next_lesson" "marker23"
+	}
+
+	"marker23"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 23/74"
+		}
+
+		"task_move_location" "5034.851563 -4853.907227 379.38723"
+		"advance_event" "task_completed"
+		"next_lesson" "marker24"
+	}
+
+	"marker24"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 24/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "4862.020508 -5199.087891 379.52612"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "5154.290527 -5323.889160 379.53445"
+		"advance_event" "task_completed"
+		"next_lesson" "marker25"
+	}
+
+	"marker25"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 25/74"
+		}
+
+		"task_move_location" "4415.710938 -5459.880859 381.3009"
+		"advance_event" "task_completed"
+		"next_lesson" "marker26"
+	}
+
+	"marker26"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 26/74"
+		}
+
+		"task_move_location" "3128.720215 -5826.187988 382.27304"
+		"advance_event" "task_completed"
+		"next_lesson" "marker27"
+	}
+
+	"marker27"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 27/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "3094.059082 -5603.525391 381.4941"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "2877.892090 -5299.937012 381.1754"
+		"advance_event" "task_completed"
+		"next_lesson" "marker28"
+	}
+
+	"marker28"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 28/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "2626.126953 -5383.681152 380.036"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "2522.239502 -5690.993164 381.83291"
+		"advance_event" "task_completed"
+		"next_lesson" "marker29"
+	}
+
+	"marker29"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 29/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "2491.201416 -5762.200684 381.69174"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "2172.602295 -5960.528320 385.4443"
+		"advance_event" "task_completed"
+		"next_lesson" "marker30"
+	}
+
+	"marker30"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 30/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "2233.804688 -5725.102051 379.4527"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "2375.697021 -5479.161133 381.25549"
+		"advance_event" "task_completed"
+		"next_lesson" "marker31"
+	}
+
+	"marker31"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 31/74"
+		}
+
+		"task_move_location" "2415.456299 -4958.749023 382.07159"
+		"advance_event" "task_completed"
+		"next_lesson" "marker32"
+	}
+
+	"marker32"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 32/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "2454.394043 -4763.293457 379.4803"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "2439.116943 -4394.644043 381.6847"
+		"advance_event" "task_completed"
+		"next_lesson" "marker33"
+	}
+
+	"marker33"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 33/74"
+		}
+
+		"task_move_location" "3028.754395 -4033.603271 378.267639"
+		"advance_event" "task_completed"
+		"next_lesson" "marker34"
+	}
+
+	"marker34"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 34/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "3015.090332 -4243.448242 378.077"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "3063.538818 -4719.702148 380.0637"
+		"advance_event" "task_completed"
+		"next_lesson" "marker35"
+	}
+
+	"marker35"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 35/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "3351.750244 -4524.985840 380.65155"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "3722.248535 -4069.509521 368.382751"
+		"advance_event" "task_completed"
+		"next_lesson" "marker36"
+	}
+
+	"marker36"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 36/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "4029.342041 -4230.583008 382.5138"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "4381.385254 -4168.710938 378.87"
+		"advance_event" "task_completed"
+		"next_lesson" "marker37"
+	}
+
+	// To bottom T2 ////////////////////////////////////////////////////////////
+
+	"marker37"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 37/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "2897.024658 -3068.640381 390.13452"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "2688.744385 -2887.231689 398.7757"
+		"advance_event" "task_completed"
+		"next_lesson" "marker38"
+	}
+
+	"marker38"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 38/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "2706.068604 -3436.949463 387.01004"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "2267.628906 -3407.202881 390.55090"
+		"advance_event" "task_completed"
+		"next_lesson" "marker39"
+	}
+
+	"marker39"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 39/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "1944.486206 -3175.731445 398.54"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "1579.409424 -3183.698486 392.5560"
+		"advance_event" "task_completed"
+		"next_lesson" "marker40"
+	}
+
+	"marker40"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 40/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "1480.370972 -3192.077148 385.84121"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "1621.208740 -3721.873291 382.9494"
+		"advance_event" "task_completed"
+		"next_lesson" "marker41"
+	}
+
+	"marker41"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 41/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "1095.654785 -3546.021973 388.85028"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "490.372833 -3319.970947 376.2964"
+		"advance_event" "task_completed"
+		"next_lesson" "marker42"
+	}
+
+	"marker42"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 42/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "364.356140 -3335.875244 373.692719"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "160.759109 -3554.731201 366.6571"
+		"advance_event" "task_completed"
+		"next_lesson" "marker43"
+	}
+
+	"marker43"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 43/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "52.601913 -3562.187256 361.8929"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-161.402084 -3418.197021 354.83099"
+		"advance_event" "task_completed"
+		"next_lesson" "marker44"
+	}
+
+	"marker44"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 44/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-62.373299 -3898.011719 355.68277"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "617.753357 -4617.879883 378.5749"
+		"advance_event" "task_completed"
+		"next_lesson" "marker45"
+	}
+
+	"marker45"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 45/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "628.014282 -4350.164551 378.15"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "129.039536 -4775.119629 375.5364"
+		"advance_event" "task_completed"
+		"next_lesson" "marker46"
+	}
+
+	"marker46"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 46/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "393.120544 -4867.760254 376.7894"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-69.770844 -5104.762207 375.35076"
+		"advance_event" "task_completed"
+		"next_lesson" "marker47"
+	}
+
+	"marker47"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 47/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "63.722710 -4824.671387 370.12219"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-297.231750 -5072.962402 378.6694"
+		"advance_event" "task_completed"
+		"next_lesson" "marker48"
+	}
+
+	"marker48"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 48/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-248.610397 -5199.932129 377.8814"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-609.202087 -5905.656738 384.323"
+		"advance_event" "task_completed"
+		"next_lesson" "marker49"
+	}
+
+	"marker49"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 49/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-610.312195 -5607.064941 385.1446"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-1159.455933 -5555.995605 362.8429"
+		"advance_event" "task_completed"
+		"next_lesson" "marker50"
+	}
+
+	"marker50"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 50/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-2177.124512 -4527.325195 274.08"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-2461.023438 -4201.419922 281.7263"
+		"advance_event" "task_completed"
+		"next_lesson" "marker51"
+	}
+
+	"marker51"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 51/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-2550.547119 -4205.519531 283.0256"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-2777.079102 -2972.073730 271.06631"
+		"advance_event" "task_completed"
+		"next_lesson" "marker52"
+	}
+
+	"marker52"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 52/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-2505.602783 -3016.323975 264.1398"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-2275.563477 -3100.237793 255.7019"
+		"advance_event" "task_completed"
+		"next_lesson" "marker53"
+	}
+
+	"marker53"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 53/74"
+		}
+
+		"task_move_location" "-2197.750000 -2385.414307 265.35794"
+		"advance_event" "task_completed"
+		"next_lesson" "marker54"
+	}
+
+	"marker54"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 54/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-2176.318848 -2286.031494 258.74789"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-2172.775635 -1895.883179 269.627"
+		"advance_event" "task_completed"
+		"next_lesson" "marker55"
+	}
+
+	"marker55"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 55/74"
+		}
+
+		"task_move_location" "-1903.845581 -2568.472900 258.47213"
+		"advance_event" "task_completed"
+		"next_lesson" "marker56"
+	}
+
+	"marker56"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 56/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-867.179626 -3330.212402 295.5381"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-835.913147 -3661.624268 304.4689"
+		"advance_event" "task_completed"
+		"next_lesson" "marker57"
+	}
+
+	"marker57"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 57/74"
+		}
+
+		"task_move_location" "-76.499321 -1921.069214 292.2166"
+		"advance_event" "task_completed"
+		"next_lesson" "marker58"
+	}
+
+	"marker58"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 58/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-189.579880 -1711.467896 287.01348"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-793.334473 -2061.912354 272.6903"
+		"advance_event" "task_completed"
+		"next_lesson" "marker59"
+	}
+
+	"marker59"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 59/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-994.542175 -1837.152222 269.45159"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-2347.192383 -929.625671 312.9550"
+		"advance_event" "task_completed"
+		"next_lesson" "marker60"
+	}
+
+	"marker60"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 60/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-2235.899902 -1107.132568 305.16476"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-2280.764893 -1304.629883 300.3325"
+		"advance_event" "task_completed"
+		"next_lesson" "marker61"
+	}
+
+	"marker61"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 61/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-2240.765625 -1344.104736 297.731"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-4060.032959 -1519.470215 453.0535"
+		"advance_event" "task_completed"
+		"next_lesson" "marker62"
+	}
+
+	// To secret shop //////////////////////////////////////////////////////////
+
+	"marker62"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 62/74"
+		}
+
+		"task_move_location" "-4119.770996 -610.704285 411.4111"
+		"advance_event" "task_completed"
+		"next_lesson" "marker63"
+	}
+
+	"marker63"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 63/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-4247.712891 -672.364197 412.5144"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-4915.089355 -914.685974 409.02813"
+		"advance_event" "task_completed"
+		"next_lesson" "marker64"
+	}
+
+	"marker64"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 64/74"
+		}
+
+		"task_move_location" "-4002.247559 32.452362 405.8133"
+		"advance_event" "task_completed"
+		"next_lesson" "marker65"
+	}
+
+	"marker65"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 65/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-3903.416260 188.873062 400.4090"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-3922.505859 469.849121 402.474"
+		"advance_event" "task_completed"
+		"next_lesson" "marker66"
+	}
+
+	"marker66"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 66/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-3729.529053 267.572784 395.8189"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-3747.332031 793.176392 395.724792"
+		"advance_event" "task_completed"
+		"next_lesson" "marker67"
+	}
+
+	"marker67"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 67/74"
+		}
+
+		"task_move_location" "-3703.768311 1694.989136 395.2948"
+		"advance_event" "task_completed"
+		"next_lesson" "marker68"
+	}
+
+	"marker68"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 68/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-3862.389893 1671.561523 383.9259"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-4250.076172 1877.444946 383.4895"
+		"advance_event" "task_completed"
+		"next_lesson" "marker69"
+	}
+
+	"marker69"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 69/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-4459.184082 1962.043213 388.14538"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-4981.645020 927.525085 396.8089"
+		"advance_event" "task_completed"
+		"next_lesson" "marker70"
+	}
+
+	// To home /////////////////////////////////////////////////////////////////
+
+	"marker70"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 70/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-5075.562500 852.415222 391.6781"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-7232.000000 2230.824219 405.91033"
+		"advance_event" "task_completed"
+		"next_lesson" "marker71"
+	}
+
+	"marker71"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 71/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-7202.561035 2106.017822 410.863"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-7301.277832 1851.038940 407.07379"
+		"advance_event" "task_completed"
+		"next_lesson" "marker72"
+	}
+
+	"marker72"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 72/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-7301.277832 1851.038940 407.07379"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-7337.046387 1643.183105 375.87"
+		"advance_event" "task_completed"
+		"next_lesson" "marker73"
+	}
+
+	"marker73"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 73/74"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-7337.046387 1643.183105 375.87"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-7264.519531 787.447205 363.8807"
+		"advance_event" "task_completed"
+		"next_lesson" "marker74"
+	}
+
+	"marker74"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Waypoint 74/74"
+		}
+
+		"task_move_location" "-7345.474609 -1272.445190 362.86999"
+		"advance_event" "task_completed"
+		"next_lesson" "finish"
+	}
+
+	// Ending //////////////////////////////////////////////////////////////////
+
+	"finish"
+	{
+		"quest_finish" "quest_walk"
+		"ping_minimap_stop" "1"
+
+		"player_movement_allowed" "0"
+		"convars"
+		{
+			"dota_hud_healthbars" "0"
+		}
+
+		"npc_speech"
+		{
+			"text" "That's all for today."
+			"npc" "npc_dota_hero_windrunner"
+			"duration" "3"
+		}
+
+		"advance_time" "3"
+		"advance_event" "lesson_started"
+		"next_lesson" "finish2"
+	}
+
+	"finish2"
+	{
+		"npc_speech"
+		{
+			"text" "Time for home!"
+			"npc" "npc_dota_hero_windrunner"
+			"duration" "3"
+		}
+
+		"advance_time" "3"
+		"advance_event" "lesson_started"
+		"next_lesson" "end_quest"
+	}
+
+	"end_quest"
+	{
+		"player_movement_allowed" "1"
+		"convars"
+		{
+			"dota_hud_healthbars" "1"
+		}
+
+		"quest_base"
+		{
+			"name" "quest_base"
+			"type" "3"
+			"text" "Return home."
+		}
+
+		"task_move_location" "-6935.240234 -6440.072266 0"
+		"advance_event" "task_completed"
+		"next_lesson" "end_game"
+	}
+
+	"end_game"
+	{
+		"quest_finish" "quest_base"
+
+		"finish_text" "#DOTA_Tutorial_Finished_Tutorial01"
+		"finish_tutorial" "1"
+
+		"advance_time" "2"
+		"advance_event" "lesson_started"
+		"next_lesson" "end_game2"
+	}
+
+	"end_game2"
+	{
+		"fade_to" "255"
+	}
+}
