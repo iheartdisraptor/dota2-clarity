@@ -39,7 +39,7 @@
 			"dota_tutorial_game" "0"
 			"sv_cheats" "1"
 			"dota_creeps_no_spawning" "1"
-			"dota_ability_debug" "1"
+			"dota_ability_debug" "0"
 			"dota_range_display" "800"
 
 			// Required for various tutorial commands to work
@@ -48,7 +48,7 @@
 
 		"precache"
 		{
-			"npc_dota_hero_windrunner" "1"
+			"npc_dota_hero_luna" "1"
 		}
 
 		"advance_time" "0"
@@ -60,7 +60,7 @@
 	{
 		"player_team" "good"
 
-		"player_hero" "npc_dota_hero_windrunner"
+		"player_hero" "npc_dota_hero_luna"
 
 		"player_movement_allowed" "0"
 		"convars"
@@ -70,29 +70,29 @@
 
 		"hero_levelup"
 		{
-			"hero"	"npc_dota_hero_windrunner"
-			"level"	"25"
+			"hero" "npc_dota_hero_luna"
+			"level" "25"
 
 			"levelups"
 			{
-				"windrunner_shackleshot" "1"
-				"windrunner_shackleshot" "1"
-				"windrunner_shackleshot" "1"
-				"windrunner_shackleshot" "1"
+				"luna_lucent_beam" "1"
+				"luna_lucent_beam" "1"
+				"luna_lucent_beam" "1"
+				"luna_lucent_beam" "1"
 
-				"windrunner_powershot" "1"
-				"windrunner_powershot" "1"
-				"windrunner_powershot" "1"
-				"windrunner_powershot" "1"
+				"luna_moon_glaive" "1"
+				"luna_moon_glaive" "1"
+				"luna_moon_glaive" "1"
+				"luna_moon_glaive" "1"
 
-				"windrunner_windrun" "1"
-				"windrunner_windrun" "1"
-				"windrunner_windrun" "1"
-				"windrunner_windrun" "1"
+				"luna_lunar_blessing" "1"
+				"luna_lunar_blessing" "1"
+				"luna_lunar_blessing" "1"
+				"luna_lunar_blessing" "1"
 
-				"windrunner_focusfire" "1"
-				"windrunner_focusfire" "1"
-				"windrunner_focusfire" "1"
+				"luna_eclipse" "1"
+				"luna_eclipse" "1"
+				"luna_eclipse" "1"
 
 				"attribute_bonus" "1"
 				"attribute_bonus" "1"
@@ -109,10 +109,36 @@
 
 		"player_set_gold" "81523"
 
+		// Give player realistic items
+		"player_give_item" "item_boots"
+		"player_give_item" "item_quelling_blade"
+		"player_give_item" "item_tango"
+		"player_give_item" "item_tango"
+		"player_give_item" "item_tango"
+		"player_give_item" "item_tango"
+		"player_give_item" "item_tango"
+		"player_give_item" "item_tango"
+		"player_give_item" "item_tango"
+		"player_give_item" "item_tango"
+		"player_give_item" "item_tango"
+		"player_give_item" "item_tango"
+		"player_give_item" "item_tango"
+		"player_give_item" "item_tango"
+		"player_give_item" "item_tango"
+		"player_give_item" "item_tango"
+		"player_give_item" "item_tango"
+		"player_give_item" "item_tango"
+		"player_give_item" "item_tango"
+		"player_give_item" "item_tango"
+		"player_give_item" "item_tango"
+		"player_give_item" "item_tango"
+		"player_give_item" "item_branches"
+		"player_give_item" "item_branches"
+		"player_give_item" "item_branches"
+
 		// Give player the highest movespeed possible (and a quelling blade to
 		// cut trees for the juke paths).
 		"player_give_item" "item_travel_boots"
-		"player_give_item" "item_quelling_blade"
 		"player_give_item" "item_cyclone"
 		"player_give_item" "item_sange_and_yasha"
 		"player_give_item" "item_ancient_janggo"
@@ -140,7 +166,7 @@
 		"npc_speech"
 		{
 			"text" "Today we're going to learn juke paths on our side of the river."
-			"npc" "npc_dota_hero_windrunner"
+			"npc" "npc_dota_hero_luna"
 			"duration" "5"
 		}
 
@@ -153,8 +179,22 @@
 	{
 		"npc_speech"
 		{
-			"text" "Move to the waypoints and cut the trees that I ping. Are you ready?"
-			"npc" "npc_dota_hero_windrunner"
+			"text" "Move to the waypoints and cut the trees that I ping."
+			"npc" "npc_dota_hero_luna"
+			"duration" "5"
+		}
+
+		"advance_time" "5"
+		"advance_event" "lesson_started"
+		"next_lesson" "intro_speech3"
+	}
+
+	"intro_speech3"
+	{
+		"npc_speech"
+		{
+			"text" "If you want to do this training quickly, pick up the speed items in the stash and use '-' to enable wtf mode."
+			"npc" "npc_dota_hero_luna"
 			"duration" "5"
 		}
 
@@ -176,7 +216,7 @@
 		"npc_speech"
 		{
 			"text" "Here we go!"
-			"npc" "npc_dota_hero_windrunner"
+			"npc" "npc_dota_hero_luna"
 			"duration" "5"
 			"allow_movement" "1"
 		}
@@ -1882,7 +1922,7 @@
 		"npc_speech"
 		{
 			"text" "That's all for today."
-			"npc" "npc_dota_hero_windrunner"
+			"npc" "npc_dota_hero_luna"
 			"duration" "3"
 		}
 
@@ -1895,8 +1935,8 @@
 	{
 		"npc_speech"
 		{
-			"text" "Time for home!"
-			"npc" "npc_dota_hero_windrunner"
+			"text" "Time to go back to base."
+			"npc" "npc_dota_hero_luna"
 			"duration" "3"
 		}
 
