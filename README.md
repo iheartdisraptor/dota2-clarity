@@ -36,6 +36,9 @@ Credits
 
 * Cyborgmatt for the original HUD disabling commands
 * devilesk for the exact neutal spawn camp box coordinates
+* Filk for one of the early autoexec.cfg's
+* TheParadoxataur (critwhale.com) for their map of juke paths
+* Chudooder for their chat wheel generator
 * Various Reddit threads
 
 Usage
