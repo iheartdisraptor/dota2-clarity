@@ -1,20 +1,8 @@
-// Training Mission: Camp Warding by Anita (Octavia, u/iheartdisraptor)
-// This script belongs to the community. Feel free to extend and rerelease this
-// script. For directions, see tm_pull_camp_warding_console.cfg.
-
-// Changelog:
-// 1.1-6.79, 13.11.19
-// - Added Dire pull camp warding
-// - Added explanation about using sentries to block pulls
-// - Added ending sequence allowing optional free play
-// 1.0-6.79, 13.11.18
-// - Initial version
-
 "Tutorial_Lessons"
 {
 	"Version" "1"
 
-	"tm_pull_camp_warding"
+	"custom_pull_wards"
 	{
 		"advance_time" "0"
 		"advance_event" "player_joined"
@@ -219,7 +207,7 @@
 	{
 		"npc_speech"
 		{
-			"text" "Today let's learn how to ward and deward camps."
+			"text" "Today let's learn how to ward and deward pull camps."
 			"npc" "npc_dota_hero_enchantress"
 			"duration" "6"
 		}
@@ -449,7 +437,7 @@
 	{
 		"npc_speech"
 		{
-			"text" "To see why this ward blocks the camp, press ']' to display the spawn boxes for a time. (Make sure you haven't set this key to anything else in the options!)"
+			"text" "To see why this ward blocks the camp, press '\' to display the spawn boxes for a time. (Make sure you haven't set this key to anything else in the options!)"
 			"npc" "npc_dota_hero_enchantress"
 			"duration" "12"
 		}
@@ -463,7 +451,7 @@
 	{
 		"npc_speech"
 		{
-			"text" "In this training mission, you can also press '[' to switch to a bird's eye view."
+			"text" "In this training mission, you can also press 'k' to switch to a bird's eye view."
 			"npc" "npc_dota_hero_enchantress"
 			"duration" "5"
 		}

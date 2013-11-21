@@ -1,16 +1,8 @@
-// Training Mission: Rune Warding by Anita (Octavia, u/iheartdisraptor)
-// This script belongs to the community. Feel free to extend and rerelease this
-// script. For directions, see tm_rune_warding_console.cfg.
-
-// Changelog:
-// 1.0-6.79, 13.11.19
-// - Initial version
-
 "Tutorial_Lessons"
 {
 	"Version" "1"
 
-	"tm_rune_warding"
+	"custom_rune_wards"
 	{
 		"advance_time" "0"
 		"advance_event" "player_joined"
@@ -321,7 +313,7 @@
 			"text" "This rune ward gives vision closer to mid, protecting that lane from a gank through the jungle. As Radiant, this ward is risky after 20:00 since it does not cover the entrance to Roshan's pit."
 			"npc" "npc_dota_hero_crystal_maiden"
 			"allow_movement" "1"
-			"duration" "12"
+			"duration" "24"
 		}
 
 		"advance_time" "0"
@@ -353,21 +345,48 @@
 
 		"task_move_location" "1517.948975 -2417.623047 250"
 		"advance_event" "task_completed"
+		"next_lesson" "killwards_tip"
+	}
+
+	"killwards_tip"
+	{
+		"quest_finish" "quest_ward"
+		"ping_minimap_stop" "1"
+
+		"player_movement_allowed" "0"
+		"convars"
+		{
+			"dota_hud_healthbars" "0"
+		}
+
+		"npc_speech"
+		{
+			"text" "If you want to practice warding the same spots, at any time you can destroy all wards with '['."
+			"npc" "npc_dota_hero_crystal_maiden"
+			"allow_movement" "0"
+			"duration" "10"
+		}
+
+		"advance_time" "10"
+		"advance_event" "lesson_started"
 		"next_lesson" "bottom2_exp"
 	}
 
 	// Radiant cliff ward
 	"bottom2_exp"
 	{
-		"quest_finish" "quest_ward"
-		"ping_minimap_stop" "1"
+		"player_movement_allowed" "1"
+		"convars"
+		{
+			"dota_hud_healthbars" "1"
+		}
 
 		"npc_speech"
 		{
 			"text" "This ward gives some vision of the Radiant jungle."
 			"npc" "npc_dota_hero_crystal_maiden"
 			"allow_movement" "1"
-			"duration" "12"
+			"duration" "24"
 		}
 
 		"advance_time" "0"
@@ -407,7 +426,7 @@
 			"text" "At the cost of vision, this ward is slightly harder to deward with a sentry in the river."
 			"npc" "npc_dota_hero_crystal_maiden"
 			"allow_movement" "1"
-			"duration" "12"
+			"duration" "24"
 		}
 
 		"advance_time" "0"
@@ -431,7 +450,7 @@
 			"repeat" "6"
 		}
 
-		"task_move_location" "1975.176270 -2560.332764 223.244431"
+		"task_move_location" "3437.728760 -2800.101807 97.75054"
 		"advance_event" "task_completed"
 		"next_lesson" "bottom4_exp"
 	}
@@ -447,7 +466,7 @@
 			"text" "This ward covers Roshan and more of the Dire ramp towards mid."
 			"npc" "npc_dota_hero_crystal_maiden"
 			"allow_movement" "1"
-			"duration" "12"
+			"duration" "24"
 		}
 
 		"advance_time" "0"
@@ -487,7 +506,7 @@
 			"text" "This ward is similar to the last but avoids a commonly used sentry ward. It can be placed from this position."
 			"npc" "npc_dota_hero_crystal_maiden"
 			"allow_movement" "1"
-			"duration" "12"
+			"duration" "24"
 		}
 
 		"advance_time" "0"
@@ -527,7 +546,7 @@
 			"text" "This ward gives more vision towards Dire mid and covers Roshan well."
 			"npc" "npc_dota_hero_crystal_maiden"
 			"allow_movement" "1"
-			"duration" "12"
+			"duration" "24"
 		}
 
 		"advance_time" "0"
@@ -567,7 +586,7 @@
 			"text" "This ward also covers Roshan but is not covered by a commonly used sentry. It is less effective for Radiant."
 			"npc" "npc_dota_hero_crystal_maiden"
 			"allow_movement" "1"
-			"duration" "12"
+			"duration" "24"
 		}
 
 		"advance_time" "0"
@@ -604,10 +623,10 @@
 
 		"npc_speech"
 		{
-			"text" "This ward gives rune vision and blocks the Radiant camp to the left. To see why, press ']' to display spawn boxes."
+			"text" "This ward gives rune vision and blocks the Radiant camp to the left. To see why, press '\' to display spawn boxes."
 			"npc" "npc_dota_hero_crystal_maiden"
 			"allow_movement" "1"
-			"duration" "12"
+			"duration" "24"
 		}
 
 		"advance_time" "0"
@@ -621,7 +640,7 @@
 		{
 			"name" "quest_ward"
 			"type" "1"
-			"text" "Place an observer ward."
+			"text" "Place an observer ward to block the camp."
 		}
 
 		"ping_minimap"
@@ -647,7 +666,7 @@
 			"text" "This ward blocks a camp while giving rune vision, sacrificing some coverage. It is most useful in the early game."
 			"npc" "npc_dota_hero_crystal_maiden"
 			"allow_movement" "1"
-			"duration" "12"
+			"duration" "24"
 		}
 
 		"advance_time" "0"
@@ -687,7 +706,7 @@
 			"text" "This ward covers the rune while giving vision of the jungle to the side of bottom lane. Use this in the early game, but be careful since it tends to get dewarded often due to its utility. You can place the ward from the river."
 			"npc" "npc_dota_hero_crystal_maiden"
 			"allow_movement" "1"
-			"duration" "12"
+			"duration" "24"
 		}
 
 		"advance_time" "0"
@@ -711,7 +730,7 @@
 			"repeat" "6"
 		}
 
-		"task_move_location" "3437.728760 -2800.101807 97.75054"
+		"task_move_location" "2588.387451 -2132.402100 338.313263"
 		"advance_event" "task_completed"
 		"next_lesson" "bottom_sentry_transition"
 	}
@@ -738,19 +757,6 @@
 
 		"advance_time" "4"
 		"advance_event" "lesson_started"
-		"next_lesson" "bottom_sentry_transition_allow_move"
-	}
-
-	"bottom_sentry_transition_allow_move"
-	{
-		"player_movement_allowed" "1"
-		"convars"
-		{
-			"dota_hud_healthbars" "1"
-		}
-
-		"advance_time" "2"
-		"advance_event" "lesson_started"
 		"next_lesson" "bottom10_exp"
 	}
 
@@ -759,12 +765,18 @@
 	// Near Radiant sentry
 	"bottom10_exp"
 	{
+		"player_movement_allowed" "1"
+		"convars"
+		{
+			"dota_hud_healthbars" "1"
+		}
+
 		"npc_speech"
 		{
 			"text" "This will reveal almost all rune wards placed on this side of the river."
 			"npc" "npc_dota_hero_crystal_maiden"
 			"allow_movement" "1"
-			"duration" "12"
+			"duration" "24"
 		}
 
 		"advance_time" "0"
@@ -804,7 +816,7 @@
 			"text" "This sentry reveals part of the Dire ramp, the Dire cliff, and the Radiant cliff. It's useful when you only have one sentry."
 			"npc" "npc_dota_hero_crystal_maiden"
 			"allow_movement" "1"
-			"duration" "12"
+			"duration" "24"
 		}
 
 		"advance_time" "0"
@@ -844,7 +856,7 @@
 			"text" "This sentry reveals most of the Dire cliff and ramp. Use this with the sentry on the Radiant side to reveal almost every bottom rune warding spot."
 			"npc" "npc_dota_hero_crystal_maiden"
 			"allow_movement" "1"
-			"duration" "12"
+			"duration" "24"
 		}
 
 		"advance_time" "0"
@@ -956,7 +968,7 @@
 			"text" "This common observer protects top lane from mid ganks. Although it can be guessed easily, it provides the best vision for both Radiant and Dire top lanes in the early game."
 			"npc" "npc_dota_hero_crystal_maiden"
 			"allow_movement" "1"
-			"duration" "12"
+			"duration" "24"
 		}
 
 		"advance_time" "0"
@@ -980,7 +992,7 @@
 			"repeat" "6"
 		}
 
-		"task_move_location" "-2284.021240 3479.121094 230.23117"
+		"task_move_location" "-2284.021240 3479.121094 360.23117"
 		"advance_event" "task_completed"
 		"next_lesson" "top2_exp"
 	}
@@ -996,7 +1008,7 @@
 			"text" "This observer covers some, but not all paths that Dire mid could take to get to the top lane. It can be placed from the Secret Shop area."
 			"npc" "npc_dota_hero_crystal_maiden"
 			"allow_movement" "1"
-			"duration" "12"
+			"duration" "24"
 		}
 
 		"advance_time" "0"
@@ -1036,7 +1048,7 @@
 			"text" "This gives vision of the Radiant ancients and the rune. Early game, it protects mid from ganks by top lane supports. Late game, it can be used by the Dire to scout out ganks on the Radiant carry."
 			"npc" "npc_dota_hero_crystal_maiden"
 			"allow_movement" "1"
-			"duration" "12"
+			"duration" "24"
 		}
 
 		"advance_time" "0"
@@ -1073,10 +1085,10 @@
 
 		"npc_speech"
 		{
-			"text" "This rune ward blocks the Radiant ancient camp. It must be placed down and left of the pole. Use the ']' key to display spawn boxes that will help you learn the placement."
+			"text" "This rune ward blocks the Radiant ancient camp. It must be placed down and left of the pole. Use the '\' key to display spawn boxes that will help you learn the placement."
 			"npc" "npc_dota_hero_crystal_maiden"
 			"allow_movement" "1"
-			"duration" "12"
+			"duration" "24"
 		}
 
 		"advance_time" "0"
@@ -1116,7 +1128,7 @@
 			"text" "This ward gives some vision of both Radiant Dire mid. This is useful for when Pudge is around."
 			"npc" "npc_dota_hero_crystal_maiden"
 			"allow_movement" "1"
-			"duration" "12"
+			"duration" "24"
 		}
 
 		"advance_time" "0"
@@ -1156,7 +1168,7 @@
 			"text" "This ward also gives vision of both Radiant and Dire mid, with more emphasis on the Dire side."
 			"npc" "npc_dota_hero_crystal_maiden"
 			"allow_movement" "1"
-			"duration" "12"
+			"duration" "24"
 		}
 
 		"advance_time" "0"
@@ -1175,7 +1187,7 @@
 
 		"ping_minimap"
 		{
-			"pos" "-951.697937 1062.268799 285.318573"
+			"pos" "-1100.697937 1062.268799 285.318573"
 			"delay" "2"
 			"repeat" "6"
 		}
@@ -1207,19 +1219,6 @@
 
 		"advance_time" "4"
 		"advance_event" "lesson_started"
-		"next_lesson" "top_sentry_transition_allow_move"
-	}
-
-	"top_sentry_transition_allow_move"
-	{
-		"player_movement_allowed" "1"
-		"convars"
-		{
-			"dota_hud_healthbars" "1"
-		}
-
-		"advance_time" "2"
-		"advance_event" "lesson_started"
 		"next_lesson" "top7_exp"
 	}
 
@@ -1228,12 +1227,18 @@
 	// River sentry
 	"top7_exp"
 	{
+		"player_movement_allowed" "1"
+		"convars"
+		{
+			"dota_hud_healthbars" "1"
+		}
+
 		"npc_speech"
 		{
 			"text" "The sentry covers wards on the Dire ramp, the Radiant ramp, and the Radiant ancients ramp."
 			"npc" "npc_dota_hero_crystal_maiden"
 			"allow_movement" "1"
-			"duration" "12"
+			"duration" "24"
 		}
 
 		"advance_time" "0"
@@ -1273,7 +1278,7 @@
 			"text" "This sentry reveals the Radiant side observers, including the one that blocks ancients and sees the rune. "
 			"npc" "npc_dota_hero_crystal_maiden"
 			"allow_movement" "1"
-			"duration" "12"
+			"duration" "24"
 		}
 
 		"advance_time" "0"
@@ -1310,7 +1315,7 @@
 			"text" "This reveals wards on the Dire cliff."
 			"npc" "npc_dota_hero_crystal_maiden"
 			"allow_movement" "1"
-			"duration" "12"
+			"duration" "24"
 		}
 
 		"advance_time" "0"
@@ -1350,7 +1355,7 @@
 			"text" "This reveals wards on the Radiant cliff."
 			"npc" "npc_dota_hero_crystal_maiden"
 			"allow_movement" "1"
-			"duration" "12"
+			"duration" "24"
 		}
 
 		"advance_time" "0"

@@ -1,0 +1,10 @@
+Various console commands
+
+box - Draw a box
+buildcubemaps - Generate a cubemap for the current view
+dota_apm - Show actions per minute
+dota_scale_unit - Change the size of a unit by a multiplier
+dota_show_selection_boxes - Show hitboxes
+dota_time_of_day_rate - Change the rate of the day/night cycle
+gameui_activate - Bring up the main interface
+getpos - Display the current position of the camera
