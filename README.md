@@ -11,23 +11,23 @@ dota2-clarity features custom console commands and training missions for Dota 2.
 * Disable HUD partially or entirely
 * Display neutral camp spawn boxes
 * Seven grouped chat wheels that encapsulate almost every response
-* Practice drills
-  - These aliases can be used in a local practice game to train a specific skill
+* Practice drills (aliases and key bindings to be used in in a local game to
+  practice specific skills)
   - Warding
+  - Stacking and pulling
   - Juke paths
   - Lasthitting under towers
-  - Stacking and pulling
   - Tower range
 * Custom training missions
-  - Pull camp warding
+  - Pull warding
   - Rune warding
   - Radiant juke paths
 * Various useful console variables
   - Health bar settings
   - Minimap icon settings
   - Gameplay settings
-  - net_graph
-* Various other aliases and key bindings to augment your Dota 2 experience
+  - Net graph to show FPS and ping
+* Various other aliases and key bindings
   - Quick courier
   - Cycle camera focus between runes and hero
 
@@ -63,7 +63,27 @@ To enable only training missions:
    a training mission, e.g. "tutorial_radiant_juke_paths",
    "tutorial_pull_wards", or "tutorial_rune_wards".
 
-3. Credits
+3. Usage
+--------
+
+Explore the clarity/ directory and read the documentation in the files that
+interest you. Of particular interest is clarity/binds.cfg, which defines
+key bindings for aliases defined by Clarity.
+
+To use practice drills:
+
+1. Start a local game with cheats enabled.
+2. Open the console and enter the command to start the drill you want to run,
+   e.g. "drill_juke_paths".
+3. Press the apostrophe key to print cheat keys to the console.
+
+To use training missions:
+
+1. At the main interface without a game started, open the console and enter the
+   command to start the tutorial, e.g. "drill_rune_wards".
+2. Press the apostrophe key to print cheat keys to the console.
+
+4. Credits
 ----------
 
 * Cyborgmatt for the original HUD disabling commands
@@ -73,7 +93,7 @@ To enable only training missions:
 * Chudooder for their chat wheel generator
 * Various Reddit threads
 
-4. Ownership
+5. Ownership
 ------------
 
 These scripts belong to the community. Feel free to extend them and share
