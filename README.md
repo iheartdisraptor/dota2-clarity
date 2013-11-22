@@ -3,8 +3,8 @@ dota2-clarity
 
 dota2-clarity features custom console commands and training missions for Dota 2.
 
-Features
---------
+1. Features
+-----------
 
 * Cheat key bindings add convenience in practice lobbies
 * Advanced spectator controls make active spectating easier
@@ -31,25 +31,12 @@ Features
   - Quick courier
   - Cycle camera focus between runes and hero
 
-Credits
--------
-
-* Cyborgmatt for the original HUD disabling commands
-* devilesk for the exact neutal spawn camp box coordinates
-* Filk for one of the early autoexec.cfg's
-* TheParadoxataur (critwhale.com) for their map of juke paths
-* Chudooder for their chat wheel generator
-* Various Reddit threads
-
-Usage
------
+2. Installation
+---------------
 
 The file structure is designed so that you can include only the parts of
 dota2-clarity that you want to use and ignore the rest. This works by keeping
 all files in .../dota/cfg/clarity and exec'ing them from your autoexec.cfg.
-
-Installation
-------------
 
 1. Copy the dota/cfg/clarity folder itself to
    Steam/SteamApps/common/dota 2 beta/dota/cfg.
@@ -59,7 +46,7 @@ Installation
    http://wyksblog.com/guide-activating-the-console-in-dota-2/
 
 Enable Only Training Missions
------------------------------
+_____________________________
 
 1. In your Steam/SteamApps/common/dota 2 beta//dota/cfg/autoexec.cfg file,
    add "exec clarity/tutorials.cfg".
@@ -67,19 +54,29 @@ Enable Only Training Missions
    a training mission, e.g. "tutorial_radiant_juke_paths",
    "tutorial_pull_wards", or "tutorial_rune_wards".
 
-Enable All
-----------
+Enable All Features
+-------------------
 
 1. In your Steam/SteamApps/common/dota 2 beta//dota/cfg/autoexec.cfg file,
    add "exec clarity/autoexec.cfg".
 
-Enable Some
------------
+Enable Some Features
+--------------------
 
 1. Open clarity/autoexec.cfg and clarity/binds.cfg.
 2. Copy the lines that include the features you want.
 
-Ownership
+3. Credits
+-------
+
+* Cyborgmatt for the original HUD disabling commands
+* devilesk for the exact neutal spawn camp box coordinates
+* Filk for one of the early autoexec.cfg's
+* TheParadoxataur (critwhale.com) for their map of juke paths
+* Chudooder for their chat wheel generator
+* Various Reddit threads
+
+4. Ownership
 ---------
 
 These scripts belong to the community. Feel free to extend them and share
