@@ -45,8 +45,17 @@ all files in .../dota/cfg/clarity and exec'ing them from your autoexec.cfg.
 3. Enable the Dota 2 console:
    http://wyksblog.com/guide-activating-the-console-in-dota-2/
 
-Enable Only Training Missions
-_____________________________
+To enable all features:
+
+1. In your Steam/SteamApps/common/dota 2 beta//dota/cfg/autoexec.cfg file,
+   add "exec clarity/autoexec.cfg".
+
+To enable only some features:
+
+1. Open clarity/autoexec.cfg and clarity/binds.cfg.
+2. Copy the lines that include the features you want.
+
+To enable only training missions:
 
 1. In your Steam/SteamApps/common/dota 2 beta//dota/cfg/autoexec.cfg file,
    add "exec clarity/tutorials.cfg".
@@ -54,20 +63,8 @@ _____________________________
    a training mission, e.g. "tutorial_radiant_juke_paths",
    "tutorial_pull_wards", or "tutorial_rune_wards".
 
-Enable All Features
--------------------
-
-1. In your Steam/SteamApps/common/dota 2 beta//dota/cfg/autoexec.cfg file,
-   add "exec clarity/autoexec.cfg".
-
-Enable Some Features
---------------------
-
-1. Open clarity/autoexec.cfg and clarity/binds.cfg.
-2. Copy the lines that include the features you want.
-
 3. Credits
--------
+----------
 
 * Cyborgmatt for the original HUD disabling commands
 * devilesk for the exact neutal spawn camp box coordinates
@@ -77,7 +74,7 @@ Enable Some Features
 * Various Reddit threads
 
 4. Ownership
----------
+------------
 
 These scripts belong to the community. Feel free to extend them and share
 your changes.
