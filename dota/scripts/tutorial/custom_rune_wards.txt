@@ -583,7 +583,7 @@
 
 		"npc_speech"
 		{
-			"text" "This ward also covers Roshan but is not covered by a commonly used sentry. It is less effective for Radiant."
+			"text" "This ward also covers Roshan but is not covered by a commonly used sentry."
 			"npc" "npc_dota_hero_crystal_maiden"
 			"allow_movement" "1"
 			"duration" "24"

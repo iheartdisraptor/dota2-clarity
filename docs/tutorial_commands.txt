@@ -43,6 +43,12 @@ hero_levelup: level up a hero and select skills
 }
 ________________________________________________________________________________
 
+		"create_item_at_entity"
+		{
+			"entity_name"			"tgt_r1_tangoloc"
+			"item"					"item_tango"
+		}
+
 dota_tutorial_move_location_dist
 dota_tutorial_camera_location_dist
 dota_tutorial_state_change_delay
