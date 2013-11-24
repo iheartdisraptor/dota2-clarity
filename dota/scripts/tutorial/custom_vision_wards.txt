@@ -265,10 +265,10 @@
 		{
 			"text" "Rylai might have shown you rune wards, but today we're going to learn warding for vision beyond the rune spots. Lane wards are first, and then we'll go on to mid and late game wards."
 			"npc" "npc_dota_hero_lina"
-			"duration" "16"
+			"duration" "14"
 		}
 
-		"advance_time" "16"
+		"advance_time" "14"
 		"advance_event" "lesson_started"
 		"next_lesson" "intro_speech2"
 	}
@@ -344,13 +344,13 @@
 	{
 		"npc_speech"
 		{
-			"text" "When it comes to warding, all ward spots are situational. This is especially true when laning depending which and how many heroes are in lane and what you're trying to accomplish at any moment."
+			"text" "When it comes to warding, all ward spots are situational. This all depends on which and how many heroes are in lane and what you're trying to accomplish at any moment."
 			"npc" "npc_dota_hero_lina"
-			"duration" "20"
+			"duration" "16"
 			"allow_movement" "0"
 		}
 
-		"advance_time" "20"
+		"advance_time" "16"
 		"advance_event" "lesson_started"
 		"next_lesson" "intro_plus3"
 	}
@@ -361,11 +361,11 @@
 		{
 			"text" "When we discuss these ward spots, focus on the why and the when rather than simply memorizing all of them. This way you'll be able to create your own ward spots depending on what your team needs."
 			"npc" "npc_dota_hero_lina"
-			"duration" "20"
+			"duration" "16"
 			"allow_movement" "0"
 		}
 
-		"advance_time" "20"
+		"advance_time" "16"
 		"advance_event" "lesson_started"
 		"next_lesson" "intro_plus3_buffer"
 	}
@@ -383,11 +383,19 @@
 
 	"marker1"
 	{
+//		"npc_speech"
+//		{
+//			"text" "Let's go to the first ward."
+//			"npc" "npc_dota_hero_lina"
+//			"duration" "120"
+//			"allow_movement" "1"
+//		}
+
 		"npc_speech"
 		{
-			"text" "Let's go to the first ward."
+			"text" "This first ward could be used early by Dire to spot incoming TPs and ganks. However, it is more likely used by Dire when they are pushing the top T1."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -414,9 +422,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward here could be used early by Dire to spot incoming TPs and ganks. However, it is more likely used by Dire when they are pushing the top T1."
+			"text" "This next ward is used by Dire to spot incoming ganks and to catch Radiant out of position. It is especially useful for them in trilanes."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -446,9 +454,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward here is used by Dire to spot incoming ganks and to catch Radiant out of position. It is especially useful for them in trilanes."
+			"text" "This next ward can spot ganks or trilane positioning for either team. It does not block the camp, but move it to the right of the rocks 100 units and it will."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -478,9 +486,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward here can spot ganks or trilane positioning for either team. To the left of the rocks, the one shown here, the camp is not blocked. To the right of the rocks, it is."
+			"text" "This is another ward that can show positioning and incoming ganks. Notice how it is positioned at the intersection of multiple paths of vision to provide the most coverage. It blocks the camp unless you move it up 100 units. Press '\' to see spawn boxes."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 	
@@ -510,9 +518,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This is another ward that can show positioning and incoming ganks. Notice how it is positioned at the intersection of multiple paths of vision to provide the most coverage. It blocks the camp unless you move it up 100 units."
+			"text" "Use this ward as Radiant to spot enemies who are pulling and catch them out of position."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -542,9 +550,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "Use this ward as Radiant to spot enemies who are pulling and catch them out of position."
+			"text" "This ward is similar to the last, but can also help when pushing Dire's top T1."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -574,9 +582,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward is similar to the last, but can also help when pushing Dire's top T1."
+			"text" "For Radiant this ward can spot incoming TPs and fleeing enemies. It is highly situational since the previous ward does almost the same but better."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -606,9 +614,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "For Radiant this ward can spot incoming TPs and fleeing enemies. It is highly situational since the previous ward does almost the same but better."
+			"text" "For Radiant this ward reveals part of the Dire high ground across the river. This is useful at night time for preventing ganks and for pushing the mid T1."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -638,9 +646,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "For Radiant this ward reveals part of the Dire high ground across the river. This is useful at night time for preventing ganks and for pushing the mid T1."
+			"text" "This ward is similar to the last, but it can be used by both teams since it is outside of tower reveal range."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -670,9 +678,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward is similar to the last, but it can be used by both teams since it is outside of tower reveal range."
+			"text" "This ward is similar to the last two but protects mid from ganks by the Dire bottom lane heroes."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -702,9 +710,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward is similar to the last two but protects mid from ganks by the Dire bottom lane heroes."
+			"text" "This ward is similar to the last."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -734,12 +742,12 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward is similar to the last."
+			"text" "This can be used by Radiant to spot incoming ganks and fleeing enemies. It is mostly used by Radiant in trilanes. It can also be used later on to protect the jungle from ganks through bottom lane."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
-
+		
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
@@ -766,9 +774,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This can be used by Radiant to spot incoming ganks and fleeing enemies. It is mostly used by Radiant in trilanes. It can also be used later on to protect the jungle from ganks through bottom lane."
+			"text" "All wards are prone to dewarding, and when that happens you must offset your wards. Try to find alternative positions for wards. They sacrifice the vision of their counterparts for the chance of not being dewarded."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -784,7 +792,7 @@
 
 		"ping_minimap"
 		{
-			"pos" "4900.470703 -3277.62597 270"
+			"pos" "4900.470703 -3477.62597 270"
 			"delay" "0"
 			"repeat" "6"
 		}
@@ -798,9 +806,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "All wards are prone to dewarding, and when that happens you must offset your wards. Try to find alternative positions for wards. They sacrifice the vision of their counterparts for the chance of not being dewarded."
+			"text" "This ward can be used by both sides when vision to the side of lane is important to the success of the lane. For example, when going up against Keeper of the Light, it is important to spot out the Illuminate."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -830,9 +838,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward can be used by both sides when vision to the side of lane is important to the success of the lane. For example, when going up against Keeper of the Light, it is important to spot out the Illuminate."
+			"text" "This ward for Dire can be used to spot incoming TPs and to give an advantage when pushing bottom T1."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -862,9 +870,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward for Dire can be used to spot incoming TPs and to give an advantage when pushing bottom T1."
+			"text" "This situational ward can be used by Dire to spot incoming TPs and fleeing enemies."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "8"
 			"allow_movement" "1"
 		}
 
@@ -876,14 +884,6 @@
 			"name" "quest_walk"
 			"type" "1"
 			"text" "Ward 16/50"
-		}
-
-		"npc_speech"
-		{
-			"text" "You can access the side shop over here."
-			"npc" "npc_dota_hero_lina"
-			"allow_movement" "1"
-			"duration" "8"
 		}
 
 		"ping_minimap"
@@ -902,9 +902,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This situational ward can be used by Dire to spot incoming TPs and fleeing enemies."
+			"text" "That's hot."
 			"npc" "npc_dota_hero_lina"
-			"duration" "8"
+			"duration" "3"
 			"allow_movement" "1"
 		}
 
@@ -938,19 +938,27 @@
 		{
 			"text" "Let's go!"
 			"npc" "npc_dota_hero_lina"
-			"duration" "4"
-			"allow_movement" "0"
+			"duration" "2"
+			"allow_movement" "1"
 		}
 
-		"advance_time" "2"
+		"advance_time" "3"
 		"advance_event" "lesson_started"
-		"next_lesson" "marker1"
+		"next_lesson" "marker17"
 	}
 
 	// Mid and late game wards /////////////////////////////////////////////////
 
 	"marker17"
 	{
+		"npc_speech"
+		{
+			"text" "For Dire, this is an aggressive ward to spot out gankable heroes. For Radiant, this is a defensive ward, especially when defending the bottom T2. To remember your ward spots, you can use landmarks as a guide. The rocks here marks this ward."
+			"npc" "npc_dota_hero_lina"
+			"duration" "120"
+			"allow_movement" "1"
+		}
+
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
@@ -977,9 +985,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "For Dire, this is an aggressive ward to spot out gankable heroes. For Radiant, this is a defensive ward, especially when defending the bottom T2. To remember your ward spots, you can use landmarks as a guide. The rocks here marks this ward."
+			"text" "This ward sacrifices vision of the rune for more vision of Radiant jungle movement. It can be a good alternative when your rune ward has been dewarded and you have vision of top rune."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1009,9 +1017,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward sacrifices vision of the rune for more vision of Radiant jungle movement. It can be a good alternative when your rune ward has been dewarded and you have vision of top rune."
+			"text" "This ward can be used by Dire when pushing bottom T2. It spots out Radiant initiators, especially those who can blink into the fight."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1041,9 +1049,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward can be used by Dire when pushing bottom T2. It spots out Radiant initiators, especially those who can blink into the fight."
+			"text" "This ward gives unobstructed vision of the area around it and is highly sought after for ganking and for defending the push of T2 towers."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1073,9 +1081,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward gives unobstructed vision of the area around it and is highly sought after for ganking and for defending the push of T2 towers."
+			"text" "When Radiant T3 is being pushed, this ward can provide much needed high ground vision against Dire. It is also less likely to be dewarded than the last ward."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1105,9 +1113,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "When Radiant T3 is being pushed, this ward can provide much needed high ground vision against Dire. It is also less likely to be dewarded than the last ward."
+			"text" "When Dire is fountain diving they may place a ward here to help. It is outside of the reveal range of both the Ancient and the fountain."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1137,9 +1145,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "When Dire is fountain diving they may place a ward here to help. It is outside of the reveal range of both the Ancient and the fountain."
+			"text" "This is an alternative to the previous ward. It can also be used for courier sniping by Nature's Prophet."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1169,9 +1177,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This is an alternative to the previous ward."
+			"text" "For Dire this ward is used when pushing T3. It can be placed from outside of the base."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1201,9 +1209,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "For Dire this ward is used when pushing T3. It can be placed from outside of the base."
+			"text" "This ward is similar to the last ward."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1233,9 +1241,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward is similar to the last ward."
+			"text" "This ward can help Radiant defend against a T3 push. It also demonstrates a principle of warding: try to place wards at intersections of multiple paths to provide the most vision. This ward is positioned at the intersection of three paths."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1265,9 +1273,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward can help Radiant defend against a T3 push. It also demonstrates a principle of warding: try to place wards at intersections of multiple paths to provide the most vision. This ward is positioned at the intersection of three paths."
+			"text" "This highly situational ward can be used by Dire to push the mid T2."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1297,9 +1305,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This highly situational ward can be used by Dire to push the mid T2."
+			"text" "This ward can be used by Dire when pushing the mid T2 to protect against initiation from the high ground. Radiant can also use this when defending T2."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1329,9 +1337,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward can be used by Dire when pushing the mid T2 to protect against initiation from the high ground. Radiant can also use this when defending T2."
+			"text" "This can be used for defending T2, but it also useful for defending T3. Many fights happen on the low ground and being able to spot high ground initation is important."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1361,9 +1369,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This can be used for defending T2, but it also useful for defending T3. Many fights happen on the low ground and being able to spot high ground initation is important."
+			"text" "This ward can be used by Radiant when defending T3."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1393,9 +1401,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward can be used by Radiant when defending T3."
+			"text" "This ward can help Dire push top T2. It can be placed from across the fissure."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1425,9 +1433,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward can help Dire push top T2. It can be placed from across the fissure."
+			"text" "This ward can be used by Radiant for defending top T2 or even mid T2. Highly situational wards like this are relevant when you believe the enemy team will be spending a lot of time in the area."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1459,9 +1467,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward can be used by Radiant for defending top T2 or even mid T2. Highly situational wards like this are relevant when you believe the enemy team will be spending a lot of time in the area."
+			"text" "This ward can be used by Dire to protect the jungle from ganks, especially when the mid T1 has fallen."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1491,9 +1499,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward can be used by Dire to protect the jungle from ganks, especially when the mid T1 has fallen."
+			"text" "This ward can be used by Radiant to spot out gankable heroes in their jungle. It is also useful when pushing mid T2 as it gives high ground vision."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1523,9 +1531,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward can be used by Radiant to spot out gankable heroes in their jungle. It is also useful when pushing mid T2 as it gives high ground vision."
+			"text" "This ward is similar to the last but sacrifices vision to give more vision to the side of T2 for Radiant and to be safer to place for Dire."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1555,9 +1563,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward is similar to the last but sacrifices vision to give more vision to the side of T2 for Radiant and to be safer to place for Dire."
+			"text" "This ward can be used to spot gankable heroes in the Dire jungle. To the left of the rocks, the camp is not blocked. To the right of the rocks, the camp is blocked."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1587,9 +1595,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward can be used to spot gankable heroes in the Dire jungle. To the left of the rocks, the camp is not blocked. To the right of the rocks, the camp is blocked."
+			"text" "This can be used by Radiant to spot gank opportunities or by Dire to help defend top T2."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1619,9 +1627,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This can be used by Radiant to spot gank opportunities or by Dire to help defend top T2."
+			"text" "This highly sought after ward gives clear vision of the area around it. It's used by Radiant when pushing T2 or even T3 and also by Dire when defending."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1651,9 +1659,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This highly sought after ward gives clear vision of the area around it. It's used by Radiant when pushing T2 or even T3 and also by Dire when defending."
+			"text" "This ward can be used by Dire to get high ground vision for defending top T3."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1683,9 +1691,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward can be used by Dire to get high ground vision for defending top T3."
+			"text" "This ward can be used by Radiant when fountain diving or courier sniping. It can be placed at the entrance since the Dire ancient is so far from its fountain compared to the Radiant ancient."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1715,9 +1723,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward can be used by Radiant when fountain diving or courier sniping. It can be placed at the entrance since the Dire ancient is so far from its fountain compared to the Radiant ancient."
+			"text" "Cutting a tree and placing a ward here can give high ground vision for Radiant when pushing T3. It is not often used but it is also hard to deward."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1747,9 +1755,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "Cutting a tree and placing a ward here can give high ground vision for Radiant when pushing T3. It is not often used but it is also hard to deward."
+			"text" "This ward can be used by Radiant when pushing T3. It can be placed from outside of the base."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1779,9 +1787,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward can be used by Radiant when pushing T3. It can be placed from outside of the base."
+			"text" "This ward is similar to the last."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1811,9 +1819,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward is similar to the last."
+			"text" "This ward gives vision for Dire when defending T3, and is especially useful at night."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1825,14 +1833,6 @@
 			"name" "quest_walk"
 			"type" "1"
 			"text" "Ward 44/50"
-		}
-
-		"npc_speech"
-		{
-			"text" "Standing here can block the camp."
-			"npc" "npc_dota_hero_lina"
-			"allow_movement" "1"
-			"duration" "8"
 		}
 
 		"ping_minimap"
@@ -1851,9 +1851,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward gives vision for Dire when defending T3, and is especially useful at night."
+			"text" "When mid T2 has fallen, Dire may use this ward to spot incoming pushes and to defend."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1883,9 +1883,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "When mid T2 has fallen, Dire may use this ward to spot incoming pushes and to defend."
+			"text" "For Dire this ward gives high ground vision for defending T3. For Radiant it can also be useful when fighting around this area, but the next ward may be more useful for them."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1915,9 +1915,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "For Dire this ward gives high ground vision for defending T3. For Radiant it can also be useful when fighting around this area, but the next ward may be more useful for them."
+			"text" "This ward spots movement around the secret shop, which is a highly sought after resource in the late phase of the game."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1947,9 +1947,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward spots movement around the secret shop, which is a highly sought after resource in the late phase of the game."
+			"text" "This ward spots gankable heroes attempting to kill the ancient creep camps. It can also show when Dire is going for Roshan."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -1979,9 +1979,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward spots gankable heroes attempting to kill the ancient creep camps. It can also show when Dire is going for Roshan."
+			"text" "This ward can be used by Radiant when pushing bottom T1."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -2011,9 +2011,9 @@
 	{
 		"npc_speech"
 		{
-			"text" "This ward can be used by Radiant when pushing bottom T1."
+			"text" "This ward can be used by Dire to gain high ground vision when defending T3."
 			"npc" "npc_dota_hero_lina"
-			"duration" "24"
+			"duration" "120"
 			"allow_movement" "1"
 		}
 
@@ -2036,16 +2036,16 @@
 
 		"task_move_location" "6344.235352 1452.9132 150"
 		"advance_event" "task_completed"
-		"next_lesson" "finish"
+		"next_lesson" "marker50_exp"
 	}
 
 	"marker50_exp"
 	{
 		"npc_speech"
 		{
-			"text" "This ward can be used by Dire to gain high ground vision when defending T3."
+			"text" "This was a lot of work."
 			"npc" "npc_dota_hero_lina"
-			"duration" "8"
+			"duration" "3"
 			"allow_movement" "1"
 		}
 
@@ -2069,9 +2069,9 @@
 
 		"npc_speech"
 		{
-			"text" "That's all for today. Always remember that the best ward spots depend entirely on what your team is trying to accomplish. Rather than attempt to memorize all of these ward spots, review why they are useful and you will be able to create your own ward spots."
+			"text" "That's all for today. Always remember that the best ward spots depend entirely on what your team is trying to accomplish. Rather than attempt to memorize all of these ward spots, review why they are useful and you will be able to create your own."
 			"npc" "npc_dota_hero_lina"
-			"duration" "22"
+			"duration" "20"
 		}
 
 		"advance_time" "20"

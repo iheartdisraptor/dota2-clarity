@@ -60,8 +60,8 @@ To enable only training missions:
 1. In your Steam/SteamApps/common/dota 2 beta//dota/cfg/autoexec.cfg file,
    add "exec clarity/tutorials.cfg".
 2. Restart Dota 2, open the console, and enter one of the commands to start
-   a training mission, e.g. "tutorial_radiant_juke_paths",
-   "tutorial_pull_wards", or "tutorial_rune_wards".
+   a training mission, e.g. "train_radiant_juke_paths",
+   "train_pull_wards", or "train_rune_wards".
 
 3. Usage
 --------
@@ -91,6 +91,7 @@ To use training missions:
 * Filk for one of the early autoexec.cfg's
 * TheParadoxataur (critwhale.com) for their map of juke paths
 * Chudooder for their chat wheel generator
+* gso's warding guide
 * Various Reddit threads
 
 5. Ownership
@@ -98,3 +99,18 @@ To use training missions:
 
 These scripts belong to the community. Feel free to extend them and share
 your changes.
+
+6. Changelog
+------------
+
+1.1-6.79
+
+* Added Dire juke paths training mission (train_dire_juke_paths).
+* Added vision warding training mission (train_vision_wards).
+* Fixed errors with the UI disablind aliases being too long.
+* For convenience, to run tutorials you can type "train_..."
+  instead of "tutorial_..."
+
+1.0-6.79
+
+* Initial release
