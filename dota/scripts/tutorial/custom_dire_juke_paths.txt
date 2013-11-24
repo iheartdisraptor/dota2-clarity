@@ -2,7 +2,7 @@
 {
 	"Version" "1"
 
-	"custom_radiant_juke_paths"
+	"custom_dire_juke_paths"
 	{
 		"advance_time" "0"
 		"advance_event" "player_joined"
@@ -39,7 +39,7 @@
 			"dota_tutorial_game" "0"
 			"sv_cheats" "1"
 			"dota_creeps_no_spawning" "1"
-			"dota_ability_debug" "0"
+			"dota_ability_debug" "1"
 			"dota_range_display" "800"
 
 			// Required for various tutorial commands to work
@@ -48,7 +48,7 @@
 
 		"precache"
 		{
-			"npc_dota_hero_luna" "1"
+			"npc_dota_hero_death_prophet" "1"
 		}
 
 		"advance_time" "0"
@@ -58,9 +58,9 @@
 
 	"setup_hero"
 	{
-		"player_team" "good"
+		"player_team" "bad"
 
-		"player_hero" "npc_dota_hero_luna"
+		"player_hero" "npc_dota_hero_death_prophet"
 
 		"player_movement_allowed" "0"
 		"convars"
@@ -70,29 +70,29 @@
 
 		"hero_levelup"
 		{
-			"hero" "npc_dota_hero_luna"
+			"hero" "npc_dota_hero_death_prophet"
 			"level" "25"
 
 			"levelups"
 			{
-				"luna_lucent_beam" "1"
-				"luna_lucent_beam" "1"
-				"luna_lucent_beam" "1"
-				"luna_lucent_beam" "1"
+				"death_prophet_carrion_swarm" "1"
+				"death_prophet_carrion_swarm" "1"
+				"death_prophet_carrion_swarm" "1"
+				"death_prophet_carrion_swarm" "1"
 
-				"luna_moon_glaive" "1"
-				"luna_moon_glaive" "1"
-				"luna_moon_glaive" "1"
-				"luna_moon_glaive" "1"
+				"death_prophet_silence" "1"
+				"death_prophet_silence" "1"
+				"death_prophet_silence" "1"
+				"death_prophet_silence" "1"
 
-				"luna_lunar_blessing" "1"
-				"luna_lunar_blessing" "1"
-				"luna_lunar_blessing" "1"
-				"luna_lunar_blessing" "1"
+				"death_prophet_witchcraft" "1"
+				"death_prophet_witchcraft" "1"
+				"death_prophet_witchcraft" "1"
+				"death_prophet_witchcraft" "1"
 
-				"luna_eclipse" "1"
-				"luna_eclipse" "1"
-				"luna_eclipse" "1"
+				"death_prophet_exorcism" "1"
+				"death_prophet_exorcism" "1"
+				"death_prophet_exorcism" "1"
 
 				"attribute_bonus" "1"
 				"attribute_bonus" "1"
@@ -162,7 +162,7 @@
 
 		"give_courier" "1"
 
-		"advance_time" "1"
+		"advance_time" "3"
 		"advance_event" "lesson_started"
 		"next_lesson" "intro_fade"
 	}
@@ -182,8 +182,8 @@
 	{
 		"npc_speech"
 		{
-			"text" "Today we're going to learn juke paths on our side of the river."
-			"npc" "npc_dota_hero_luna"
+			"text" "Today we will learn the paths through the forest on the Dire side."
+			"npc" "npc_dota_hero_death_prophet"
 			"duration" "5"
 		}
 
@@ -197,7 +197,7 @@
 		"npc_speech"
 		{
 			"text" "Move to the waypoints and cut the trees that I ping."
-			"npc" "npc_dota_hero_luna"
+			"npc" "npc_dota_hero_death_prophet"
 			"duration" "5"
 		}
 
@@ -210,12 +210,12 @@
 	{
 		"npc_speech"
 		{
-			"text" "If you want to do this training at a realistic pace, pick up the brown boots and disable wtf mode with '-'."
-			"npc" "npc_dota_hero_luna"
-			"duration" "5"
+			"text" "If you want to do this training at a realistic pace, remove all speed items, pick up the brown boots from the stash, and use '-' to disable wtf mode."
+			"npc" "npc_dota_hero_death_prophet"
+			"duration" "7"
 		}
 
-		"advance_time" "5"
+		"advance_time" "7"
 		"advance_event" "lesson_started"
 		"next_lesson" "intro_start_game"
 	}
@@ -232,8 +232,8 @@
 
 		"npc_speech"
 		{
-			"text" "Here we go!"
-			"npc" "npc_dota_hero_luna"
+			"text" "We shall go."
+			"npc" "npc_dota_hero_death_prophet"
 			"duration" "5"
 			"allow_movement" "1"
 		}
@@ -243,7 +243,7 @@
 		"next_lesson" "marker1"
 	}
 
-	// Bottom lane T3 to T1 ////////////////////////////////////////////////////
+	// Fountain to top T1 //////////////////////////////////////////////////////
 
 	"marker1"
 	{
@@ -251,17 +251,10 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Embark on a journey through the woods."
+			"text" "Waypoint 1/63"
 		}
 
-		"ping_minimap"
-		{
-			"pos" "-4731.511230 -6889.816406 323.005035"
-			"delay" "0"
-			"repeat" "6"
-		}
-
-		"task_move_location" "-4574.581543 -7202.764160 405.43185"
+		"task_move_location" "5217.717773 6871.345703 410.66775"
 		"advance_event" "task_completed"
 		"next_lesson" "marker2"
 	}
@@ -275,17 +268,10 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 2/74"
+			"text" "Waypoint 2/63"
 		}
 
-		"ping_minimap"
-		{
-			"pos" "-4267.103516 -7057.769531 403.536469"
-			"delay" "0"
-			"repeat" "6"
-		}
-
-		"task_move_location" "-3987.153320 -7087.376465 401.76763"
+		"task_move_location" "4634.865723 7009.615723 408.481"
 		"advance_event" "task_completed"
 		"next_lesson" "marker3"
 	}
@@ -299,17 +285,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 3/74"
+			"text" "Waypoint 3/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-3904.940186 -6974.712891 393.044952"
+			"pos" "3901.494385 6584.937500 422.4045"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-3654.840820 -6714.635254 382.93637"
+		"task_move_location" "3276.435791 6996.181641 398.3074"
 		"advance_event" "task_completed"
 		"next_lesson" "marker4"
 	}
@@ -323,17 +309,10 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 4/74"
+			"text" "Waypoint 4/63"
 		}
 
-		"ping_minimap"
-		{
-			"pos" "-1021.440491 -6846.120117 392.72900"
-			"delay" "0"
-			"repeat" "6"
-		}
-
-		"task_move_location" "-729.874512 -6945.213867 397.00134"
+		"task_move_location" "1477.060059 6936.868652 399.9561"
 		"advance_event" "task_completed"
 		"next_lesson" "marker5"
 	}
@@ -347,17 +326,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 5/74"
+			"text" "Waypoint 5/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-458.362366 -6846.154785 383.01586"
+			"pos" "1486.063354 7026.397461 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-163.522186 -6882.964844 402.7983"
+		"task_move_location" "1189.926758 7171.444 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker6"
 	}
@@ -371,10 +350,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 6/74"
+			"text" "Waypoint 6/63"
 		}
 
-		"task_move_location" "1428.795410 -6849.295410 404.2109"
+		"ping_minimap"
+		{
+			"pos" "1098.906250 7122.46826 350"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "287.917480 7425.46386 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker7"
 	}
@@ -388,17 +374,10 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 7/74"
+			"text" "Waypoint 7/63"
 		}
 
-		"ping_minimap"
-		{
-			"pos" "1796.189697 -6732.568848 404.78564"
-			"delay" "0"
-			"repeat" "6"
-		}
-
-		"task_move_location" "2161.892334 -6456.468750 402.7243"
+		"task_move_location" "408.916504 6803.4653 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker8"
 	}
@@ -412,17 +391,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 8/74"
+			"text" "Waypoint 8/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "2284.473877 -6846.808105 403.98971"
+			"pos" "-113.702225 6756.9555 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "2389.553711 -6985.586914 407.06274"
+		"task_move_location" "-281.083069 6977.464 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker9"
 	}
@@ -436,17 +415,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 9/74"
+			"text" "Waypoint 9/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "3310.635010 -6680.712891 405.628998"
+			"pos" "-302.082825 7110.4570 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "3031.290527 -6745.712402 406.08578"
+		"task_move_location" "-480.083038 7169.46533 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker10"
 	}
@@ -460,15 +439,13 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 10/74"
+			"text" "Waypoint 10/63"
 		}
 
-		"task_move_location" "3876.459717 -6828.425293 407.357422"
+		"task_move_location" "-689.033081 6165.28759 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker11"
 	}
-
-	// To side shop ////////////////////////////////////////////////////////////
 
 	"marker11"
 	{
@@ -479,17 +456,10 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 11/74"
+			"text" "Waypoint 11/63"
 		}
 
-		"ping_minimap"
-		{
-			"pos" "4125.098145 -6783.395508 406.88665"
-			"delay" "0"
-			"repeat" "6"
-		}
-
-		"task_move_location" "4162.051270 -6994.084473 410.629944"
+		"task_move_location" "-1107.910278 6875.953 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker12"
 	}
@@ -503,17 +473,10 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 12/74"
+			"text" "Waypoint 12/63"
 		}
 
-		"ping_minimap"
-		{
-			"pos" "4162.051270 -6994.084473 410.629944"
-			"delay" "0"
-			"repeat" "6"
-		}
-
-		"task_move_location" "4594.037109 -7042.015137 408.8315"
+		"task_move_location" "-991.890015 7316.797363 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker13"
 	}
@@ -527,17 +490,10 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 13/74"
+			"text" "Waypoint 13/63"
 		}
 
-		"ping_minimap"
-		{
-			"pos" "5578.515625 -6660.170410 401.430"
-			"delay" "0"
-			"repeat" "6"
-		}
-
-		"task_move_location" "5595.750488 -7065.291504 406.724060"
+		"task_move_location" "-1956.697632 7304.952 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker14"
 	}
@@ -551,17 +507,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 14/74"
+			"text" "Waypoint 14/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "6132.978516 -6139.979004 394.09198"
+			"pos" "-2047.538208 6828.25585 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "6305.933105 -6113.183594 393.50912"
+		"task_move_location" "-2281.126953 7323.7919 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker15"
 	}
@@ -575,17 +531,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 15/74"
+			"text" "Waypoint 15/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "6843.416504 -4991.106934 395.4679"
+			"pos" "-2958.230225 6694.047 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "7079.430664 -5164.184570 399.52044"
+		"task_move_location" "-3684.116211 7258.5239 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker16"
 	}
@@ -599,25 +555,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 16/74"
-		}
-
-		"npc_speech"
-		{
-			"text" "You can access the side shop over here."
-			"npc" "npc_dota_hero_luna"
-			"allow_movement" "1"
-			"duration" "8"
+			"text" "Waypoint 16/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "7093.717773 -4591.113770 382.944489"
+			"pos" "-3908.941650 7096.68896 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "7418.485352 -4804.237793 417.296204"
+		"task_move_location" "-4121.111816 7051.528 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker17"
 	}
@@ -631,22 +579,20 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 17/74"
+			"text" "Waypoint 17/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "7367.476563 -3416.235596 434.95227"
+			"pos" "-4161.865723 7020.4912 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "6681.547852 -3114.378906 389.66381"
+		"task_move_location" "-4701.072266 6559.49023 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker18"
 	}
-
-	// To pull camp ////////////////////////////////////////////////////////////
 
 	"marker18"
 	{
@@ -657,10 +603,18 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 18/74"
+			"text" "Waypoint 18/63"
 		}
 
-		"task_move_location" "5538.005371 -3545.814941 366.52795"
+
+		"ping_minimap"
+		{
+			"pos" "-4811.711914 6772.42431 350"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-5215.107422 7507.515"
 		"advance_event" "task_completed"
 		"next_lesson" "marker19"
 	}
@@ -674,17 +628,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 19/74"
+			"text" "Waypoint 19/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "5576.676270 -3651.458496 372.52554"
+			"pos" "-5324.863770 7443.54052 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "5786.979004 -3752.711426 373.8084"
+		"task_move_location" "-5860.109375 7311.5200 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker20"
 	}
@@ -698,17 +652,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 20/74"
+			"text" "Waypoint 20/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "5448.377441 -3841.195068 357.94845"
+			"pos" "-5369.926758 7078.5712 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "5222.437500 -3936.580322 369.86419"
+		"task_move_location" "-5160.474609 7118.4819 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker21"
 	}
@@ -722,17 +676,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 21/74"
+			"text" "Waypoint 21/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "5380.576660 -4086.945068 378.576"
+			"pos" "-5763.776855 6914.365 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "5085.061523 -4280.389160 381.997986"
+		"task_move_location" "-6687.109375 5594.52832 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker22"
 	}
@@ -746,17 +700,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 22/74"
+			"text" "Waypoint 22/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "5589.438965 -4214.396973 381.5464"
+			"pos" "-6865.273926 5744.18652 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "5829.412598 -4215.478516 381.41259"
+		"task_move_location" "-7071.951172 5847.9218 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker23"
 	}
@@ -770,10 +724,10 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 23/74"
+			"text" "Waypoint 23/63"
 		}
 
-		"task_move_location" "5034.851563 -4853.907227 379.38723"
+		"task_move_location" "-7206.118164 5215.5195 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker24"
 	}
@@ -787,17 +741,10 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 24/74"
+			"text" "Waypoint 24/63"
 		}
 
-		"ping_minimap"
-		{
-			"pos" "4862.020508 -5199.087891 379.52612"
-			"delay" "0"
-			"repeat" "6"
-		}
-
-		"task_move_location" "5154.290527 -5323.889160 379.53445"
+		"task_move_location" "-6646.109375 3519.52172 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker25"
 	}
@@ -811,10 +758,25 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 25/74"
+			"text" "Waypoint 25/63"
 		}
 
-		"task_move_location" "4415.710938 -5459.880859 381.3009"
+		"npc_speech"
+		{
+			"text" "You can access the side shop behind here."
+			"npc" "npc_dota_hero_death_prophet"
+			"allow_movement" "1"
+			"duration" "8"
+		}
+
+		"ping_minimap"
+		{
+			"pos" "-6873.847656 3661.5107 350"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-7015.109375 3853.521 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker26"
 	}
@@ -828,10 +790,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 26/74"
+			"text" "Waypoint 26/63"
 		}
 
-		"task_move_location" "3128.720215 -5826.187988 382.27304"
+		"ping_minimap"
+		{
+			"pos" "-7123.467285 3882.5043 350"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-7463.109375 4117.5195"
 		"advance_event" "task_completed"
 		"next_lesson" "marker27"
 	}
@@ -845,17 +814,10 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 27/74"
+			"text" "Waypoint 27/63"
 		}
 
-		"ping_minimap"
-		{
-			"pos" "3094.059082 -5603.525391 381.4941"
-			"delay" "0"
-			"repeat" "6"
-		}
-
-		"task_move_location" "2877.892090 -5299.937012 381.1754"
+		"task_move_location" "-4721.576660 4595.947 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker28"
 	}
@@ -869,17 +831,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 28/74"
+			"text" "Waypoint 28/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "2626.126953 -5383.681152 380.036"
+			"pos" "-4743.250000 4805.2407 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "2522.239502 -5690.993164 381.83291"
+		"task_move_location" "-4696.337891 4984.5537 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker29"
 	}
@@ -893,17 +855,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 29/74"
+			"text" "Waypoint 29/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "2491.201416 -5762.200684 381.69174"
+			"pos" "-4594.220703 5027.602 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "2172.602295 -5960.528320 385.4443"
+		"task_move_location" "-4646.192383 5335.5961 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker30"
 	}
@@ -917,17 +879,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 30/74"
+			"text" "Waypoint 30/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "2233.804688 -5725.102051 379.4527"
+			"pos" "-4426.337891 5161.5561 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "2375.697021 -5479.161133 381.25549"
+		"task_move_location" "-4207.447754 5395.4511 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker31"
 	}
@@ -941,10 +903,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 31/74"
+			"text" "Waypoint 31/63"
 		}
 
-		"task_move_location" "2415.456299 -4958.749023 382.07159"
+		"ping_minimap"
+		{
+			"pos" "-4022.338135 5349.564941 350"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-3778.335693 5145.5649 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker32"
 	}
@@ -958,17 +927,10 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 32/74"
+			"text" "Waypoint 32/63"
 		}
 
-		"ping_minimap"
-		{
-			"pos" "2454.394043 -4763.293457 379.4803"
-			"delay" "0"
-			"repeat" "6"
-		}
-
-		"task_move_location" "2439.116943 -4394.644043 381.6847"
+		"task_move_location" "-2719.165771 4238.5947 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker33"
 	}
@@ -982,10 +944,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 33/74"
+			"text" "Waypoint 33/63"
 		}
 
-		"task_move_location" "3028.754395 -4033.603271 378.267639"
+		"ping_minimap"
+		{
+			"pos" "-2663.332520 5383.5585 350"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "-2455.335693 5471.5649 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker34"
 	}
@@ -999,17 +968,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 34/74"
+			"text" "Waypoint 34/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "3015.090332 -4243.448242 378.077"
+			"pos" "-1710.334473 5460.5566 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "3063.538818 -4719.702148 380.0637"
+		"task_move_location" "-1507.334473 5552.5561 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker35"
 	}
@@ -1023,17 +992,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 35/74"
+			"text" "Waypoint 35/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "3351.750244 -4524.985840 380.65155"
+			"pos" "-1253.078613 5215.7622 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "3722.248535 -4069.509521 368.382751"
+		"task_move_location" "-963.217773 5519.5561 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker36"
 	}
@@ -1047,22 +1016,20 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 36/74"
+			"text" "Waypoint 36/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "4029.342041 -4230.583008 382.5138"
+			"pos" "-966.577148 5253.0791 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "4381.385254 -4168.710938 378.87"
+		"task_move_location" "-182.333984 5043.5649 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker37"
 	}
-
-	// To bottom T2 ////////////////////////////////////////////////////////////
 
 	"marker37"
 	{
@@ -1073,17 +1040,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 37/74"
+			"text" "Waypoint 37/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "2897.024658 -3068.640381 390.13452"
+			"pos" "-66.377197 5017.9848 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "2688.744385 -2887.231689 398.7757"
+		"task_move_location" "249.551758 5068.552 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker38"
 	}
@@ -1097,17 +1064,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 38/74"
+			"text" "Waypoint 38/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "2706.068604 -3436.949463 387.01004"
+			"pos" "1861.416504 3499.31347 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "2267.628906 -3407.202881 390.55090"
+		"task_move_location" "1824.857910 3274.3315 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker39"
 	}
@@ -1121,17 +1088,10 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 39/74"
+			"text" "Waypoint 39/63"
 		}
 
-		"ping_minimap"
-		{
-			"pos" "1944.486206 -3175.731445 398.54"
-			"delay" "0"
-			"repeat" "6"
-		}
-
-		"task_move_location" "1579.409424 -3183.698486 392.5560"
+		"task_move_location" "491.215820 1347.60376 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker40"
 	}
@@ -1145,17 +1105,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 40/74"
+			"text" "Waypoint 40/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "1480.370972 -3192.077148 385.84121"
+			"pos" "637.064453 1550.281 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "1621.208740 -3721.873291 382.9494"
+		"task_move_location" "1115.832520 1385.201172 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker41"
 	}
@@ -1169,17 +1129,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 41/74"
+			"text" "Waypoint 41/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "1095.654785 -3546.021973 388.85028"
+			"pos" "1088.833984 1507.2019 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "490.372833 -3319.970947 376.2964"
+		"task_move_location" "2151.830566 2406.198 250"
 		"advance_event" "task_completed"
 		"next_lesson" "marker42"
 	}
@@ -1193,17 +1153,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 42/74"
+			"text" "Waypoint 42/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "364.356140 -3335.875244 373.692719"
+			"pos" "2360.822510 293.19818 250"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "160.759109 -3554.731201 366.6571"
+		"task_move_location" "2521.825195 261.2021 250"
 		"advance_event" "task_completed"
 		"next_lesson" "marker43"
 	}
@@ -1217,17 +1177,25 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 43/74"
+			"text" "Waypoint 43/63"
+		}
+
+		"npc_speech"
+		{
+			"text" "You can access the secret shop over here."
+			"npc" "npc_dota_hero_death_prophet"
+			"allow_movement" "1"
+			"duration" "8"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "52.601913 -3562.187256 361.8929"
+			"pos" "3858.557373 -1955.3095 250"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-161.402084 -3418.197021 354.83099"
+		"task_move_location" "3879.664307 -2218.42724 250"
 		"advance_event" "task_completed"
 		"next_lesson" "marker44"
 	}
@@ -1241,25 +1209,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 44/74"
-		}
-
-		"npc_speech"
-		{
-			"text" "Standing here can block the camp."
-			"npc" "npc_dota_hero_luna"
-			"allow_movement" "1"
-			"duration" "8"
+			"text" "Waypoint 44/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-62.373299 -3898.011719 355.68277"
+			"pos" "4133.582520 -2108.5593 250"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "617.753357 -4617.879883 378.5749"
+		"task_move_location" "4455.662109 -1777.4473 250"
 		"advance_event" "task_completed"
 		"next_lesson" "marker45"
 	}
@@ -1273,17 +1233,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 45/74"
+			"text" "Waypoint 45/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "628.014282 -4350.164551 378.15"
+			"pos" "3599.753906 -399.31689 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "129.039536 -4775.119629 375.5364"
+		"task_move_location" "3424.668701 -497.4393 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker46"
 	}
@@ -1297,17 +1257,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 46/74"
+			"text" "Waypoint 46/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "393.120544 -4867.760254 376.7894"
+			"pos" "3139.668701 21.56034 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-69.770844 -5104.762207 375.35076"
+		"task_move_location" "2988.743652 -171.359 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker47"
 	}
@@ -1321,17 +1281,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 47/74"
+			"text" "Waypoint 47/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "63.722710 -4824.671387 370.12219"
+			"pos" "2988.743652 -171.359 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-397.231750 -5072.962402 378.6694"
+		"task_move_location" "2996.668701 266.56146 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker48"
 	}
@@ -1345,17 +1305,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 48/74"
+			"text" "Waypoint 48/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-248.610397 -5199.932129 377.8814"
+			"pos" "2938.119629 102.798828 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-609.202087 -5905.656738 384.323"
+		"task_move_location" "2720.672119 142.55920 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker49"
 	}
@@ -1369,17 +1329,10 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 49/74"
+			"text" "Waypoint 49/63"
 		}
 
-		"ping_minimap"
-		{
-			"pos" "-610.312195 -5607.064941 385.1446"
-			"delay" "0"
-			"repeat" "6"
-		}
-
-		"task_move_location" "-1159.455933 -5555.995605 362.8429"
+		"task_move_location" "4187.542480 735.2461 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker50"
 	}
@@ -1393,17 +1346,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 50/74"
+			"text" "Waypoint 50/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-2177.124512 -4527.325195 274.08"
+			"pos" "4278.246582 743.5012 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-2461.023438 -4201.419922 281.7263"
+		"task_move_location" "4497.664551 748.56012 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker51"
 	}
@@ -1417,17 +1370,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 51/74"
+			"text" "Waypoint 51/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-2550.547119 -4205.519531 283.0256"
+			"pos" "4497.664551 748.56012 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-2777.079102 -2972.073730 271.06631"
+		"task_move_location" "4664.663574 508.5605 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker52"
 	}
@@ -1441,17 +1394,10 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 52/74"
+			"text" "Waypoint 52/63"
 		}
 
-		"ping_minimap"
-		{
-			"pos" "-2505.602783 -3016.323975 264.1398"
-			"delay" "0"
-			"repeat" "6"
-		}
-
-		"task_move_location" "-2275.563477 -3100.237793 255.7019"
+		"task_move_location" "4905.369141 1299.6748 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker53"
 	}
@@ -1465,10 +1411,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 53/74"
+			"text" "Waypoint 53/63"
 		}
 
-		"task_move_location" "-2197.750000 -2385.414307 265.35794"
+		"ping_minimap"
+		{
+			"pos" "5140.705078 804.81726 350"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "5328.625977 545.6672 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker54"
 	}
@@ -1482,17 +1435,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 54/74"
+			"text" "Waypoint 54/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-2176.318848 -2286.031494 258.74789"
+			"pos" "5888.229004 877.276 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-2172.775635 -1895.883179 269.627"
+		"task_move_location" "6747.665527 779.5604 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker55"
 	}
@@ -1506,10 +1459,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 55/74"
+			"text" "Waypoint 55/63"
 		}
 
-		"task_move_location" "-1903.845581 -2568.472900 258.47213"
+		"ping_minimap"
+		{
+			"pos" "6910.259277 803.1820 350"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "7250.147461 812.52258 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker56"
 	}
@@ -1523,17 +1483,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 56/74"
+			"text" "Waypoint 56/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-867.179626 -3330.212402 295.5381"
+			"pos" "7177.670898 551.5632 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-835.913147 -3661.624268 304.4689"
+		"task_move_location" "7225.664551 376.5604 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker57"
 	}
@@ -1547,10 +1507,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 57/74"
+			"text" "Waypoint 57/63"
 		}
 
-		"task_move_location" "-76.499321 -1921.069214 292.2166"
+		"ping_minimap"
+		{
+			"pos" "7091.993164 101.61207 350"
+			"delay" "0"
+			"repeat" "6"
+		}
+
+		"task_move_location" "7237.856445 -1068.2353 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker58"
 	}
@@ -1564,17 +1531,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 58/74"
+			"text" "Waypoint 58/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-189.579880 -1711.467896 287.01348"
+			"pos" "7219.109863 -1194.4248 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-793.334473 -2061.912354 272.6903"
+		"task_move_location" "6816.662109 -1649.4406 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker59"
 	}
@@ -1588,17 +1555,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 59/74"
+			"text" "Waypoint 59/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-994.542175 -1837.152222 269.45159"
+			"pos" "6931.069824 -1671.3156 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-2347.192383 -929.625671 312.9550"
+		"task_move_location" "7199.662109 -1849.43847 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker60"
 	}
@@ -1612,17 +1579,17 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 60/74"
+			"text" "Waypoint 60/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-2235.899902 -1107.132568 305.16476"
+			"pos" " 5614.467773 -1567.1597 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-2280.764893 -1304.629883 300.3325"
+		"task_move_location" "5244.670898 -1636.438 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker61"
 	}
@@ -1636,22 +1603,20 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 61/74"
+			"text" "Waypoint 61/63"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-2240.765625 -1344.104736 297.731"
+			"pos" "5451.422363 -1721.31958 350"
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-4060.032959 -1519.470215 453.0535"
+		"task_move_location" "5831.007813 -1859.01525 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker62"
 	}
-
-	// To secret shop //////////////////////////////////////////////////////////
 
 	"marker62"
 	{
@@ -1662,10 +1627,10 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 62/74"
+			"text" "Waypoint 62/63"
 		}
 
-		"task_move_location" "-4119.770996 -610.704285 411.4111"
+		"task_move_location" "7584.554199 3150.55029 350"
 		"advance_event" "task_completed"
 		"next_lesson" "marker63"
 	}
@@ -1679,262 +1644,10 @@
 		{
 			"name" "quest_walk"
 			"type" "1"
-			"text" "Waypoint 63/74"
+			"text" "Waypoint 63/63"
 		}
 
-		"ping_minimap"
-		{
-			"pos" "-4247.712891 -672.364197 412.5144"
-			"delay" "0"
-			"repeat" "6"
-		}
-
-		"task_move_location" "-4915.089355 -914.685974 409.02813"
-		"advance_event" "task_completed"
-		"next_lesson" "marker64"
-	}
-
-	"marker64"
-	{
-		"quest_finish" "quest_walk"
-		"ping_minimap_stop" "1"
-
-		"quest_base"
-		{
-			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 64/74"
-		}
-
-		"task_move_location" "-4002.247559 32.452362 405.8133"
-		"advance_event" "task_completed"
-		"next_lesson" "marker65"
-	}
-
-	"marker65"
-	{
-		"quest_finish" "quest_walk"
-		"ping_minimap_stop" "1"
-
-		"quest_base"
-		{
-			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 65/74"
-		}
-
-		"ping_minimap"
-		{
-			"pos" "-3903.416260 188.873062 400.4090"
-			"delay" "0"
-			"repeat" "6"
-		}
-
-		"task_move_location" "-3922.505859 469.849121 402.474"
-		"advance_event" "task_completed"
-		"next_lesson" "marker66"
-	}
-
-	"marker66"
-	{
-		"quest_finish" "quest_walk"
-		"ping_minimap_stop" "1"
-
-		"quest_base"
-		{
-			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 66/74"
-		}
-
-		"ping_minimap"
-		{
-			"pos" "-3729.529053 267.572784 395.8189"
-			"delay" "0"
-			"repeat" "6"
-		}
-
-		"task_move_location" "-3747.332031 793.176392 395.724792"
-		"advance_event" "task_completed"
-		"next_lesson" "marker67"
-	}
-
-	"marker67"
-	{
-		"quest_finish" "quest_walk"
-		"ping_minimap_stop" "1"
-
-		"quest_base"
-		{
-			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 67/74"
-		}
-
-		"task_move_location" "-3703.768311 1694.989136 395.2948"
-		"advance_event" "task_completed"
-		"next_lesson" "marker68"
-	}
-
-	"marker68"
-	{
-		"quest_finish" "quest_walk"
-		"ping_minimap_stop" "1"
-
-		"quest_base"
-		{
-			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 68/74"
-		}
-
-		"ping_minimap"
-		{
-			"pos" "-3862.389893 1671.561523 383.9259"
-			"delay" "0"
-			"repeat" "6"
-		}
-
-		"task_move_location" "-4250.076172 1877.444946 383.4895"
-		"advance_event" "task_completed"
-		"next_lesson" "marker69"
-	}
-
-	"marker69"
-	{
-		"quest_finish" "quest_walk"
-		"ping_minimap_stop" "1"
-
-		"quest_base"
-		{
-			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 69/74"
-		}
-
-		"ping_minimap"
-		{
-			"pos" "-4459.184082 1962.043213 388.14538"
-			"delay" "0"
-			"repeat" "6"
-		}
-
-		"task_move_location" "-4981.645020 927.525085 396.8089"
-		"advance_event" "task_completed"
-		"next_lesson" "marker70"
-	}
-
-	// To home /////////////////////////////////////////////////////////////////
-
-	"marker70"
-	{
-		"quest_finish" "quest_walk"
-		"ping_minimap_stop" "1"
-
-		"quest_base"
-		{
-			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 70/74"
-		}
-
-		"ping_minimap"
-		{
-			"pos" "-5075.562500 852.415222 391.6781"
-			"delay" "0"
-			"repeat" "6"
-		}
-
-		"task_move_location" "-7232.000000 2230.824219 405.91033"
-		"advance_event" "task_completed"
-		"next_lesson" "marker71"
-	}
-
-	"marker71"
-	{
-		"quest_finish" "quest_walk"
-		"ping_minimap_stop" "1"
-
-		"quest_base"
-		{
-			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 71/74"
-		}
-
-		"ping_minimap"
-		{
-			"pos" "-7202.561035 2106.017822 410.863"
-			"delay" "0"
-			"repeat" "6"
-		}
-
-		"task_move_location" "-7301.277832 1851.038940 407.07379"
-		"advance_event" "task_completed"
-		"next_lesson" "marker72"
-	}
-
-	"marker72"
-	{
-		"quest_finish" "quest_walk"
-		"ping_minimap_stop" "1"
-
-		"quest_base"
-		{
-			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 72/74"
-		}
-
-		"ping_minimap"
-		{
-			"pos" "-7301.277832 1851.038940 407.07379"
-			"delay" "0"
-			"repeat" "6"
-		}
-
-		"task_move_location" "-7337.046387 1643.183105 375.87"
-		"advance_event" "task_completed"
-		"next_lesson" "marker73"
-	}
-
-	"marker73"
-	{
-		"quest_finish" "quest_walk"
-		"ping_minimap_stop" "1"
-
-		"quest_base"
-		{
-			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 73/74"
-		}
-
-		"ping_minimap"
-		{
-			"pos" "-7337.046387 1643.183105 375.87"
-			"delay" "0"
-			"repeat" "6"
-		}
-
-		"task_move_location" "-7264.519531 787.447205 363.8807"
-		"advance_event" "task_completed"
-		"next_lesson" "marker74"
-	}
-
-	"marker74"
-	{
-		"quest_finish" "quest_walk"
-		"ping_minimap_stop" "1"
-
-		"quest_base"
-		{
-			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 74/74"
-		}
-
-		"task_move_location" "-7345.474609 -1272.445190 362.86999"
+		"task_move_location" "7576.704102 4128.7880 350"
 		"advance_event" "task_completed"
 		"next_lesson" "finish"
 	}
@@ -1954,8 +1667,8 @@
 
 		"npc_speech"
 		{
-			"text" "That's all for today."
-			"npc" "npc_dota_hero_luna"
+			"text" "We have finished for today."
+			"npc" "npc_dota_hero_death_prophet"
 			"duration" "3"
 		}
 
@@ -1968,8 +1681,8 @@
 	{
 		"npc_speech"
 		{
-			"text" "Time to go back to base."
-			"npc" "npc_dota_hero_luna"
+			"text" "It is time for us to return."
+			"npc" "npc_dota_hero_death_prophet"
 			"duration" "3"
 		}
 
@@ -1993,7 +1706,7 @@
 			"text" "Return home."
 		}
 
-		"task_move_location" "-6935.240234 -6440.072266 0"
+		"task_move_location" "7022.478516 6408.1860 350"
 		"advance_event" "task_completed"
 		"next_lesson" "end_game"
 	}
