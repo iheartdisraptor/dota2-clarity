@@ -3,6 +3,7 @@ dota2-clarity
 
 dota2-clarity features custom console commands and training missions for Dota 2.
 
+---
 1. Features
 -----------
 
@@ -32,7 +33,6 @@ dota2-clarity features custom console commands and training missions for Dota 2.
   - Cycle camera focus between runes and hero
 
 ---
-
 2. Installation
 ---------------
 
@@ -66,7 +66,6 @@ To enable only training missions:
    "train_pull_wards", or "train_rune_wards".
 
 ---
-
 3. Usage
 --------
 
@@ -88,7 +87,6 @@ To use training missions:
 2. Press the apostrophe key to print cheat keys to the console.
 
 ---
-
 4. Credits
 ----------
 
@@ -101,7 +99,6 @@ To use training missions:
 * Various Reddit threads    
 
 ---
-
 5. Ownership
 ------------
 
@@ -109,7 +106,6 @@ These scripts belong to the community. Feel free to extend them and share
 your changes.
 
 ---
-
 6. Changelog
 ------------
 
