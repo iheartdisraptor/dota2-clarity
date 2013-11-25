@@ -13,7 +13,8 @@ dota2-clarity features custom console commands and training missions for Dota 2.
 * Display neutral camp spawn boxes
 * Seven grouped chat wheels that encapsulate almost every response
 * Practice drills (aliases and key bindings to be used in in a local game to
-  practice specific skills)
+  practice specific skills; these are the training mission controls without
+  the training mission events)
   - Warding
   - Stacking and pulling
   - Juke paths
@@ -47,23 +48,28 @@ all files in .../dota/cfg/clarity and exec'ing them from your autoexec.cfg.
 3. Enable the Dota 2 console:
    http://wyksblog.com/guide-activating-the-console-in-dota-2/
 
-To enable all features:
+To enable only training missions and drills (recommended):
 
-1. In your Steam/SteamApps/common/dota 2 beta//dota/cfg/autoexec.cfg file,
-   add "exec clarity/autoexec.cfg".
-
-To enable only some features:
-
-1. Open clarity/autoexec.cfg and clarity/binds.cfg.
-2. Copy the lines that include the features you want.
-
-To enable only training missions:
-
-1. In your Steam/SteamApps/common/dota 2 beta//dota/cfg/autoexec.cfg file,
-   add "exec clarity/tutorials.cfg".
+1. In your Steam/SteamApps/common/dota 2 beta/dota/cfg/autoexec.cfg file,
+   add `exec clarity/tutorials.cfg`.
 2. Restart Dota 2, open the console, and enter one of the commands to start
-   a training mission, e.g. "train_radiant_juke_paths",
-   "train_pull_wards", or "train_rune_wards".
+   a training mission:
+   * `train_radiant_juke_paths`
+   * `train_dire_juke_paths`
+   * `train_pull_wards`
+   * `train_rune_wards`
+   * `train_vision_wards`
+
+To enable only some features (recommended):
+
+1. Open clarity/example_use_all.cfg and clarity/binds.cfg.
+2. Copy and modify the lines for the features you want to use into your
+   autoexec.cfg.
+
+To enable all features (not recommended):
+
+1. In your Steam/SteamApps/common/dota 2 beta//dota/cfg/autoexec.cfg file,
+   add `exec clarity/example_use_all.cfg`.
 
 ---
 3. Usage
@@ -77,13 +83,13 @@ To use practice drills:
 
 1. Start a local game with cheats enabled.
 2. Open the console and enter the command to start the drill you want to run,
-   e.g. "drill_juke_paths".
+   e.g. `drill_juke_paths`.
 3. Press the apostrophe key to print cheat keys to the console.
 
 To use training missions:
 
 1. At the main interface without a game started, open the console and enter the
-   command to start the tutorial, e.g. "drill_rune_wards".
+   command to start the tutorial, e.g. `drill_rune_wards`.
 2. Press the apostrophe key to print cheat keys to the console.
 
 ---
@@ -111,11 +117,13 @@ your changes.
 
 1.1-6.79
 
-* Added Dire juke paths training mission (train_dire_juke_paths).
-* Added vision warding training mission (train_vision_wards).
+* Added Dire juke paths training mission (`train_dire_juke_paths`).
+* Added vision warding training mission (`train_vision_wards`).
 * Fixed errors with the UI disablind aliases being too long.
-* For convenience, to run tutorials you can type "train_..."
-  instead of "tutorial_..."
+* For convenience, to run tutorials you can type `train_...`
+  instead of `tutorial_...`.
+* Made it harder to override all your console settings with those from
+  dota2-clarity.
 
 1.0-6.79
 
