@@ -3,7 +3,6 @@ dota2-clarity
 
 dota2-clarity features custom console commands and training missions for Dota 2.
 
-
 1. Features
 -----------
 
@@ -31,7 +30,7 @@ dota2-clarity features custom console commands and training missions for Dota 2.
 * Various other aliases and key bindings
   - Quick courier
   - Cycle camera focus between runes and hero
-
+.
 
 2. Installation
 ---------------
@@ -64,7 +63,7 @@ To enable only training missions:
 2. Restart Dota 2, open the console, and enter one of the commands to start
    a training mission, e.g. "train_radiant_juke_paths",
    "train_pull_wards", or "train_rune_wards".
-    
+---
 
 3. Usage
 --------
@@ -86,7 +85,6 @@ To use training missions:
    command to start the tutorial, e.g. "drill_rune_wards".
 2. Press the apostrophe key to print cheat keys to the console.
 
-
 4. Credits
 ----------
 
@@ -96,8 +94,8 @@ To use training missions:
 * TheParadoxataur (critwhale.com) for their map of juke paths
 * Chudooder for their chat wheel generator
 * gso's warding guide
-* Various Reddit threads
-   
+* Various Reddit threads    
+ 
 
 5. Ownership
 ------------
@@ -119,5 +117,3 @@ your changes.
 1.0-6.79
 
 * Initial release
-   
-
