@@ -27,8 +27,11 @@ dota2-clarity features custom console commands and training missions for Dota 2.
   - Minimap icon settings
   - Gameplay settings
   - Net graph to show FPS and ping
+
 * Various other aliases and key bindings
+
   - Quick courier
+
   - Cycle camera focus between runes and hero
 
 2. Installation
@@ -60,8 +63,8 @@ To enable only training missions:
 1. In your Steam/SteamApps/common/dota 2 beta//dota/cfg/autoexec.cfg file,
    add "exec clarity/tutorials.cfg".
 2. Restart Dota 2, open the console, and enter one of the commands to start
-   a training mission, e.g. "train_radiant_juke_paths",
-   "train_pull_wards", or "train_rune_wards".
+ a training mission, e.g. "train_radiant_juke_paths",
+ "train_pull_wards", or "train_rune_wards".
 
 3. Usage
 --------
@@ -82,6 +85,8 @@ To use training missions:
 1. At the main interface without a game started, open the console and enter the
    command to start the tutorial, e.g. "drill_rune_wards".
 2. Press the apostrophe key to print cheat keys to the console.
+
+end
 
 4. Credits
 ----------
