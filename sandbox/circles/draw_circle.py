@@ -44,6 +44,8 @@ outputFile = open('tower_circles.cfg', 'w')
 nameList = []
 for line in fileinput.input('circles_in.txt'):
 	tokens = line.split()
+	if len(tokens) != 6:
+		continue
 	nameList.append(tokens[5])
 numPairs = int(len(nameList) / 2)
 
@@ -61,7 +63,7 @@ for index in range(numPairs):
 	# Create toggle step
 	outputFile.write(
 		'alias toggle_tower_' + str(index) + ' \"' +
-		'say_team Displaying tower ranges: ' + nameList[index*2] + ', ' + nameList[index*2+1] + '; ' +
+		'echo Displaying tower ranges: ' + nameList[index*2] + ', ' + nameList[index*2+1] + '; ' +
 		'tower_' + nameList[index*2] + '; tower_' + nameList[index*2+1] + '; ' +
 		'alias toggle_tower_prev toggle_tower_' + str(prevIndex) + '; ' +
 		'alias toggle_tower_next toggle_tower_' + str(nextIndex) + '\"\n')
@@ -75,6 +77,8 @@ outputFile.write('\n')
 for line in fileinput.input('circles_in.txt'):
 	# Split the line into 6 strings
 	tokens = line.split()
+	if len(tokens) != 6:
+		continue
 
 	# Get x, y, z, radius, segments as floats
 	x = float(tokens[0])
