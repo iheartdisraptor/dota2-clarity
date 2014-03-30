@@ -1,3 +1,0 @@
-Enter the following in the console:
-
-cvarlist log cvarlist-log.txt    

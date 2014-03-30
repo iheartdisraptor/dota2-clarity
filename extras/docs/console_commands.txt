@@ -1,4 +1,4 @@
-Various console commands
+Various useful or interesting console commands
 
 box - Draw a box
 buildcubemaps - Generate a cubemap for the current view

@@ -234,11 +234,11 @@
 
 	"intro_quest"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_sproink_to_forest"
 			"type" "0"
-			"text" "Sproink to the forest."
+			"title" "Sproink to the forest."
 		}
 
 		"advance_time" "0.3"
@@ -307,11 +307,11 @@
 			"duration" "4"
 		}
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "3"
-			"text" "Place an observer on the marker."
+			"type" "0"
+			"title" "Place an observer on the marker."
 		}
 
 		"task_move_location" "3002.907715 -4869.374512 0"
@@ -371,11 +371,11 @@
 			"duration" "4"
 		}
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "3"
-			"text" "Place an observer on the next marker."
+			"type" "0"
+			"title" "Place an observer on the next marker."
 		}
 
 		"task_move_location" "3727 -5251 0"
@@ -451,7 +451,7 @@
 	{
 		"npc_speech"
 		{
-			"text" "In this training mission, you can also press 'k' to switch to a bird's eye view."
+			"text" "In this training mission, you can also press '.' or '>' to switch to a bird's eye view."
 			"npc" "npc_dota_hero_enchantress"
 			"duration" "5"
 		}
@@ -477,11 +477,11 @@
 			"duration" "4"
 		}
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "3"
-			"text" "Place an observer on the marker."
+			"type" "0"
+			"title" "Place an observer on the marker."
 		}
 
 		"task_move_location" "2599.620361 -4492.426758 0"
@@ -527,11 +527,11 @@
 			"duration" "4"
 		}
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "3"
-			"text" "Place an observer on the next marker."
+			"type" "0"
+			"title" "Place an observer on the next marker."
 		}
 
 		"task_move_location" "3692.026367 -4847.524902 0"
@@ -577,11 +577,11 @@
 			"duration" "4"
 		}
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "3"
-			"text" "Place an observer on the marker."
+			"type" "0"
+			"title" "Place an observer on the marker."
 		}
 
 		"task_move_location" "2322.907959 -4790.977051 0"
@@ -627,11 +627,11 @@
 			"duration" "4"
 		}
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "3"
-			"text" "Place an observer on the next marker."
+			"type" "0"
+			"title" "Place an observer on the next marker."
 		}
 
 		"task_move_location" "2270.642334 -4392.752930 0"
@@ -678,11 +678,11 @@
 			"duration" "4"
 		}
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "3"
-			"text" "Place an observer on the marker."
+			"type" "0"
+			"title" "Place an observer on the marker."
 		}
 
 		"task_move_location" "2651.502197 -4396.487793 0"
@@ -728,11 +728,11 @@
 			"duration" "4"
 		}
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "3"
-			"text" "Place an observer on the next marker."
+			"type" "0"
+			"title" "Place an observer on the next marker."
 		}
 
 		"task_move_location" "3400.152832 -4415.329102 0"
@@ -778,11 +778,11 @@
 			"duration" "4"
 		}
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "3"
-			"text" "Place an observer on the marker."
+			"type" "0"
+			"title" "Place an observer on the marker."
 		}
 
 		"task_move_location" "3704.333008 -4507.153320 0"
@@ -848,11 +848,11 @@
 			"dota_hud_healthbars" "1"
 		}
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "3"
-			"text" "Cut the tree and place a sentry on the marker."
+			"type" "0"
+			"title" "Cut the tree and place a sentry on the marker."
 		}
 
 		"task_move_location" "3051.203857 -4227.062500 0"
@@ -890,11 +890,11 @@
 			"dota_hud_healthbars" "1"
 		}
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "3"
-			"text" "Place a sentry on the marker."
+			"type" "0"
+			"title" "Place a sentry on the marker."
 		}
 
 		"task_move_location" "2964.214600 -5399.545898 0"
@@ -939,11 +939,11 @@
 			"duration" "4"
 		}
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "3"
-			"text" "Place an observer on the marker."
+			"type" "0"
+			"title" "Place an observer on the marker."
 		}
 
 		"task_move_location" "2257.233643 -3236.331299 0"
@@ -997,11 +997,11 @@
 			"dota_hud_healthbars" "1"
 		}
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_transition"
-			"type" "3"
-			"text" "Skip across the river."
+			"type" "0"
+			"title" "Skip across the river."
 		}
 
 		"task_move_location" "-3360.540039 5387.213867 0"
@@ -1049,11 +1049,11 @@
 			"duration" "5"
 		}
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "3"
-			"text" "Place an observer on the marker."
+			"type" "0"
+			"title" "Place an observer on the marker."
 		}
 
 		"task_move_location" "-3400.520264 4882.933594 0"
@@ -1101,11 +1101,11 @@
 			"duration" "2"
 		}
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "3"
-			"text" "Place an observer on the next marker."
+			"type" "0"
+			"title" "Place an observer on the next marker."
 		}
 
 		"task_move_location" "-3394.506836 4001.669434 0"
@@ -1186,11 +1186,11 @@
 			"dota_hud_healthbars" "1"
 		}
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "3"
-			"text" "Place a sentry on the marker."
+			"type" "0"
+			"title" "Place a sentry on the marker."
 		}
 
 		"task_move_location" "-2737.553467 4240.097656 0"
@@ -1243,11 +1243,11 @@
 			"dota_hud_healthbars" "1"
 		}
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "3"
-			"text" "Place a sentry on the next marker."
+			"type" "0"
+			"title" "Place a sentry on the next marker."
 		}
 
 		"task_move_location" "-3513.422119 4493.787109 0"
@@ -1286,11 +1286,11 @@
 			"dota_hud_healthbars" "1"
 		}
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "3"
-			"text" "Place a sentry on the marker."
+			"type" "0"
+			"title" "Place a sentry on the marker."
 		}
 
 		"task_move_location" "-2612.920410 4463.698730 0"
@@ -1380,11 +1380,11 @@
 			"dota_hud_healthbars" "1"
 		}
 
-		"quest_base"
+		"quest"
 		{
-			"name" "quest_base"
-			"type" "3"
-			"text" "Return home."
+			"name" "quest"
+			"type" "0"
+			"title" "Return home."
 		}
 
 		"task_move_location" "-6935.240234 -6440.072266 0"
@@ -1394,7 +1394,7 @@
 
 	"end_game"
 	{
-		"quest_finish" "quest_base"
+		"quest_finish" "quest"
 
 		"finish_text" "#DOTA_Tutorial_Finished_Tutorial01"
 		"finish_tutorial" "1"

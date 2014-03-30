@@ -201,9 +201,9 @@
 			"duration" "5"
 		}
 
-		"advance_time" "5"
+		"advance_time" "7"
 		"advance_event" "lesson_started"
-		"next_lesson" "intro_speech3"
+		"next_lesson" "intro_start_game"
 	}
 
 	"intro_speech3"
@@ -247,11 +247,11 @@
 
 	"marker1"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Embark on a journey through the woods."
+			"type" "0"
+			"title" "Embark on a journey through the woods."
 		}
 
 		"ping_minimap"
@@ -271,11 +271,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 2/74"
+			"type" "0"
+			"title" "Waypoint 2/74"
 		}
 
 		"ping_minimap"
@@ -295,11 +295,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 3/74"
+			"type" "0"
+			"title" "Waypoint 3/74"
 		}
 
 		"ping_minimap"
@@ -319,11 +319,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 4/74"
+			"type" "0"
+			"title" "Waypoint 4/74"
 		}
 
 		"ping_minimap"
@@ -343,11 +343,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 5/74"
+			"type" "0"
+			"title" "Waypoint 5/74"
 		}
 
 		"ping_minimap"
@@ -367,11 +367,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 6/74"
+			"type" "0"
+			"title" "Waypoint 6/74"
 		}
 
 		"task_move_location" "1428.795410 -6849.295410 404.2109"
@@ -384,11 +384,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 7/74"
+			"type" "0"
+			"title" "Waypoint 7/74"
 		}
 
 		"ping_minimap"
@@ -408,11 +408,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 8/74"
+			"type" "0"
+			"title" "Waypoint 8/74"
 		}
 
 		"ping_minimap"
@@ -432,11 +432,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 9/74"
+			"type" "0"
+			"title" "Waypoint 9/74"
 		}
 
 		"ping_minimap"
@@ -456,11 +456,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 10/74"
+			"type" "0"
+			"title" "Waypoint 10/74"
 		}
 
 		"task_move_location" "3876.459717 -6828.425293 407.357422"
@@ -475,11 +475,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 11/74"
+			"type" "0"
+			"title" "Waypoint 11/74"
 		}
 
 		"ping_minimap"
@@ -499,11 +499,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 12/74"
+			"type" "0"
+			"title" "Waypoint 12/74"
 		}
 
 		"ping_minimap"
@@ -523,11 +523,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 13/74"
+			"type" "0"
+			"title" "Waypoint 13/74"
 		}
 
 		"ping_minimap"
@@ -547,11 +547,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 14/74"
+			"type" "0"
+			"title" "Waypoint 14/74"
 		}
 
 		"ping_minimap"
@@ -571,11 +571,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 15/74"
+			"type" "0"
+			"title" "Waypoint 15/74"
 		}
 
 		"ping_minimap"
@@ -595,11 +595,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 16/74"
+			"type" "0"
+			"title" "Waypoint 16/74"
 		}
 
 		"npc_speech"
@@ -627,11 +627,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 17/74"
+			"type" "0"
+			"title" "Waypoint 17/74"
 		}
 
 		"ping_minimap"
@@ -653,11 +653,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 18/74"
+			"type" "0"
+			"title" "Waypoint 18/74"
 		}
 
 		"task_move_location" "5538.005371 -3545.814941 366.52795"
@@ -670,11 +670,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 19/74"
+			"type" "0"
+			"title" "Waypoint 19/74"
 		}
 
 		"ping_minimap"
@@ -694,11 +694,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 20/74"
+			"type" "0"
+			"title" "Waypoint 20/74"
 		}
 
 		"ping_minimap"
@@ -718,11 +718,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 21/74"
+			"type" "0"
+			"title" "Waypoint 21/74"
 		}
 
 		"ping_minimap"
@@ -742,11 +742,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 22/74"
+			"type" "0"
+			"title" "Waypoint 22/74"
 		}
 
 		"ping_minimap"
@@ -766,11 +766,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 23/74"
+			"type" "0"
+			"title" "Waypoint 23/74"
 		}
 
 		"task_move_location" "5034.851563 -4853.907227 379.38723"
@@ -783,11 +783,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 24/74"
+			"type" "0"
+			"title" "Waypoint 24/74"
 		}
 
 		"ping_minimap"
@@ -807,11 +807,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 25/74"
+			"type" "0"
+			"title" "Waypoint 25/74"
 		}
 
 		"task_move_location" "4415.710938 -5459.880859 381.3009"
@@ -824,11 +824,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 26/74"
+			"type" "0"
+			"title" "Waypoint 26/74"
 		}
 
 		"task_move_location" "3128.720215 -5826.187988 382.27304"
@@ -841,11 +841,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 27/74"
+			"type" "0"
+			"title" "Waypoint 27/74"
 		}
 
 		"ping_minimap"
@@ -865,11 +865,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 28/74"
+			"type" "0"
+			"title" "Waypoint 28/74"
 		}
 
 		"ping_minimap"
@@ -889,11 +889,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 29/74"
+			"type" "0"
+			"title" "Waypoint 29/74"
 		}
 
 		"ping_minimap"
@@ -913,11 +913,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 30/74"
+			"type" "0"
+			"title" "Waypoint 30/74"
 		}
 
 		"ping_minimap"
@@ -937,11 +937,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 31/74"
+			"type" "0"
+			"title" "Waypoint 31/74"
 		}
 
 		"task_move_location" "2415.456299 -4958.749023 382.07159"
@@ -954,11 +954,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 32/74"
+			"type" "0"
+			"title" "Waypoint 32/74"
 		}
 
 		"ping_minimap"
@@ -978,11 +978,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 33/74"
+			"type" "0"
+			"title" "Waypoint 33/74"
 		}
 
 		"task_move_location" "3028.754395 -4033.603271 378.267639"
@@ -995,11 +995,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 34/74"
+			"type" "0"
+			"title" "Waypoint 34/74"
 		}
 
 		"ping_minimap"
@@ -1019,11 +1019,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 35/74"
+			"type" "0"
+			"title" "Waypoint 35/74"
 		}
 
 		"ping_minimap"
@@ -1043,11 +1043,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 36/74"
+			"type" "0"
+			"title" "Waypoint 36/74"
 		}
 
 		"ping_minimap"
@@ -1069,11 +1069,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 37/74"
+			"type" "0"
+			"title" "Waypoint 37/74"
 		}
 
 		"ping_minimap"
@@ -1093,11 +1093,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 38/74"
+			"type" "0"
+			"title" "Waypoint 38/74"
 		}
 
 		"ping_minimap"
@@ -1117,11 +1117,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 39/74"
+			"type" "0"
+			"title" "Waypoint 39/74"
 		}
 
 		"ping_minimap"
@@ -1141,11 +1141,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 40/74"
+			"type" "0"
+			"title" "Waypoint 40/74"
 		}
 
 		"ping_minimap"
@@ -1165,11 +1165,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 41/74"
+			"type" "0"
+			"title" "Waypoint 41/74"
 		}
 
 		"ping_minimap"
@@ -1189,11 +1189,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 42/74"
+			"type" "0"
+			"title" "Waypoint 42/74"
 		}
 
 		"ping_minimap"
@@ -1213,11 +1213,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 43/74"
+			"type" "0"
+			"title" "Waypoint 43/74"
 		}
 
 		"ping_minimap"
@@ -1237,11 +1237,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 44/74"
+			"type" "0"
+			"title" "Waypoint 44/74"
 		}
 
 		"npc_speech"
@@ -1269,11 +1269,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 45/74"
+			"type" "0"
+			"title" "Waypoint 45/74"
 		}
 
 		"ping_minimap"
@@ -1293,11 +1293,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 46/74"
+			"type" "0"
+			"title" "Waypoint 46/74"
 		}
 
 		"ping_minimap"
@@ -1317,11 +1317,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 47/74"
+			"type" "0"
+			"title" "Waypoint 47/74"
 		}
 
 		"ping_minimap"
@@ -1341,11 +1341,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 48/74"
+			"type" "0"
+			"title" "Waypoint 48/74"
 		}
 
 		"ping_minimap"
@@ -1365,11 +1365,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 49/74"
+			"type" "0"
+			"title" "Waypoint 49/74"
 		}
 
 		"ping_minimap"
@@ -1389,11 +1389,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 50/74"
+			"type" "0"
+			"title" "Waypoint 50/74"
 		}
 
 		"ping_minimap"
@@ -1413,11 +1413,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 51/74"
+			"type" "0"
+			"title" "Waypoint 51/74"
 		}
 
 		"ping_minimap"
@@ -1437,11 +1437,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 52/74"
+			"type" "0"
+			"title" "Waypoint 52/74"
 		}
 
 		"ping_minimap"
@@ -1461,11 +1461,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 53/74"
+			"type" "0"
+			"title" "Waypoint 53/74"
 		}
 
 		"task_move_location" "-2197.750000 -2385.414307 265.35794"
@@ -1478,11 +1478,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 54/74"
+			"type" "0"
+			"title" "Waypoint 54/74"
 		}
 
 		"ping_minimap"
@@ -1502,11 +1502,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 55/74"
+			"type" "0"
+			"title" "Waypoint 55/74"
 		}
 
 		"task_move_location" "-1903.845581 -2568.472900 258.47213"
@@ -1519,11 +1519,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 56/74"
+			"type" "0"
+			"title" "Waypoint 56/74"
 		}
 
 		"ping_minimap"
@@ -1543,11 +1543,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 57/74"
+			"type" "0"
+			"title" "Waypoint 57/74"
 		}
 
 		"task_move_location" "-76.499321 -1921.069214 292.2166"
@@ -1560,11 +1560,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 58/74"
+			"type" "0"
+			"title" "Waypoint 58/74"
 		}
 
 		"ping_minimap"
@@ -1584,11 +1584,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 59/74"
+			"type" "0"
+			"title" "Waypoint 59/74"
 		}
 
 		"ping_minimap"
@@ -1608,11 +1608,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 60/74"
+			"type" "0"
+			"title" "Waypoint 60/74"
 		}
 
 		"ping_minimap"
@@ -1632,11 +1632,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 61/74"
+			"type" "0"
+			"title" "Waypoint 61/74"
 		}
 
 		"ping_minimap"
@@ -1658,11 +1658,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 62/74"
+			"type" "0"
+			"title" "Waypoint 62/74"
 		}
 
 		"task_move_location" "-4119.770996 -610.704285 411.4111"
@@ -1675,11 +1675,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 63/74"
+			"type" "0"
+			"title" "Waypoint 63/74"
 		}
 
 		"ping_minimap"
@@ -1699,11 +1699,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 64/74"
+			"type" "0"
+			"title" "Waypoint 64/74"
 		}
 
 		"task_move_location" "-4002.247559 32.452362 405.8133"
@@ -1716,11 +1716,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 65/74"
+			"type" "0"
+			"title" "Waypoint 65/74"
 		}
 
 		"ping_minimap"
@@ -1740,11 +1740,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 66/74"
+			"type" "0"
+			"title" "Waypoint 66/74"
 		}
 
 		"ping_minimap"
@@ -1764,11 +1764,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 67/74"
+			"type" "0"
+			"title" "Waypoint 67/74"
 		}
 
 		"task_move_location" "-3703.768311 1694.989136 395.2948"
@@ -1781,11 +1781,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 68/74"
+			"type" "0"
+			"title" "Waypoint 68/74"
 		}
 
 		"ping_minimap"
@@ -1805,11 +1805,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 69/74"
+			"type" "0"
+			"title" "Waypoint 69/74"
 		}
 
 		"ping_minimap"
@@ -1831,11 +1831,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 70/74"
+			"type" "0"
+			"title" "Waypoint 70/74"
 		}
 
 		"ping_minimap"
@@ -1855,11 +1855,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 71/74"
+			"type" "0"
+			"title" "Waypoint 71/74"
 		}
 
 		"ping_minimap"
@@ -1879,11 +1879,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 72/74"
+			"type" "0"
+			"title" "Waypoint 72/74"
 		}
 
 		"ping_minimap"
@@ -1903,11 +1903,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 73/74"
+			"type" "0"
+			"title" "Waypoint 73/74"
 		}
 
 		"ping_minimap"
@@ -1927,11 +1927,11 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_walk"
-			"type" "1"
-			"text" "Waypoint 74/74"
+			"type" "0"
+			"title" "Waypoint 74/74"
 		}
 
 		"task_move_location" "-7345.474609 -1272.445190 362.86999"
@@ -1986,11 +1986,11 @@
 			"dota_hud_healthbars" "1"
 		}
 
-		"quest_base"
+		"quest"
 		{
-			"name" "quest_base"
-			"type" "3"
-			"text" "Return home."
+			"name" "quest"
+			"type" "0"
+			"title" "Return home."
 		}
 
 		"task_move_location" "-6935.240234 -6440.072266 0"
@@ -2000,7 +2000,7 @@
 
 	"end_game"
 	{
-		"quest_finish" "quest_base"
+		"quest_finish" "quest"
 
 		"finish_text" "#DOTA_Tutorial_Finished_Tutorial01"
 		"finish_tutorial" "1"

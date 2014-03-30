@@ -242,11 +242,11 @@
 
 	"intro_quest"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_start"
 			"type" "0"
-			"text" "Walk to the bottom rune spot."
+			"title" "Walk to the bottom rune spot."
 		}
 
 		"advance_time" "0.3"
@@ -329,11 +329,11 @@
 			"dota_hud_healthbars" "1"
 		}
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "1"
-			"text" "Place an observer ward."
+			"type" "0"
+			"title" "Place an observer ward."
 		}
 
 		"ping_minimap"
@@ -396,11 +396,11 @@
 
 	"bottom2"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "1"
-			"text" "Place another observer ward."
+			"type" "0"
+			"title" "Place another observer ward."
 		}
 
 		"ping_minimap"
@@ -436,11 +436,11 @@
 
 	"bottom3"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "1"
-			"text" "Place an observer ward."
+			"type" "0"
+			"title" "Place an observer ward."
 		}
 
 		"ping_minimap"
@@ -476,11 +476,11 @@
 
 	"bottom4"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "1"
-			"text" "Place another observer ward."
+			"type" "0"
+			"title" "Place another observer ward."
 		}
 
 		"ping_minimap"
@@ -516,11 +516,11 @@
 
 	"bottom5"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "1"
-			"text" "Place an observer ward."
+			"type" "0"
+			"title" "Place an observer ward."
 		}
 
 		"ping_minimap"
@@ -556,11 +556,11 @@
 
 	"bottom6"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "1"
-			"text" "Place another observer ward."
+			"type" "0"
+			"title" "Place another observer ward."
 		}
 
 		"ping_minimap"
@@ -596,11 +596,11 @@
 
 	"bottom7"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "1"
-			"text" "Place an observer ward."
+			"type" "0"
+			"title" "Place an observer ward."
 		}
 
 		"ping_minimap"
@@ -636,11 +636,11 @@
 
 	"bottom7.5"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "1"
-			"text" "Place an observer ward to block the camp."
+			"type" "0"
+			"title" "Place an observer ward to block the camp."
 		}
 
 		"ping_minimap"
@@ -676,11 +676,11 @@
 
 	"bottom8"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "1"
-			"text" "Place another observer ward."
+			"type" "0"
+			"title" "Place another observer ward."
 		}
 
 		"ping_minimap"
@@ -716,11 +716,11 @@
 
 	"bottom9"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "1"
-			"text" "Place an observer ward."
+			"type" "0"
+			"title" "Place an observer ward."
 		}
 
 		"ping_minimap"
@@ -786,11 +786,11 @@
 
 	"bottom10"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "1"
-			"text" "Place a sentry ward."
+			"type" "0"
+			"title" "Place a sentry ward."
 		}
 
 		"ping_minimap"
@@ -826,11 +826,11 @@
 
 	"bottom11"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "1"
-			"text" "Place another sentry ward."
+			"type" "0"
+			"title" "Place another sentry ward."
 		}
 
 		"ping_minimap"
@@ -866,11 +866,11 @@
 
 	"bottom12"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "1"
-			"text" "Place a sentry ward."
+			"type" "0"
+			"title" "Place a sentry ward."
 		}
 
 		"ping_minimap"
@@ -918,11 +918,11 @@
 			"dota_hud_healthbars" "1"
 		}
 
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_transition"
-			"type" "3"
-			"text" "Walk to the top rune spot."
+			"type" "0"
+			"title" "Walk to the top rune spot."
 		}
 
 		"task_move_location" "-3014.913086 1459.686401 337.469910"
@@ -978,11 +978,11 @@
 
 	"top1"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "1"
-			"text" "Place an observer ward."
+			"type" "0"
+			"title" "Place an observer ward."
 		}
 
 		"ping_minimap"
@@ -1018,11 +1018,11 @@
 
 	"top2"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "1"
-			"text" "Place another observer ward."
+			"type" "0"
+			"title" "Place another observer ward."
 		}
 
 		"ping_minimap"
@@ -1058,11 +1058,11 @@
 
 	"top3"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "1"
-			"text" "Place an observer ward."
+			"type" "0"
+			"title" "Place an observer ward."
 		}
 
 		"ping_minimap"
@@ -1098,11 +1098,11 @@
 
 	"top4"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "1"
-			"text" "Place another observer ward."
+			"type" "0"
+			"title" "Place another observer ward."
 		}
 
 		"ping_minimap"
@@ -1138,11 +1138,11 @@
 
 	"top5"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "1"
-			"text" "Place an observer ward."
+			"type" "0"
+			"title" "Place an observer ward."
 		}
 
 		"ping_minimap"
@@ -1178,11 +1178,11 @@
 
 	"top6"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "1"
-			"text" "Place another observer ward."
+			"type" "0"
+			"title" "Place another observer ward."
 		}
 
 		"ping_minimap"
@@ -1248,11 +1248,11 @@
 
 	"top7"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "1"
-			"text" "Place a sentry ward."
+			"type" "0"
+			"title" "Place a sentry ward."
 		}
 
 		"ping_minimap"
@@ -1288,11 +1288,11 @@
 
 	"top8"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "1"
-			"text" "Place another sentry ward."
+			"type" "0"
+			"title" "Place another sentry ward."
 		}
 
 		"ping_minimap"
@@ -1325,11 +1325,11 @@
 
 	"top9"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "1"
-			"text" "Place a sentry ward."
+			"type" "0"
+			"title" "Place a sentry ward."
 		}
 
 		"ping_minimap"
@@ -1365,11 +1365,11 @@
 
 	"top10"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name" "quest_ward"
-			"type" "1"
-			"text" "Place another sentry ward."
+			"type" "0"
+			"title" "Place another sentry ward."
 		}
 
 		"ping_minimap"
@@ -1431,11 +1431,11 @@
 			"dota_hud_healthbars" "1"
 		}
 
-		"quest_base"
+		"quest"
 		{
-			"name" "quest_base"
-			"type" "3"
-			"text" "Return home."
+			"name" "quest"
+			"type" "0"
+			"title" "Return home."
 		}
 
 		"task_move_location" "-6935.240234 -6440.072266 0"
@@ -1445,7 +1445,7 @@
 
 	"end_game"
 	{
-		"quest_finish" "quest_base"
+		"quest_finish" "quest"
 
 		"finish_text" "#DOTA_Tutorial_Finished_Tutorial01"
 		"finish_tutorial" "1"

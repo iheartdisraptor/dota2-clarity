@@ -2,7 +2,7 @@
 {
 	"Version" "1"
 
-	"custom_vision_wards"
+	"custom_camp_wards"
 	{
 		"advance_time" "0"
 		"advance_event" "player_joined"
@@ -48,7 +48,7 @@
 
 		"precache"
 		{
-			"npc_dota_hero_lina" "1"
+			"npc_dota_hero_lich" "1"
 		}
 
 		"advance_time" "0"
@@ -58,9 +58,9 @@
 
 	"setup_hero"
 	{
-		"player_team" "good"
+		"player_team" "bad"
 
-		"player_hero" "npc_dota_hero_lina"
+		"player_hero" "npc_dota_hero_lich"
 
 		"player_movement_allowed" "0"
 		"convars"
@@ -70,29 +70,29 @@
 
 		"hero_levelup"
 		{
-			"hero" "npc_dota_hero_lina"
+			"hero" "npc_dota_hero_lich"
 			"level" "25"
 
 			"levelups"
 			{
-				"lina_dragon_slave" "1"
-				"lina_dragon_slave" "1"
-				"lina_dragon_slave" "1"
-				"lina_dragon_slave" "1"
+				"lich_frost_blast" "1"
+				"lich_frost_blast" "1"
+				"lich_frost_blast" "1"
+				"lich_frost_blast" "1"
 
-				"lina_light_strike_array" "1"
-				"lina_light_strike_array" "1"
-				"lina_light_strike_array" "1"
-				"lina_light_strike_array" "1"
+				"lich_ice_armor" "1"
+				"lich_ice_armor" "1"
+				"lich_ice_armor" "1"
+				"lich_ice_armor" "1"
 
-				"lina_fiery_soul" "1"
-				"lina_fiery_soul" "1"
-				"lina_fiery_soul" "1"
-				"lina_fiery_soul" "1"
+				"lich_sacrifice" "1"
+				"lich_sacrifice" "1"
+				"lich_sacrifice" "1"
+				"lich_sacrifice" "1"
 
-				"lina_laguna_blade" "1"
-				"lina_laguna_blade" "1"
-				"lina_laguna_blade" "1"
+				"lich_chain_frost" "1"
+				"lich_chain_frost" "1"
+				"lich_chain_frost" "1"
 
 				"attribute_bonus" "1"
 				"attribute_bonus" "1"
@@ -255,20 +255,20 @@
 
 		"advance_time" "2"
 		"advance_event" "lesson_started"
-		//"next_lesson" "intro_start_game"
-		"next_lesson" "intro_speech1"
+		"next_lesson" "intro_start_game"
+		//"next_lesson" "intro_speech1"
 	}
 
 	"intro_speech1"
 	{
 		"npc_speech"
 		{
-			"text" "Rylai might have shown you rune wards, but today we're going to learn warding for vision beyond the rune spots. Lane wards are first, and then we'll go on to mid and late game wards."
-			"npc" "npc_dota_hero_lina"
-			"duration" "14"
+			"text" "Ah, wards! Today we will learn how to ward jungle camps. This is useful in the early phase to disrupt enemy junglers. We will also look at dewarding jungle camps to support ally junglers."
+			"npc" "npc_dota_hero_lich"
+			"duration" "20"
 		}
 
-		"advance_time" "14"
+		"advance_time" "20"
 		"advance_event" "lesson_started"
 		"next_lesson" "intro_speech2"
 	}
@@ -277,12 +277,12 @@
 	{
 		"npc_speech"
 		{
-			"text" "Place an observer on top of where I ping and move to the quest marker to get an explanation of the ward."
-			"npc" "npc_dota_hero_lina"
-			"duration" "8"
+			"text" "Place a ward on the ping location and move to the quest marker to proceed."
+			"npc" "npc_dota_hero_lich"
+			"duration" "7"
 		}
 
-		"advance_time" "8"
+		"advance_time" "7"
 		"advance_event" "lesson_started"
 		"next_lesson" "intro_speech3"
 	}
@@ -291,8 +291,8 @@
 	{
 		"npc_speech"
 		{
-			"text" "At any time you can destroy all wards by pressing '[', you can spawn neutrals with ']', and you can show camp spawn boxes with '\'."
-			"npc" "npc_dota_hero_lina"
+			"text" "At any time you can destroy all wards by pressing '[', you can spawn neutrals with ']', and you can show camp spawn boxes with '\'. Use the warding drill alias to enable these controls in a local lobby."
+			"npc" "npc_dota_hero_lich"
 			"duration" "16"
 		}
 
@@ -313,107 +313,44 @@
 
 		"npc_speech"
 		{
-			"text" "Ready? Let's go!"
-			"npc" "npc_dota_hero_lina"
+			"text" "Time for us to go."
+			"npc" "npc_dota_hero_lich"
 			"duration" "5"
 			"allow_movement" "1"
 		}
 
 		"advance_time" "6"
 		"advance_event" "lesson_started"
-		"next_lesson" "intro_plus"
-	}
-
-	// Intro to lane wards /////////////////////////////////////////////////////
-
-	"intro_plus"
-	{
-		"quest"
-		{
-			"name" "quest_walk"
-			"type" "0"
-			"title" "Learn about lane wards."
-		}
-
-		"task_move_location" "-6526.493652 -1150.49926 270"
-		"advance_event" "task_completed"
-		"next_lesson" "intro_plus2"
-	}
-
-	"intro_plus2"
-	{
-		"npc_speech"
-		{
-			"text" "When it comes to warding, all ward spots are situational. This all depends on which and how many heroes are in lane and what you're trying to accomplish at any moment."
-			"npc" "npc_dota_hero_lina"
-			"duration" "16"
-			"allow_movement" "0"
-		}
-
-		"advance_time" "16"
-		"advance_event" "lesson_started"
-		"next_lesson" "intro_plus3"
-	}
-
-	"intro_plus3"
-	{
-		"npc_speech"
-		{
-			"text" "When we discuss these ward spots, focus on the why and the when rather than simply memorizing all of them. This way you'll be able to create your own ward spots depending on what your team needs."
-			"npc" "npc_dota_hero_lina"
-			"duration" "16"
-			"allow_movement" "0"
-		}
-
-		"advance_time" "16"
-		"advance_event" "lesson_started"
-		"next_lesson" "intro_plus3_buffer"
-	}
-
-	"intro_plus3_buffer"
-	{
-		"quest_finish" "quest_walk"
-
-		"advance_time" "2"
-		"advance_event" "lesson_started"
 		"next_lesson" "marker1"
 	}
 
-	// Laning wards ////////////////////////////////////////////////////////////
+	// Blocking wards //////////////////////////////////////////////////////////
 
 	"marker1"
 	{
-//		"npc_speech"
-//		{
-//			"text" "Let's go to the first ward."
-//			"npc" "npc_dota_hero_lina"
-//			"duration" "120"
-//			"allow_movement" "1"
-//		}
+		"quest_base"
+		{
+			"name" "quest_walk"
+			"type" "1"
+			"text" "Ward 1/50"
+		}
 
 		"npc_speech"
 		{
-			"text" "This first ward could be used early by Dire to spot incoming TPs and ganks. However, it is more likely used by Dire when they are pushing the top T1."
-			"npc" "npc_dota_hero_lina"
+			"text" "This first ward gives vision of the rune while blocking the Radiant ancients."
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
 
-		"quest"
-		{
-			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 1/50"
-		}
-
 		"ping_minimap"
 		{
-			"pos" "-5755.602051 600.5407 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-5755.602051 600.5407 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker2"
 	}
@@ -423,7 +360,7 @@
 		"npc_speech"
 		{
 			"text" "This next ward is used by Dire to spot incoming ganks and to catch Radiant out of position. It is especially useful for them in trilanes."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -431,21 +368,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 2/50"
+			"type" "1"
+			"text" "Ward 2/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-6067.642090 3137.98877"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-6067.642090 3137.98877"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker3"
 	}
@@ -455,7 +392,7 @@
 		"npc_speech"
 		{
 			"text" "This next ward can spot ganks or trilane positioning for either team. It does not block the camp, but move it to the right of the rocks 100 units and it will."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -463,21 +400,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 3/50"
+			"type" "1"
+			"text" "Ward 3/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-5161.820313 4011.952 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-5161.820313 4011.952 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker4"
 	}
@@ -487,7 +424,7 @@
 		"npc_speech"
 		{
 			"text" "This is another ward that can show positioning and incoming ganks. Notice how it is positioned at the intersection of multiple paths of vision to provide the most coverage. It blocks the camp unless you move it up 100 units. Press '\' to see spawn boxes."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -495,21 +432,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 4/50"
+			"type" "1"
+			"text" "Ward 4/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-4317.063965 4270.4887 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-4317.063965 4270.4887 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker5"
 	}
@@ -519,7 +456,7 @@
 		"npc_speech"
 		{
 			"text" "Use this ward as Radiant to spot enemies who are pulling and catch them out of position."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -527,21 +464,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 5/50"
+			"type" "1"
+			"text" "Ward 5/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-3775.016602 4973.48 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-3775.016602 4973.48 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker6"
 	}
@@ -551,7 +488,7 @@
 		"npc_speech"
 		{
 			"text" "This ward is similar to the last, but can also help when pushing Dire's top T1."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -559,21 +496,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 6/50"
+			"type" "1"
+			"text" "Ward 6/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-3378.065918 5701.4882 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-3378.065918 5701.4882 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker7"
 	}
@@ -583,7 +520,7 @@
 		"npc_speech"
 		{
 			"text" "For Radiant this ward can spot incoming TPs and fleeing enemies. It is highly situational since the previous ward does almost the same but better."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -591,21 +528,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 7/50"
+			"type" "1"
+			"text" "Ward 7/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-5795.063965 5850.4882 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-5795.063965 5850.4882 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker8"
 	}
@@ -615,7 +552,7 @@
 		"npc_speech"
 		{
 			"text" "For Radiant this ward reveals part of the Dire high ground across the river. This is useful at night time for preventing ganks and for pushing the mid T1."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -623,21 +560,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 8/50"
+			"type" "1"
+			"text" "Ward 8/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-1174.958130 -354.31585 150"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-1174.958130 -354.31585 150"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker9"
 	}
@@ -647,7 +584,7 @@
 		"npc_speech"
 		{
 			"text" "This ward is similar to the last, but it can be used by both teams since it is outside of tower reveal range."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -655,21 +592,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 9/50"
+			"type" "1"
+			"text" "Ward 9/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-400.067932 311.4928 150"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-400.067932 311.4928 150"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker10"
 	}
@@ -679,7 +616,7 @@
 		"npc_speech"
 		{
 			"text" "This ward is similar to the last two but protects mid from ganks by the Dire bottom lane heroes."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -687,21 +624,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 10/50"
+			"type" "1"
+			"text" "Ward 10/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "66.689636 -1143.90551 150"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "66.689636 -1143.90551 150"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker11"
 	}
@@ -711,7 +648,7 @@
 		"npc_speech"
 		{
 			"text" "This ward is similar to the last."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -719,21 +656,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 11/50"
+			"type" "1"
+			"text" "Ward 11/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "887.631836 -620.04480 150"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "887.631836 -620.04480 150"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker12"
 	}
@@ -743,7 +680,7 @@
 		"npc_speech"
 		{
 			"text" "This can be used by Radiant to spot incoming ganks and fleeing enemies. It is mostly used by Radiant in trilanes. It can also be used later on to protect the jungle from ganks through bottom lane."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -751,21 +688,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 12/50"
+			"type" "1"
+			"text" "Ward 12/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "5889.473633 -3103.6247 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "5889.473633 -3103.6247 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker13"
 	}
@@ -775,7 +712,7 @@
 		"npc_speech"
 		{
 			"text" "All wards are prone to dewarding, and when that happens you must offset your wards. Try to find alternative positions for wards. They sacrifice the vision of their counterparts for the chance of not being dewarded."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -783,21 +720,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 13/50"
+			"type" "1"
+			"text" "Ward 13/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "4900.470703 -3477.62597 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "4400.470703 -3477.62597 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker14"
 	}
@@ -807,7 +744,7 @@
 		"npc_speech"
 		{
 			"text" "This ward can be used by both sides when vision to the side of lane is important to the success of the lane. For example, when going up against Keeper of the Light, it is important to spot out the Illuminate."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -815,21 +752,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 14/50"
+			"type" "1"
+			"text" "Ward 14/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "4730.471680 -4596.6245 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "4730.471680 -4596.6245 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker15"
 	}
@@ -839,7 +776,7 @@
 		"npc_speech"
 		{
 			"text" "This ward for Dire can be used to spot incoming TPs and to give an advantage when pushing bottom T1."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -847,21 +784,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 15/50"
+			"type" "1"
+			"text" "Ward 15/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "3716.467041 -6008.6225 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "3716.467041 -6008.6225 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker16"
 	}
@@ -871,7 +808,7 @@
 		"npc_speech"
 		{
 			"text" "This situational ward can be used by Dire to spot incoming TPs and fleeing enemies."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "8"
 			"allow_movement" "1"
 		}
@@ -879,21 +816,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 16/50"
+			"type" "1"
+			"text" "Ward 16/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "5935.416504 -5636.62255 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "5935.416504 -5636.62255 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker16_exp"
 	}
@@ -903,7 +840,7 @@
 		"npc_speech"
 		{
 			"text" "That's hot."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "3"
 			"allow_movement" "1"
 		}
@@ -920,7 +857,7 @@
 		"npc_speech"
 		{
 			"text" "That is all for lane warding. Now we'll look at wards that give vision for the mid and late phases of the game. There are wards to help push, wards to help gank, and wards to help farm."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "20"
 			"allow_movement" "0"
 		}
@@ -937,7 +874,7 @@
 		"npc_speech"
 		{
 			"text" "Let's go!"
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "2"
 			"allow_movement" "1"
 		}
@@ -954,7 +891,7 @@
 		"npc_speech"
 		{
 			"text" "For Dire, this is an aggressive ward to spot out gankable heroes. For Radiant, this is a defensive ward, especially when defending the bottom T2. To remember your ward spots, you can use landmarks as a guide. The rocks here marks this ward."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -962,21 +899,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 17/50"
+			"type" "1"
+			"text" "Ward 17/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "1781.671387 -4655.505 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "1781.671387 -4655.505 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker18"
 	}
@@ -986,7 +923,7 @@
 		"npc_speech"
 		{
 			"text" "This ward sacrifices vision of the rune for more vision of Radiant jungle movement. It can be a good alternative when your rune ward has been dewarded and you have vision of top rune."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -994,21 +931,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 18/50"
+			"type" "1"
+			"text" "Ward 18/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "862.692505 -2720.50170 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "862.692505 -2720.50170 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker19"
 	}
@@ -1018,7 +955,7 @@
 		"npc_speech"
 		{
 			"text" "This ward can be used by Dire when pushing bottom T2. It spots out Radiant initiators, especially those who can blink into the fight."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -1026,21 +963,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 19/50"
+			"type" "1"
+			"text" "Ward 19/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-428.306641 -4880.5014 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-428.306641 -4880.5014 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker20"
 	}
@@ -1050,7 +987,7 @@
 		"npc_speech"
 		{
 			"text" "This ward gives unobstructed vision of the area around it and is highly sought after for ganking and for defending the push of T2 towers."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -1058,21 +995,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 20/50"
+			"type" "1"
+			"text" "Ward 20/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-1578.307617 -4482.5063 590"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-2636.938232 -5062.6123 150"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker21"
 	}
@@ -1082,7 +1019,7 @@
 		"npc_speech"
 		{
 			"text" "When Radiant T3 is being pushed, this ward can provide much needed high ground vision against Dire. It is also less likely to be dewarded than the last ward."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -1090,21 +1027,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 21/50"
+			"type" "1"
+			"text" "Ward 21/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-1312.935059 -6212.61279 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-1312.935059 -6212.61279 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker22"
 	}
@@ -1114,7 +1051,7 @@
 		"npc_speech"
 		{
 			"text" "When Dire is fountain diving they may place a ward here to help. It is outside of the reveal range of both the Ancient and the fountain."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -1122,21 +1059,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 22/50"
+			"type" "1"
+			"text" "Ward 22/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-6495.913086 -6550.0107 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-6495.913086 -6550.0107 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker23"
 	}
@@ -1146,7 +1083,7 @@
 		"npc_speech"
 		{
 			"text" "This is an alternative to the previous ward. It can also be used for courier sniping by Nature's Prophet."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -1154,21 +1091,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 23/50"
+			"type" "1"
+			"text" "Ward 23/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-6882.938477 -6040.61474 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-6882.938477 -6040.61474 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker24"
 	}
@@ -1178,7 +1115,7 @@
 		"npc_speech"
 		{
 			"text" "For Dire this ward is used when pushing T3. It can be placed from outside of the base."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -1186,21 +1123,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 24/50"
+			"type" "1"
+			"text" "Ward 24/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-3866.924316 -4927.63623 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-3866.924316 -4927.63623 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker25"
 	}
@@ -1210,7 +1147,7 @@
 		"npc_speech"
 		{
 			"text" "This ward is similar to the last ward."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -1218,21 +1155,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 25/50"
+			"type" "1"
+			"text" "Ward 25/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-5469.939453 -3381.61499 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-5469.939453 -3381.61499 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker26"
 	}
@@ -1242,7 +1179,7 @@
 		"npc_speech"
 		{
 			"text" "This ward can help Radiant defend against a T3 push. It also demonstrates a principle of warding: try to place wards at intersections of multiple paths to provide the most vision. This ward is positioned at the intersection of three paths."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -1250,21 +1187,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 26/50"
+			"type" "1"
+			"text" "Ward 26/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-2996.937012 -3247.6176 150"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-2996.937012 -3247.6176 150"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker27"
 	}
@@ -1274,7 +1211,7 @@
 		"npc_speech"
 		{
 			"text" "This highly situational ward can be used by Dire to push the mid T2."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -1282,21 +1219,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 27/50"
+			"type" "1"
+			"text" "Ward 27/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-3233.920410 -3951.5568 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-3233.920410 -3951.5568 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker28"
 	}
@@ -1306,7 +1243,7 @@
 		"npc_speech"
 		{
 			"text" "This ward can be used by Dire when pushing the mid T2 to protect against initiation from the high ground. Radiant can also use this when defending T2."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -1314,21 +1251,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 28/50"
+			"type" "1"
+			"text" "Ward 28/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-3381.708740 -1730.265 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-3381.708740 -1730.265 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker29"
 	}
@@ -1338,7 +1275,7 @@
 		"npc_speech"
 		{
 			"text" "This can be used for defending T2, but it also useful for defending T3. Many fights happen on the low ground and being able to spot high ground initation is important."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -1346,21 +1283,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 29/50"
+			"type" "1"
+			"text" "Ward 29/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-4450.708008 -2324.2646 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-4450.708008 -2324.2646 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker30"
 	}
@@ -1370,7 +1307,7 @@
 		"npc_speech"
 		{
 			"text" "This ward can be used by Radiant when defending T3."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -1378,21 +1315,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 30/50"
+			"type" "1"
+			"text" "Ward 30/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-5938.956543 -1756.4467 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-5938.956543 -1756.4467 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker31"
 	}
@@ -1402,7 +1339,7 @@
 		"npc_speech"
 		{
 			"text" "This ward can help Dire push top T2. It can be placed from across the fissure."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -1410,87 +1347,69 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 31/50"
+			"type" "1"
+			"text" "Ward 31/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-5111.949219 -1277.45166 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-5111.949219 -1277.45166 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker32"
 	}
 
 	"marker32"
 	{
-		"npc_speech"
-		{
-			"text" "This ward can be used by Radiant for defending top T2 or even mid T2. Highly situational wards like this are relevant when you believe the enemy team will be spending a lot of time in the area."
-			"npc" "npc_dota_hero_lina"
-			"duration" "120"
-			"allow_movement" "1"
-		}
-
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 32/50"
+			"type" "1"
+			"text" "Ward 32/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-4381.947754 172.5493 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-4381.947754 172.5493 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker33"
 	}
 
-	// Mid to late game Dire wards /////////////////////////////////////////////
-
 	"marker33"
 	{
-		"npc_speech"
-		{
-			"text" "This ward can be used by Dire to protect the jungle from ganks, especially when the mid T1 has fallen."
-			"npc" "npc_dota_hero_lina"
-			"duration" "120"
-			"allow_movement" "1"
-		}
-
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 33/50"
+			"type" "1"
+			"text" "Ward 33/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-111.952332 1672.54882 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-111.952332 1672.54882 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker34"
 	}
@@ -1500,7 +1419,7 @@
 		"npc_speech"
 		{
 			"text" "This ward can be used by Radiant to spot out gankable heroes in their jungle. It is also useful when pushing mid T2 as it gives high ground vision."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -1508,21 +1427,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 34/50"
+			"type" "1"
+			"text" "Ward 34/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-51.870605 2232.5966 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-51.870605 2232.5966 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker35"
 	}
@@ -1532,7 +1451,7 @@
 		"npc_speech"
 		{
 			"text" "This ward is similar to the last but sacrifices vision to give more vision to the side of T2 for Radiant and to be safer to place for Dire."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -1540,21 +1459,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 35/50"
+			"type" "1"
+			"text" "Ward 35/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "1150.048218 2286.548828 300"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "1150.048 2286.548 300"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker36"
 	}
@@ -1564,7 +1483,7 @@
 		"npc_speech"
 		{
 			"text" "This ward can be used to spot gankable heroes in the Dire jungle. To the left of the rocks, the camp is not blocked. To the right of the rocks, the camp is blocked."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -1572,21 +1491,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 36/50"
+			"type" "1"
+			"text" "Ward 36/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "360.178680 3253.187 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "360.178680 3253.187 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker37"
 	}
@@ -1596,7 +1515,7 @@
 		"npc_speech"
 		{
 			"text" "This can be used by Radiant to spot gank opportunities or by Dire to help defend top T2."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -1604,21 +1523,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 37/50"
+			"type" "1"
+			"text" "Ward 37/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "-1147.782959 4670.149 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "-1147.782959 4670.149 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker38"
 	}
@@ -1628,7 +1547,7 @@
 		"npc_speech"
 		{
 			"text" "This highly sought after ward gives clear vision of the area around it. It's used by Radiant when pushing T2 or even T3 and also by Dire when defending."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -1636,21 +1555,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 38/50"
+			"type" "1"
+			"text" "Ward 38/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "1089.177368 4738.18261 590"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "1089.177368 4238.18261 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker39"
 	}
@@ -1660,7 +1579,7 @@
 		"npc_speech"
 		{
 			"text" "This ward can be used by Dire to get high ground vision for defending top T3."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -1668,21 +1587,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 39/50"
+			"type" "1"
+			"text" "Ward 39/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "1385.213135 6164.4384 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "1385.213135 6164.4384 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker40"
 	}
@@ -1692,7 +1611,7 @@
 		"npc_speech"
 		{
 			"text" "This ward can be used by Radiant when fountain diving or courier sniping. It can be placed at the entrance since the Dire ancient is so far from its fountain compared to the Radiant ancient."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -1700,21 +1619,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 40/50"
+			"type" "1"
+			"text" "Ward 40/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "6565.764648 6056.33886 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "6565.764648 6056.33886 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker41"
 	}
@@ -1724,7 +1643,7 @@
 		"npc_speech"
 		{
 			"text" "Cutting a tree and placing a ward here can give high ground vision for Radiant when pushing T3. It is not often used but it is also hard to deward."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -1732,21 +1651,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 41/50"
+			"type" "1"
+			"text" "Ward 41/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "2712.850098 6816.7460 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "2312.850098 6216.7460 150"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker42"
 	}
@@ -1756,7 +1675,7 @@
 		"npc_speech"
 		{
 			"text" "This ward can be used by Radiant when pushing T3. It can be placed from outside of the base."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -1764,21 +1683,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 42/50"
+			"type" "1"
+			"text" "Ward 42/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "3216.375977 4679.55615 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "2489.386963 3744.6630 150"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker43"
 	}
@@ -1788,7 +1707,7 @@
 		"npc_speech"
 		{
 			"text" "This ward is similar to the last."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -1796,21 +1715,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 43/50"
+			"type" "1"
+			"text" "Ward 43/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "5018.376465 2879.54956 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "3802.370361 2069.8830 150"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker44"
 	}
@@ -1820,7 +1739,7 @@
 		"npc_speech"
 		{
 			"text" "This ward gives vision for Dire when defending T3, and is especially useful at night."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -1828,21 +1747,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 44/50"
+			"type" "1"
+			"text" "Ward 44/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "3096.146973 2739.55297 150"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "3096.146973 2739.55297 150"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker45"
 	}
@@ -1852,7 +1771,7 @@
 		"npc_speech"
 		{
 			"text" "When mid T2 has fallen, Dire may use this ward to spot incoming pushes and to defend."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -1860,21 +1779,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 45/50"
+			"type" "1"
+			"text" "Ward 45/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "1976.133057 1382.53735 150"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "1976.133057 1382.53735 150"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker46"
 	}
@@ -1884,7 +1803,7 @@
 		"npc_speech"
 		{
 			"text" "For Dire this ward gives high ground vision for defending T3. For Radiant it can also be useful when fighting around this area, but the next ward may be more useful for them."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -1892,21 +1811,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 46/50"
+			"type" "1"
+			"text" "Ward 46/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "3665.819824 1080.2066 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "3665.819824 1080.2066 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker47"
 	}
@@ -1916,7 +1835,7 @@
 		"npc_speech"
 		{
 			"text" "This ward spots movement around the secret shop, which is a highly sought after resource in the late phase of the game."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -1924,21 +1843,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 47/50"
+			"type" "1"
+			"text" "Ward 47/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "3747.058838 345.07830 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "3747.058838 345.07830 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker48"
 	}
@@ -1948,7 +1867,7 @@
 		"npc_speech"
 		{
 			"text" "This ward spots gankable heroes attempting to kill the ancient creep camps. It can also show when Dire is going for Roshan."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -1956,21 +1875,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 48/50"
+			"type" "1"
+			"text" "Ward 48/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "4436.907715 -625.5714 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "4436.907715 -625.5714 370"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker49"
 	}
@@ -1980,7 +1899,7 @@
 		"npc_speech"
 		{
 			"text" "This ward can be used by Radiant when pushing bottom T1."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -1988,21 +1907,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 49/50"
+			"type" "1"
+			"text" "Ward 49/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "5837.139648 -532.45227 270"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "5837.139648 -532.45227 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker50"
 	}
@@ -2012,7 +1931,7 @@
 		"npc_speech"
 		{
 			"text" "This ward can be used by Dire to gain high ground vision when defending T3."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "120"
 			"allow_movement" "1"
 		}
@@ -2020,21 +1939,21 @@
 		"quest_finish" "quest_walk"
 		"ping_minimap_stop" "1"
 
-		"quest"
+		"quest_base"
 		{
 			"name" "quest_walk"
-			"type" "0"
-			"title" "Ward 50/50"
+			"type" "1"
+			"text" "Ward 50/50"
 		}
 
 		"ping_minimap"
 		{
-			"pos" "6344.235352 952.9132 350"
+			"pos" ""
 			"delay" "0"
 			"repeat" "6"
 		}
 
-		"task_move_location" "6344.235352 1452.9132 150"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "marker50_exp"
 	}
@@ -2044,7 +1963,7 @@
 		"npc_speech"
 		{
 			"text" "This was a lot of work."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "3"
 			"allow_movement" "1"
 		}
@@ -2070,7 +1989,7 @@
 		"npc_speech"
 		{
 			"text" "That's all for today. Always remember that the best ward spots depend entirely on what your team is trying to accomplish. Rather than attempt to memorize all of these ward spots, review why they are useful and you will be able to create your own."
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "20"
 		}
 
@@ -2084,7 +2003,7 @@
 		"npc_speech"
 		{
 			"text" "Well, time to go home!"
-			"npc" "npc_dota_hero_lina"
+			"npc" "npc_dota_hero_lich"
 			"duration" "3"
 		}
 
@@ -2101,21 +2020,21 @@
 			"dota_hud_healthbars" "1"
 		}
 
-		"quest"
+		"quest_base"
 		{
-			"name" "quest"
-			"type" "0"
-			"title" "Return home."
+			"name" "quest_base"
+			"type" "3"
+			"text" "Return home."
 		}
 
-		"task_move_location" "-7196.527344 -6682.924 270"
+		"task_move_location" ""
 		"advance_event" "task_completed"
 		"next_lesson" "end_game"
 	}
 
 	"end_game"
 	{
-		"quest_finish" "quest"
+		"quest_finish" "quest_base"
 
 		"finish_text" "#DOTA_Tutorial_Finished_Tutorial01"
 		"finish_tutorial" "1"

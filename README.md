@@ -34,8 +34,25 @@ dota2-clarity features custom console commands and training missions for Dota 2.
   - Cycle camera focus between runes and hero
 
 ---
-2. Installation
----------------
+2. Quick Installation
+---------------------
+
+If you don't already have an autoexec.cfg, installation is easy. Simply copy
+the contents of the dota folder to <Steam>/SteamApps/common/dota 2 beta/dota.
+This will install the aliases and tutorials (but not the bindings or cvars, as
+those should be specific to your setup).
+
+If you do have an autoexec.cfg, copy the cfg/clarity/ folder to
+<Steam>/SteamApps/common/dota 2 beta/dota/cfg and the scripts/tutorial folder to
+<Steam>/SteamApps/common/dota 2 beta/dota/scripts. Then add the following to
+your autoexec.cfg:
+
+  con_enable 1
+  exec clarity/use_tutorials_and_aliases.cfg
+
+---
+3. Detailed Installation
+------------------------
 
 The file structure is designed so that you can include only the parts of
 dota2-clarity that you want to use and ignore the rest. This works by keeping
@@ -72,7 +89,7 @@ To enable all features (not recommended):
    add `exec clarity/example_use_all.cfg`.
 
 ---
-3. Usage
+4. Usage
 --------
 
 Explore the clarity/ directory and read the documentation in the files that
@@ -93,7 +110,7 @@ To use training missions:
 2. Press the apostrophe key to print cheat keys to the console.
 
 ---
-4. Credits
+5. Credits
 ----------
 
 * Cyborgmatt for the original HUD disabling commands
@@ -105,15 +122,21 @@ To use training missions:
 * Various Reddit threads    
 
 ---
-5. Ownership
+6. Ownership
 ------------
 
 These scripts belong to the community. Feel free to extend them and share
 your changes.
 
 ---
-6. Changelog
+7. Changelog
 ------------
+
+1.2-6.80
+
+* Reorganized the file structure for ease of use and installation.
+* Fixed an issue where the quest log does not appear in the tutorials due
+  to a change in the way tutorial scripts are written.
 
 1.1-6.79
 
