@@ -11,10 +11,11 @@ dota2-clarity features custom console commands and training missions for Dota 2.
 * Advanced spectator controls make active spectating easier
 * Disable HUD partially or entirely
 * Display neutral camp spawn boxes
+* Display tower range circles
 * Seven grouped chat wheels that encapsulate almost every response
 * Practice drills (aliases and key bindings to be used in in a local game to
-  practice specific skills; these are the training mission controls without
-  the training mission events)
+  practice specific skills; these are the training mission controls and setup
+  without the training mission events)
   - Warding
   - Stacking and pulling
   - Juke paths
@@ -23,7 +24,9 @@ dota2-clarity features custom console commands and training missions for Dota 2.
 * Custom training missions
   - Pull warding
   - Rune warding
+  - Vision warding
   - Radiant juke paths
+  - Dire juke paths
 * Various useful console variables
   - Health bar settings
   - Minimap icon settings
@@ -38,14 +41,15 @@ dota2-clarity features custom console commands and training missions for Dota 2.
 ---------------------
 
 If you don't already have an autoexec.cfg, installation is easy. Simply copy
-the contents of the dota folder to <Steam>/SteamApps/common/dota 2 beta/dota.
-This will install the aliases and tutorials (but not the bindings or cvars, as
-those should be specific to your setup).
+the contents of the dota/ folder to Steam/SteamApps/common/dota 2 beta/dota.
+This will install and enable the aliases and tutorials (the bindings and
+console variables will not be enabled by default; you should browse those
+and use the ones you like).
 
-If you do have an autoexec.cfg, copy the cfg/clarity/ folder to
-Steam/SteamApps/common/dota 2 beta/dota/cfg and the scripts/tutorial folder to
-Steam/SteamApps/common/dota 2 beta/dota/scripts. Then add the following to
-your autoexec.cfg:
+If you do have an autoexec.cfg, copy the dota/cfg/clarity/ folder to
+Steam/SteamApps/common/dota 2 beta/dota/cfg and the dota/scripts/tutorial/
+folder to Steam/SteamApps/common/dota 2 beta/dota/scripts. Then add the
+following to your autoexec.cfg:
 
     con_enable 1
     exec clarity/use_tutorials_and_aliases.cfg
@@ -56,20 +60,19 @@ your autoexec.cfg:
 
 The file structure is designed so that you can include only the parts of
 dota2-clarity that you want to use and ignore the rest. This works by keeping
-all files in .../dota/cfg/clarity and exec'ing them from your autoexec.cfg.
+all files in Steam/SteamApps/common/dota 2 beta/dota/cfg/clarity and `exec`uting
+them from your autoexec.cfg.
 
-1. Copy the dota/cfg/clarity folder itself to
+1. Copy the dota/cfg/clarity/ folder to
    Steam/SteamApps/common/dota 2 beta/dota/cfg.
-2. Copy all custom_*.txt files from dota/scripts/tutorial to
-   Steam/SteamApps/common/dota 2 beta/dota/scripts/tutorial.
-3. Enable the Dota 2 console:
-   http://wyksblog.com/guide-activating-the-console-in-dota-2/
+2. Copy the dota/scripts/tutorial/ folder to
+   Steam/SteamApps/common/dota 2 beta/dota/scripts.
 
 To enable only training missions and drills (recommended):
 
-1. In your Steam/SteamApps/common/dota 2 beta/dota/cfg/autoexec.cfg file,
+3. In your Steam/SteamApps/common/dota 2 beta/dota/cfg/autoexec.cfg file,
    add `exec clarity/use_tutorials_and_aliases.cfg`.
-2. Restart Dota 2, open the console, and enter one of the commands to start
+4. Restart Dota 2, open the console, and enter one of the commands to start
    a training mission:
    * `train_radiant_juke_paths`
    * `train_dire_juke_paths`
@@ -79,21 +82,21 @@ To enable only training missions and drills (recommended):
 
 To enable only some features (recommended):
 
-1. Open clarity/use_all.cfg and clarity/example_binds.cfg.
-2. Copy and modify the lines for the features you want to use into your
+3. Open clarity/use_all.cfg and clarity/example_binds.cfg.
+4. Copy and modify the lines for the features you want to use into your
    autoexec.cfg.
 
 To enable all features (not recommended):
 
-1. In your Steam/SteamApps/common/dota 2 beta//dota/cfg/autoexec.cfg file,
-   add `exec clarity/example_use_all.cfg`.
+3. In your Steam/SteamApps/common/dota 2 beta/dota/cfg/autoexec.cfg file,
+   add `exec clarity/use_all.cfg`.
 
 ---
 4. Usage
 --------
 
 Explore the clarity/ directory and read the documentation in the files that
-interest you. Of particular interest is clarity/binds.cfg, which defines
+interest you. Of particular interest is clarity/example_binds.cfg, which defines
 key bindings for aliases defined by Clarity.
 
 To use practice drills:
