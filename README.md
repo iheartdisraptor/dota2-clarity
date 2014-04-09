@@ -68,7 +68,7 @@ all files in .../dota/cfg/clarity and exec'ing them from your autoexec.cfg.
 To enable only training missions and drills (recommended):
 
 1. In your Steam/SteamApps/common/dota 2 beta/dota/cfg/autoexec.cfg file,
-   add `exec clarity/tutorials.cfg`.
+   add `exec clarity/use_tutorials_and_aliases.cfg`.
 2. Restart Dota 2, open the console, and enter one of the commands to start
    a training mission:
    * `train_radiant_juke_paths`
@@ -79,7 +79,7 @@ To enable only training missions and drills (recommended):
 
 To enable only some features (recommended):
 
-1. Open clarity/example_use_all.cfg and clarity/binds.cfg.
+1. Open clarity/use_all.cfg and clarity/example_binds.cfg.
 2. Copy and modify the lines for the features you want to use into your
    autoexec.cfg.
 
