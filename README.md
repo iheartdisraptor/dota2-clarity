@@ -43,8 +43,8 @@ This will install the aliases and tutorials (but not the bindings or cvars, as
 those should be specific to your setup).
 
 If you do have an autoexec.cfg, copy the cfg/clarity/ folder to
-<Steam>/SteamApps/common/dota 2 beta/dota/cfg and the scripts/tutorial folder to
-<Steam>/SteamApps/common/dota 2 beta/dota/scripts. Then add the following to
+Steam/SteamApps/common/dota 2 beta/dota/cfg and the scripts/tutorial folder to
+Steam/SteamApps/common/dota 2 beta/dota/scripts. Then add the following to
 your autoexec.cfg:
 
     con_enable 1
