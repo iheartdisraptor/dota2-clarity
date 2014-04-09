@@ -47,8 +47,8 @@ If you do have an autoexec.cfg, copy the cfg/clarity/ folder to
 <Steam>/SteamApps/common/dota 2 beta/dota/scripts. Then add the following to
 your autoexec.cfg:
 
-  con_enable 1
-  exec clarity/use_tutorials_and_aliases.cfg
+con_enable 1
+exec clarity/use_tutorials_and_aliases.cfg
 
 ---
 3. Detailed Installation
