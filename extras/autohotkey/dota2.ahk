@@ -1,13 +1,11 @@
 ; Dota 2 controls
 
-#IfWinActive DOTA 2
-
 ; Swap ctrl and alt
+#IfWinActive DOTA 2
 *LCtrl::SendInput {Blind}{LAlt Down}
 *LCtrl Up::SendInput {Blind}{LAlt Up}
 *LAlt::SendInput {Blind}{LCtrl Down}
 *LAlt Up::SendInput {Blind}{LCtrl Up}
-
 #IfWinActive
 
 ; Controls for all programs

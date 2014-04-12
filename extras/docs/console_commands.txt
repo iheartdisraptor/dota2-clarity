@@ -8,3 +8,5 @@ dota_show_selection_boxes - Show hitboxes
 dota_time_of_day_rate - Change the rate of the day/night cycle
 gameui_activate - Bring up the main interface
 getpos - Display the current position of the camera
+dota_particle_fow_debug - Display circles around towers
+dota_camera_disable_zoom - Disable zooming in/out with mousewheel

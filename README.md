@@ -68,7 +68,7 @@ them from your autoexec.cfg.
 2. Copy the dota/scripts/tutorial/ folder to
    Steam/SteamApps/common/dota 2 beta/dota/scripts.
 
-To enable only training missions and drills (recommended):
+To enable only training missions and aliases (recommended):
 
 3. In your Steam/SteamApps/common/dota 2 beta/dota/cfg/autoexec.cfg file,
    add `exec clarity/use_tutorials_and_aliases.cfg`.
