@@ -3,6 +3,7 @@
 "AddonInfo"
 {
     addonSteamAppID        816                             // 816 is the app ID for Dota2 Staging
+    addonID                1893                            // Unique ID for this addon
     addontitle             "Dota 2 Clarity"                // Add-on title that shows up in Add-ons list. ~20 chars max
     addonversion           0.1                             // Version number of add-on version of the form <major>.<minor>
     addontagline           "Tutorials and Aliases"         // Add-on tagline or wrap-up- a short description. ~100 chars max
