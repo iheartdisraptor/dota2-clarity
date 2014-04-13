@@ -2,7 +2,7 @@
 {
 	"Version" "1"
 
-	"custom_radiant_juke_paths"
+	"clarity_radiant_juke_paths"
 	{
 		"advance_time" "0"
 		"advance_event" "player_joined"

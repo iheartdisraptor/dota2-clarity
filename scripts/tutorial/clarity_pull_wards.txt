@@ -2,7 +2,7 @@
 {
 	"Version" "1"
 
-	"custom_pull_wards"
+	"clarity_pull_wards"
 	{
 		"advance_time" "0"
 		"advance_event" "player_joined"
