@@ -41,13 +41,13 @@ dota2-clarity features custom console commands and training missions for Dota 2.
 ---------------------
 
 If you don't already have an autoexec.cfg, installation is easy. Simply copy
-the contents of the dota/ folder to Steam/SteamApps/common/dota 2 beta/dota.
+the cfg/ and scripts/ folders to Steam/SteamApps/common/dota 2 beta/dota/.
 This will install and enable the aliases and tutorials (the bindings and
 console variables will not be enabled by default; you should browse those
 and use the ones you like).
 
-If you do have an autoexec.cfg, copy the dota/cfg/clarity/ folder to
-Steam/SteamApps/common/dota 2 beta/dota/cfg and the dota/scripts/tutorial/
+If you do have an autoexec.cfg, copy the cfg/clarity/ folder to
+Steam/SteamApps/common/dota 2 beta/dota/cfg and the scripts/tutorial/
 folder to Steam/SteamApps/common/dota 2 beta/dota/scripts. Then add the
 following to your autoexec.cfg:
 
@@ -63,9 +63,9 @@ dota2-clarity that you want to use and ignore the rest. This works by keeping
 all files in Steam/SteamApps/common/dota 2 beta/dota/cfg/clarity and `exec`uting
 them from your autoexec.cfg.
 
-1. Copy the dota/cfg/clarity/ folder to
+1. Copy the cfg/clarity/ folder to
    Steam/SteamApps/common/dota 2 beta/dota/cfg.
-2. Copy the dota/scripts/tutorial/ folder to
+2. Copy the scripts/tutorial/ folder to
    Steam/SteamApps/common/dota 2 beta/dota/scripts.
 
 To enable only training missions and aliases (recommended):
