@@ -10,3 +10,8 @@ gameui_activate - Bring up the main interface
 getpos - Display the current position of the camera
 dota_particle_fow_debug - Display circles around towers
 dota_camera_disable_zoom - Disable zooming in/out with mousewheel
+dota_gridnav_show - Display navigation grid
+
+cl_dota_showents - List all entities
+find_ent_index
+ent_info ent_dota_tree
