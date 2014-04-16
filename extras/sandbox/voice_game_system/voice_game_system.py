@@ -162,6 +162,12 @@ contimes 15
 // Keep the console output in the top left corner for 8 seconds
 con_notifytime 8
 
+// Filter console output
+//con_filter_enable 1
+
+// Tag used to filter text
+//con_filter_text [VGS]
+
 ''')
 
 #
@@ -187,7 +193,8 @@ output.write('"\n')
 # Output display help command for lead key
 #
 
-output.write('alias vgs_help_{} "echo .; echo .; echo .; echo .; '.format(LEAD_KEY))
+output.write('alias vgs_help_{} "'.format(LEAD_KEY))
+output.write('echo .; echo .; echo .; echo .; ')
 
 # For each key (first level)
 for key1 in KEYS:
@@ -201,7 +208,8 @@ output.write('"\n')
 
 # For each key (first level)
 for key1 in KEYS:
-	output.write('alias vgs_help_{} "echo .; echo .; echo .; echo .; '.format(key1))
+	output.write('alias vgs_help_{} "'.format(key1))
+	output.write('echo .; echo .; echo .; echo .; ')
 
 	# For each key (second level)
 	for key2 in KEYS:
@@ -212,7 +220,8 @@ for key1 in KEYS:
 		else:
 			phrase = "Undefined"
 
-		output.write('echo {}{}{} : {}; '.format(LEAD_KEY, key1, key2, phrase))
+		output.write('echo {}{}{} : {}; '.format(
+			LEAD_KEY, key1, key2, phrase))
 
 	output.write('"\n')
 
