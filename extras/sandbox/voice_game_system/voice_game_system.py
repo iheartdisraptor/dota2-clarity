@@ -156,8 +156,8 @@ output.write('''// Dota 2 Voice Game System by u/iheartdisraptor
 // Enable console output in the top left corner
 developer 1
 
-// Display the last 11 lines of the console in the top left corner
-contimes 11
+// Display the last 15 lines of the console in the top left corner
+contimes 15
 
 // Keep the console output in the top left corner for 8 seconds
 con_notifytime 8
@@ -187,7 +187,7 @@ output.write('"\n')
 # Output display help command for lead key
 #
 
-output.write('alias vgs_help_{} "'.format(LEAD_KEY))
+output.write('alias vgs_help_{} "echo .; echo .; echo .; echo .; '.format(LEAD_KEY))
 
 # For each key (first level)
 for key1 in KEYS:
@@ -201,7 +201,7 @@ output.write('"\n')
 
 # For each key (first level)
 for key1 in KEYS:
-	output.write('alias vgs_help_{} "'.format(key1))
+	output.write('alias vgs_help_{} "echo .; echo .; echo .; echo .; '.format(key1))
 
 	# For each key (second level)
 	for key2 in KEYS:
